@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Player
+   ========================================================================== */
+
+/**
+ * General styles
+ */
+
+.no-js .controls,
+.no-js .progress { display: none; }
+
+.player {
+  text-align: center;
+                              font-size: .875em;
+  @media (min-width: 880px) { font-size: 1.25em; }
+}
+
+
+
+/**
+ * Playlist
+ */
+
+.album {
+  margin-bottom: 1.25em;
+}
+
+.album > h3 {
+  margin-bottom: .875em;
+  color: $orange;
+  font-size: inherit;
+}
+
+.song {
+  display: block;
+  letter-spacing: .1875em;
+  color: $gray-light;
+
+                              padding: .25em;
+  @media (min-width: 750px) { padding: .375em; }
+
+  &:hover {
+    color: $white;
+    cursor: pointer;
+  }
+
+  // Switch to inline-block style player for screens wider than 1000px
+  @media (min-width: 1000px) {
+    display: inline-block;
+    padding: .375em .125em .375em 0;
+    &:before {
+      content: ' / ';
+      color: $orange;
+    }
+    &:first-of-type:before { content: ''; }
+  }
+}
+
+.song--current,
+.song--current:hover { color: $gray-med; }
+
+
+
+/*
+ * Controls
+ */
+
+.controls {
+                              margin: 2.375em 0 .625em;
+  @media (min-width: 750px) { margin: 2.75em  0 1.875em; }
+}
+
+.controls__button {
+  display: inline-block;
+  cursor: pointer;
+  &.inactive { display: none; }
+
+                              margin: 0 1em;
+  @media (min-width: 750px) { margin: 0 5.5%; }
+}
+
+.controls__button--large {
+                               height: 4em;       width: 4em;
+  @media (min-width: 750px)  { height: 5.1875em;  width: 5.1875em; }
+  @media (min-width: 1300px) { height: 6em;       width: 6em; }
+}
+
+.controls__button--small {
+  position: relative;
+                               height: 2.5em;     width: 4.1667em;  bottom: .6667em;
+  @media (min-width: 750px)  { height: 3.4583em;  width: 5.7638em;  bottom: .8646em; }
+  @media (min-width: 1300px) { height: 4em;       width: 6.6667em;  bottom: 1em; }
+}
+
+
+
+/*
+ * Progress
+ */
+
+.progress {
+  margin: auto;
+  min-width: 315px;
+                               width: 55%;
+  @media (min-width: 750px)  { width: 68%; }
+  @media (min-width: 880px)  { width: 73%; }
+  @media (min-width: 1000px) { width: 82%; }
+  @media (min-width: 1200px) { width: 73%; }
+}
+
+.progress-bar {
+  display: inline-block;
+  margin: auto;
+  width: 80%;
+  width: calc( 100% - 5.5em );
+  height: .1em;
+  background-color: #48484a;
+}
+
+.seek-bar {
+  display: inline-block;
+  height: 100%;
+  float: left;
+  background-color: #777;
+}
+
+.current-time,
+.duration {
+  display: inline-block;
+  width: 3.125em;
+  font: .625em $book;
+  color: $gray-light;
+  letter-spacing: .2em;
+  position: relative;
+  top: .25em;
+}
+
+.current-time {
+  text-align: left;
+}
+
+.duration {
+  text-align: right;
+  left: .3333em;
+}

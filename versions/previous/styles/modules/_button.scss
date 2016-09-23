@@ -1,0 +1,33 @@
+button {
+  border: none;
+  background: inherit;
+  font-family: $book;
+  letter-spacing: .2em;
+  transition: .5s ease;
+                              font-size: .6875em;  line-height: 1.375;
+  @media (min-width: 500px) { font-size: .8125em;  line-height: 1.675; }
+
+  .no-touch &:hover,
+            &:active {
+    color: white;
+    background-color: #333;
+  }
+}
+
+#about button {
+  margin-bottom: 3em;
+  padding: .875em 2.75em .625em;
+  box-shadow: 0 0 7px rgba(0,0,0,0.12);
+}
+
+#shows button {
+  margin-top: 3em;
+  padding: .875em 2.75em .625em;
+  box-shadow: 0 0 7px rgba(0,0,0,0.12);
+}
+
+#contact button {
+  margin: 1.5em auto 3em;
+  padding: .75em 3.75em .675em;
+  box-shadow: 0 0 7px rgba(0,0,0,0.2);
+}

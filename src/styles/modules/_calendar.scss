@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Calendar
+   ========================================================================== */
+
+/**
+ * General styles
+ */
+
+.calendar {
+  margin: auto;
+  text-align: center;
+                              max-width: 19em;
+  @media (min-width: 600px) { max-width: 34em; }
+  @media (min-width: 880px) { max-width: 51em; }
+}
+
+
+
+/**
+ * Show
+ */
+
+.show {
+  display: inline-block;
+  width: 16.5em;
+  height: 15.375em;
+  padding: 1.75em .5em;
+  vertical-align: top;
+  border-right: .15em solid $orange-light;
+  text-align: center;
+
+  @media (max-width: 599px) {
+    font-size: .55rem;
+    &:nth-of-type(2n)  { border-right: none; }
+    &:nth-of-type(n+3) { border-top: .15em solid $orange-light; }
+  }
+
+  @media (min-width: 600px) {
+    padding: 2.5em .5em;
+
+    &:nth-of-type(3n)  { border-right: none; }
+    &:nth-of-type(n+4) { border-top: .15em solid $orange-light; }
+
+    @media (max-width: 879px) { font-size: .675rem; }
+  }
+
+  @media (min-width: 880px) { padding: 2em .5em; }
+}
+
+
+
+/**
+ * Day
+ */
+
+.day {
+  font: 100 7em/.9 $light;
+
+  @media (min-width: 880px) { font-size: 8em; }
+}
+
+
+
+/**
+ * Details
+ */
+
+.details {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25em;
+  height: 7em;
+  font-size: .75em;
+  line-height: 1.5;
+  letter-spacing: .1em;
+}
+
+
+
+/**
+ * Venue
+ */
+
+.venue {
+  display: block;
+  padding: 0 3%;
+  font: 1.7em/1.3 $book;
+  color: $orange-light;
+}

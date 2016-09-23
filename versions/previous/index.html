@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.min.css">
+  <link rel="icon" href="favicon.png">
+  <title>Thomas McEvoy official website</title>
+  <script src="critical.min.js"></script>
+</head>
+
+<body ng-app="app" ng-strict-di>
+  <header>
+    <h1>THOMAS MCEVOY</h1>
+    <nav>
+      <ol>
+        <li><a du-smooth-scroll href="#about">ABOUT</a></li>
+        <li><a du-smooth-scroll duration="1000" href="#music">MUSIC</a></li>
+        <li><a du-smooth-scroll duration="1500" href="#shows">SHOWS</a></li>
+        <li><a du-smooth-scroll duration="2000" href="#contact">CONTACT</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <picture>
+        <!--[if IE 9]><video style="display: none;"><![endif]-->
+        <source srcset="images/thomas-xl.min.jpg" media="(min-width: 1400px)">
+        <source srcset="images/thomas-l.min.jpg" media="(min-width: 800px)">
+        <source srcset="images/thomas-portrait-l.min.jpg" media="(min-width: 500px)">
+        <source srcset="images/thomas-portrait-m.min.jpg" media="(max-width: 499px)">
+        <!--[if IE 9]></video><![endif]-->
+        <img srcset="images/thomas-l.min.jpg" alt="">
+      </picture>
+    </section>
+
+    <section id="about" ng-controller="AboutController as vm">
+      <h2>ABOUT</h2>
+      <p class="lead">Thomas McEvoy is a New York based pianist with a passion for jazz music.</p>
+      <p>Thomas began playing piano by ear at the age of four, and graduated from Juilliard in 2009, where he studied with Kenny Barron. He has performed at major jazz venues such as Dizzy's Club, Smalls, and Birdland. His accolades include first place in the Phillips Jazz Piano Competition, and the invitation to attend Betty Carter's Jazz Ahead composers' residency. He has been fortunate to share the stage with many notable artists, including Benny Golson, Christian McBride, Steve Turre, Ben Wolfe, Grant Stewart, Delbert Felix, and Fukushi Tainaka. Thomas maintains a busy performance schedule and is in demand as a leader and a sideman.</p>
+      <p ng-if="!vm.showButton">Thomas is invested in cultivating the next generation of musicians and music appreciators. He has taught students around the world, having conducted masterclasses and private lessons in Costa Rica, Colombia, and El Salvador. He has also served as guest clinician at Snow College in Ephraim, UT, and guest lecturer at The Juilliard School. Thomas is presently on faculty at <a href="//churchstreetschool.org">Church Street School for Music and Art</a>, a great community arts school in Tribeca.</p>
+      <p ng-if="vm.showButton" id="expander" class="slideable">Thomas is invested in cultivating the next generation of musicians and music appreciators. He has taught students around the world, having conducted masterclasses and private lessons in Costa Rica, Colombia, and El Salvador. He has also served as guest clinician at Snow College in Ephraim, UT, and guest lecturer at The Juilliard School. Thomas is presently on faculty at <a href="//churchstreetschool.org">Church Street School for Music and Art</a>, a great community arts school in Tribeca.</p>
+      <button ng-show="vm.showButton" ng-click="vm.toggle()" slide-toggle="#expander">
+        {{vm.label}}
+      </button>
+    </section>
+
+    <section id="music" ng-controller="MusicController as vm">
+      <h2>MUSIC</h2>
+      <div class="player">
+        <ul class="player__albums">
+          <li class="player__album" ng-repeat="album in vm.albums" ng-init="vm.player.playlist.add(album)" ng-class="{current: vm.player.current.album == $index}">
+            <div class="player__album-title">{{::album.title | uppercase}}</div>
+            <ul class="player__tracks">
+              <li class="player__track" ng-repeat="track in album.tracks" ng-class="{current: vm.player.current.track == $index && (!vm.player.pristine || vm.player.paused)}" ng-click="vm.player.play($index, $parent.$index)">{{::track.title | uppercase}}</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="player__controls">
+          <li class="player__controls__prev-button" ng-click="vm.player.previous()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="213" height="132" viewBox="0 0 213 132">
+              <path fill="none" stroke="#bf9600" stroke-width="3.5" d="M108.418 66l99 61V5zM4 66l99.293 61V5zM108.418 66l99 61V5z"/>
+            </svg>
+          </li>
+          <li class="player__controls__play-button" ng-show="!vm.player.playing" ng-click="vm.player.play()">
+            <svg width="105.469" height="131.621" viewBox="0 0 105.469 131.621">
+              <path fill="none" stroke="#bf9600" stroke-width="2.5" d="M1.25 2.255V129.37l101.858-63.49z"/>
+            </svg>
+          </li>
+          <li class="player__controls__pause-button" ng-show="vm.player.playing" ng-click="vm.player.pause()">
+            <svg width="105.469" height="131.621" viewBox="0 0 105.469 131.621">
+              <path fill="none" stroke="#bf9600" stroke-width="2.5" d="M13.25 1.25h23.652V131.46H13.25zM68.132 1.25h23.652V131.46H68.132z"/>
+            </svg>
+          </li>
+          <li class="player__controls__next-button" ng-click="vm.player.next()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="213" height="132" viewBox="0 0 213 132">
+              <path fill="none" stroke="#bf9600" stroke-width="3.5" d="M4 5v122l99-61zM108.125 5v122l99.292-61zM4 5v122l99-61z"/>
+            </svg>
+          </li>
+        </ul>
+        <ul class="player__progress">
+          <li class="player__progress__current-time" ng-show="vm.player.playing || vm.player.paused">{{vm.player.progress | mmss}}</li>
+          <li class="player__progress__bar">
+            <span class="player__progress__bar__seek" ng-style="{width: vm.player.progress_percent + '%'}"></span>
+          </li>
+          <li class="player__progress__duration" ng-show="vm.player.playing || vm.player.paused">{{vm.player.duration | mmss}}</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="shows" ng-controller="ShowsController as vm">
+      <h2>SHOWS</h2>
+      <ul class="calendar" ng-class="{'show-more': vm.showMore}">
+        <li ng-repeat="month in vm.showData">
+          <h3>{{::month.name}}</h3>
+          <ul class="calendar__month">
+            <li class="calendar__month__show col-{{::$index % vm.numCols}}" ng-repeat="show in month.shows">
+              <div class="calendar__month__show__day">{{::show.day}}</div>
+              <div class="calendar__month__show__details">
+                <div class="calendar__month__show__venue"><a ng-href="//{{::show.website}}">{{::show.venue | uppercase}}</a></div>
+                <div class="calendar__month__show__band">{{::show.band | uppercase}}</div>
+                <div class="calendar__month__show__time">{{::show.time | uppercase}}</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <button ng-click="vm.toggle()">
+        {{vm.label}}
+      </button>
+    </section>
+
+    <section id="contact" ng-controller="ContactController as vm">
+      <h2>CONTACT</h2>
+      <h3>GOT QUESTIONS / COMMENTS?</h3>
+      <h3>INQUIRE BELOW</h3>
+      <form class="form" name="contactForm" novalidate>
+        <input class="form__field" type="text" name="name" placeholder="NAME" ng-model="vm.data.name" required>
+        <input class="form__field" type="email" name="email" placeholder="EMAIL" ng-model="vm.data.email" required>
+        <textarea class="form__field" name="message" placeholder="MESSAGE" ng-model="vm.data.message" required></textarea>
+        <button class="form__submit" type="submit" ng-class="{sent: vm.sent}" ng-click="vm.submit(contactForm.$valid)">
+          {{vm.label}}
+        </button>
+        <script type="text/ng-template" id="modal.html">
+          <div ng-show="display" ng-click="close()" class="is-dimmed"></div>
+          <div ng-show="display" ng-click="close()" class="modal">
+            <p>YOUR MESSAGE HAS BEEN SENT!</p>
+            <p>THANK YOU</p>
+          </div>
+        </script>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <ul class="social-icons">
+      <li>
+        <a href="//facebook.com/tommcevoy">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <path fill="#c7c7c7" d="M8.3 10.6h3.3V7.4c0-1.4 0-3.6 1.1-5C13.7 1 15.2 0 17.8 0c4.2 0 5.9.6 5.9.6l-.8 4.9s-1.4-.4-2.7-.4c-1.3 0-2.4.5-2.4 1.7v3.7h5.3l-.4 4.8h-4.9V32h-6.2V15.4H8.3v-4.8z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="//twitter.com/tom_mcevoy">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <path fill="#c7c7c7" d="M31.8 9.2c-1.2.5-2.4.9-3.8 1 1.3-.8 2.4-2.1 2.9-3.6-1.3.7-2.7 1.3-4.1 1.6-1.2-1.3-2.9-2.1-4.8-2.1-3.6 0-6.5 2.9-6.5 6.5 0 .5.1 1 .2 1.5-5.4-.3-10.2-2.9-13.5-6.8-.6 1-.9 2.1-.9 3.3 0 2.3 1.2 4.3 2.9 5.4-1.1 0-2.1-.3-3-.8v.1c0 3.2 2.2 5.8 5.2 6.4-.5.2-1.1.2-1.7.2-.4 0-.8 0-1.2-.1.8 2.6 3.2 4.5 6.1 4.5-2.2 1.8-5.1 2.8-8.1 2.8-.5 0-1 0-1.6-.1 3 1.9 6.4 3 10.1 3 12 0 18.6-9.9 18.6-18.6v-.8c1.2-.9 2.4-2.1 3.2-3.4"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="//instagram.com/thomas_mcevoy">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <path fill="#c7c7c7" d="M25.4.1H6.1C2.8.1 0 2.8 0 6.2v19.3c0 3.4 2.7 6.1 6.1 6.1h19.3c3.4 0 6.1-2.7 6.1-6.1V6.2c0-3.4-2.7-6.1-6.1-6.1zm1.8 3.6h.7V9h-5.3V3.7h4.6zm-15.9 8.9c1-1.4 2.6-2.3 4.5-2.3s3.5.9 4.5 2.3c.7.9 1.1 2 1.1 3.2 0 3.1-2.5 5.5-5.5 5.5s-5.5-2.5-5.5-5.5c-.2-1.2.2-2.3.9-3.2zm17.2 12.9c0 1.7-1.4 3-3 3H6.1c-1.7 0-3-1.4-3-3V12.6h4.7c-.4 1-.6 2.1-.6 3.2 0 4.8 3.9 8.6 8.6 8.6s8.6-3.9 8.6-8.6c0-1.1-.2-2.2-.6-3.2h4.7v12.9z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="//linkedin.com/in/tommcevoymusic">
+          <svg width="32" height="32" viewBox="0 0 32 32">
+            <path fill="#c7c7c7" d="M7 32H.8V12.1H7V32zM3.8 9.6C1.5 9.6 0 8 0 6.1c0-2 1.5-3.5 3.8-3.5s3.7 1.5 3.8 3.5c0 1.9-1.5 3.5-3.8 3.5zM32 32h-7.1V21.7c0-2.7-1.1-4.5-3.5-4.5-1.9 0-2.9 1.2-3.4 2.4-.2.4-.2 1-.2 1.6V32h-7s.1-18.3 0-19.9h7v3.1c.4-1.4 2.6-3.3 6.2-3.3 4.4 0 7.9 2.9 7.9 9V32z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div>ALL CONTENT © 2015 THOMAS MCEVOY</div>
+  </footer>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+  <script src="app.min.js"></script>
+</body>
+</html>

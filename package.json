@@ -1,0 +1,22 @@
+{
+  "name": "thomas-mcevoy.com",
+  "version": "2.2.0",
+  "description": "Thomas McEvoy official website",
+  "author": "Thomas McEvoy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.14.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "jquery": "^3.1.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+h3 {
+  margin: 0 0 .5em;
+  font-weight: 400;
+  font-size: 1.0625em;
+  letter-spacing: .1875em;
+
+  @media (min-width: 880px) {
+    font-size: 1.25em;
+  }
+}
+
+h4 {
+  margin: 0 0 1.33em;
+  font-weight: 400;
+  font-size: 1.4375em;
+  letter-spacing: .1em;
+
+  @media (min-width: 880px) {
+    font-size: 2.5em;
+  }
+}
+
+p {
+  margin: 0 auto;
+  padding: 0 1rem 1.4rem;
+  text-align: left;
+  font-family: $book;
+  color: $gray-xdark;
+  letter-spacing: .025em;
+                               max-width: 27rem;                        line-height: 1.5;
+  @media (min-width: 750px)  { max-width: 34rem;  font-size: 1.125em;   line-height: 1.6; }
+  @media (min-width: 880px)  { max-width: 39rem;  font-size: 1.25em; }
+  @media (min-width: 1500px) { max-width: 42rem; }
+}
+
+.lead {
+  padding-bottom: .675em;
+  font-family: $sans;
+  line-height: 1.375;
+                              font-size: 1.4375em;
+  @media (min-width: 750px) { font-size: 1.875em; }
+  @media (min-width: 880px) { font-size: 2.25em; }
+}
