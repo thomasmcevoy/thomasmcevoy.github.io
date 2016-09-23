@@ -58,17 +58,17 @@
 
 	var _expandables = __webpack_require__(6);
 
-	var _form = __webpack_require__(7);
-
-	var _modal = __webpack_require__(8);
+	var _modal = __webpack_require__(7);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _touchEvents.initializeTouchEvents)();
+	// import { initializeForm } from './form';
+
 	(0, _scroll.smoothScroll)();
 	(0, _player.initializePlayer)();
 	(0, _expandables.initializeExpandables)();
-	(0, _form.initializeForm)();
+	// initializeForm();
 	(0, _modal.initializeModal)();
 
 /***/ },
@@ -11424,52 +11424,6 @@
 
 /***/ },
 /* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.initializeForm = initializeForm;
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	var _modal = __webpack_require__(8);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var $form = (0, _jquery2.default)('#form');
-	var $name = (0, _jquery2.default)('#name');
-	var $email = (0, _jquery2.default)('#email');
-	var $message = (0, _jquery2.default)('#message');
-
-	function initializeForm() {
-	  $form.on('submit', function (e) {
-	    e.preventDefault();
-
-	    var data = JSON.stringify({
-	      name: $name.val(),
-	      email: $email.val(),
-	      message: $message.val()
-	    });
-
-	    _jquery2.default.ajax({
-	      type: 'POST',
-	      url: './scripts/send.php',
-	      data: data,
-	      success: function success() {
-	        $form[0].reset();
-	        (0, _modal.showModal)('<p>YOUR MESSAGE HAS BEEN SENT!</p><p>THANK YOU</p>');
-	      }
-	    });
-	  });
-	}
-
-/***/ },
-/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
