@@ -4,3 +4,4 @@ Disallow: /assets/
 Disallow: /scripts/
 Disallow: /styles/
 Disallow: /tunes/
+Disallow: /tunes-vue/
