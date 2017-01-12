@@ -128,27 +128,27 @@ p {
   background-position: center center;
 }
 
-#bottega-1 { background-image: url('/images/bottega-1.jpg'); }
-#bottega-2 { background-image: url('/images/bottega-2.jpg'); }
-#bottega-3 { background-image: url('/images/bottega-3.jpg'); }
-#bottega-4 { background-image: url('/images/bottega-4.jpg'); }
-#bottega-5 { background-image: url('/images/bottega-5.jpg'); }
-#bottega-6 { background-image: url('/images/bottega-6.jpg'); }
-#bottega-7 { background-image: url('/images/bottega-7.jpg'); }
-#bottega-8 { background-image: url('/images/bottega-8.jpg'); }
-#bottega-9 { background-image: url('/images/bottega-9.jpg'); }
-#bottega-10 { background-image: url('/images/bottega-10.jpg'); }
-#bottega-11 { background-image: url('/images/bottega-11.jpg'); }
-#bottega-12 { background-image: url('/images/bottega-12.jpg'); }
-#adidas { background-image: url('/images/adidas.jpg'); }
-#adidas { background-image: url('/images/adidas.jpg'); }
-#adidas { background-image: url('/images/adidas.jpg'); }
-#adidas { background-image: url('/images/adidas.jpg'); }
-#estee { background-image: url('/images/estee.jpg'); }
-#gucci { background-image: url('/images/gucci.jpg'); }
-#packaging { background-image: url('/images/packaging.jpg'); }
-#jewelry { background-image: url('/images/jewelry.jpg'); }
-#book-magazine { background-image: url('/images/book-magazine.jpg'); }
+#bottega-1 { background-image: url('./images/bottega-1.jpg'); }
+#bottega-2 { background-image: url('./images/bottega-2.jpg'); }
+#bottega-3 { background-image: url('./images/bottega-3.jpg'); }
+#bottega-4 { background-image: url('./images/bottega-4.jpg'); }
+#bottega-5 { background-image: url('./images/bottega-5.jpg'); }
+#bottega-6 { background-image: url('./images/bottega-6.jpg'); }
+#bottega-7 { background-image: url('./images/bottega-7.jpg'); }
+#bottega-8 { background-image: url('./images/bottega-8.jpg'); }
+#bottega-9 { background-image: url('./images/bottega-9.jpg'); }
+#bottega-10 { background-image: url('./images/bottega-10.jpg'); }
+#bottega-11 { background-image: url('./images/bottega-11.jpg'); }
+#bottega-12 { background-image: url('./images/bottega-12.jpg'); }
+#adidas { background-image: url('./images/adidas.jpg'); }
+#adidas { background-image: url('./images/adidas.jpg'); }
+#adidas { background-image: url('./images/adidas.jpg'); }
+#adidas { background-image: url('./images/adidas.jpg'); }
+#estee { background-image: url('./images/estee.jpg'); }
+#gucci { background-image: url('./images/gucci.jpg'); }
+#packaging { background-image: url('./images/packaging.jpg'); }
+#jewelry { background-image: url('./images/jewelry.jpg'); }
+#book-magazine { background-image: url('./images/book-magazine.jpg'); }
 
 
 
