@@ -58,17 +58,21 @@
 
 	var _hamburger2 = _interopRequireDefault(_hamburger);
 
-	var _logoScroll = __webpack_require__(4);
-
-	var _logoScroll2 = _interopRequireDefault(_logoScroll);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
-	  (0, _jquery2.default)('#main').fullpage();
+	  var lastSectionIndex = (0, _jquery2.default)('section').length - 1;
+	  var $arrowDown = (0, _jquery2.default)('.arrowDown');
+
+	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
+	  (0, _jquery2.default)('.arrowUp').click(function () {
+	    return _jquery2.default.fn.fullpage.moveSectionUp();
+	  });
+	  (0, _jquery2.default)('.arrowDown').click(function () {
+	    return _jquery2.default.fn.fullpage.moveSectionDown();
+	  });
 
 	  (0, _hamburger2.default)();
-	  (0, _logoScroll2.default)();
 	});
 
 /***/ },
@@ -13358,7 +13362,10 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	var $body = (0, _jquery2.default)('body');
 	var $hamburger = (0, _jquery2.default)('#hamburger');
+	var $hamburgerPath = $hamburger.find('path');
+	var $arrowDownPath = (0, _jquery2.default)('.arrowDown').find('path');
 	var $menuContainer = (0, _jquery2.default)('#menu-container');
 	var $menu = (0, _jquery2.default)('#menu');
 
@@ -13366,68 +13373,32 @@
 
 	function initHamburger() {
 	  $hamburger.click(function () {
-	    console.log('clicked menu icon');
-	    if (menuIsOpen) {
-	      closeMenu();
-	    } else {
-	      openMenu();
-	    }
+	    if (menuIsOpen) closeMenu();else openMenu();
 	  });
 	}
 
 	function closeMenu() {
 	  _jquery2.default.fn.fullpage.destroy('all');
-	  (0, _jquery2.default)('#main').fullpage();
+	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 
 	  $menuContainer.css('z-index', '-1');
-	  $hamburger.css('color', 'black');
+	  $hamburgerPath.css('fill', '#000');
+	  $arrowDownPath.css('fill', '#000');
 
 	  menuIsOpen = false;
+	  $body.removeClass('menuIsOpen').addClass('menuIsClosed');
 	}
 
 	function openMenu() {
 	  _jquery2.default.fn.fullpage.destroy('all');
 	  (0, _jquery2.default)('#menu').fullpage();
 
-	  $menuContainer.css('z-index', '99');
-	  $hamburger.css('color', 'white');
+	  $menuContainer.css('z-index', '1');
+	  $hamburgerPath.css('fill', '#fff');
+	  $arrowDownPath.css('fill', '#fff');
 
 	  menuIsOpen = true;
-	}
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	exports.default = initLogoScroll;
-
-	var _jquery = __webpack_require__(1);
-
-	var _jquery2 = _interopRequireDefault(_jquery);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var $logo = (0, _jquery2.default)('#logo');
-	var $window = (0, _jquery2.default)(window);
-
-	var windowHeight = $window.height();
-
-	function initLogoScroll() {
-	  $window.on('scroll', handleScroll);
-	  $window.on('resize', handleResize);
-	}
-
-	function handleScroll() {
-	  console.log('scroll');
-	}
-
-	function handleResize() {
-	  console.log('resize');
+	  $body.removeClass('menuIsClosed').addClass('menuIsOpen');
 	}
 
 /***/ }
