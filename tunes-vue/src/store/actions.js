@@ -15,3 +15,7 @@ export const removeTune = ({ commit }, tune) => {
     tune: tune
   })
 }
+
+export const toggleShowOptionsMenu = ({ commit }) => {
+  commit('TOGGLE_SHOW_OPTIONS_MENU')
+}

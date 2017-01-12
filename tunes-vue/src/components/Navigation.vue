@@ -15,7 +15,7 @@
       @click="setCurrentSection('random')">
       RANDOM
     </a>
-    <a>OPTIONS</a>
+    <a @click="toggleShowOptionsMenu()">OPTIONS</a>
   </nav>
 </template>
 
@@ -30,7 +30,8 @@ export default {
     currentSection: 'currentSection'
   }),
   methods: mapActions([
-    'setCurrentSection'
+    'setCurrentSection',
+    'toggleShowOptionsMenu'
   ])
 }
 </script>

@@ -5,3 +5,4 @@ Disallow: /scripts/
 Disallow: /styles/
 Disallow: /tunes/
 Disallow: /tunes-vue/
+Disallow: /lloyd-sample/
