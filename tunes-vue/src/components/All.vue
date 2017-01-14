@@ -21,7 +21,7 @@
 
   export default {
     computed: mapGetters({
-      tunes: 'allTunes'
+      tunes: 'tunes'
     }),
     methods: mapActions([
       'toggleSelected'

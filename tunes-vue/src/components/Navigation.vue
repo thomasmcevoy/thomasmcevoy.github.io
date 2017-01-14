@@ -15,7 +15,12 @@
       @click="setCurrentSection('random')">
       RANDOM
     </a>
-    <a @click="toggleShowOptionsMenu()">OPTIONS</a>
+    <a
+      class="optionsButton"
+      v-bind:class="{ active: showOptionsMenu }"
+      @click="toggleShowOptionsMenu()">
+      OPTIONS
+    </a>
   </nav>
 </template>
 
@@ -27,7 +32,8 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   computed: mapGetters({
-    currentSection: 'currentSection'
+    currentSection: 'currentSection',
+    showOptionsMenu: 'showOptionsMenu'
   }),
   methods: mapActions([
     'setCurrentSection',
@@ -65,5 +71,8 @@ a:hover {
 .active {
   color: #4285f4;
   border-bottom: 2px solid #4285f4;
+}
+.optionsButton.active {
+  border-bottom: none;
 }
 </style>

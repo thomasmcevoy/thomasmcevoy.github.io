@@ -1,9 +1,13 @@
 <template>
   <div id="app">
-    <navigation></navigation>
-    <options-menu v-show="showOptionsMenu"></options-menu>
-    <all v-show="currentSection === 'all'"></all>
-    <setlist v-show="currentSection === 'setlist'"></setlist>
+    <header>
+      <navigation></navigation>
+      <options-menu v-show="showOptionsMenu"></options-menu>
+    </header>
+    <main>
+      <all v-show="currentSection === 'all'"></all>
+      <setlist v-show="currentSection === 'setlist'"></setlist>
+    </main>
   </div>
 </template>
 
@@ -45,5 +49,17 @@ body {
   border: solid thin #ddd;
   font-family: Helvetica, Arial, sans-serif;
   color: black;
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+main {
+  margin-top: 40px;
 }
 </style>

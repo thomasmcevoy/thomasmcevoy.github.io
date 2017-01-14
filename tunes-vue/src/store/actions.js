@@ -19,3 +19,23 @@ export const removeTune = ({ commit }, tune) => {
 export const toggleShowOptionsMenu = ({ commit }) => {
   commit('TOGGLE_SHOW_OPTIONS_MENU')
 }
+
+export const setSortBy = ({ commit }, newSortBy) => {
+  commit('SET_SORT_BY', {
+    newSortBy: newSortBy
+  })
+}
+
+export const setFilterBy = ({ commit }, newFilterBy) => {
+  commit('SET_FILTER_BY', {
+    newFilterBy: newFilterBy
+  })
+}
+
+export const toggleShowSortByDropdown = ({ commit }) => {
+  commit('TOGGLE_SHOW_SORT_BY_DROPDOWN')
+}
+
+export const toggleShowFilterByDropdown = ({ commit }) => {
+  commit('TOGGLE_SHOW_FILTER_BY_DROPDOWN')
+}
