@@ -104,14 +104,13 @@ export default {
   }),
   methods: {
     ...mapActions([
-      'setSortBy',
+      'sortTunesBy',
       'setFilterBy',
       'toggleShowSortByDropdown',
       'toggleShowFilterByDropdown'
     ]),
     handleSort: function(prop) {
-      this.setSortBy(prop)
-
+      this.sortTunesBy(prop)
     },
     handleFilter: function(prop) {
       this.setFilterBy(prop)

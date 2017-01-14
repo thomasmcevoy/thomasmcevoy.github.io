@@ -20,8 +20,8 @@ export const toggleShowOptionsMenu = ({ commit }) => {
   commit('TOGGLE_SHOW_OPTIONS_MENU')
 }
 
-export const setSortBy = ({ commit }, newSortBy) => {
-  commit('SET_SORT_BY', {
+export const sortTunesBy = ({ commit }, newSortBy) => {
+  commit('SORT_TUNES_BY', {
     newSortBy: newSortBy
   })
 }

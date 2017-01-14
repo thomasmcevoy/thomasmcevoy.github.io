@@ -46,8 +46,17 @@ const mutations = {
     state.tunes[index].selected = false;
   },
 
-  ['SET_SORT_BY'] (state, { newSortBy }) {
-    state.sortBy = newSortBy
+  ['SORT_TUNES_BY'] (state, { newSortBy }) {
+    if (newSortBy !== state.sortBy) {
+      state.sortBy = newSortBy
+      state.tunes = state.tunes.sort((a, b) => {
+        const tuneA = a[state.sortBy]
+        const tuneB = b[state.sortBy]
+        if (tuneA < tuneB) return -1
+        if (tuneA > tuneB) return 1
+        return 0
+      })
+    }
   },
 
   ['SET_FILTER_BY'] (state, { newFilterBy }) {
