@@ -66,7 +66,8 @@
 
 	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 	  (0, _jquery2.default)('#logo-small').click(function () {
-	    return _jquery2.default.fn.fullpage.moveTo(0);
+	    console.log('#logo-small click function');
+	    _jquery2.default.fn.fullpage.moveTo(0);
 	  });
 	  (0, _jquery2.default)('.arrowUp').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionUp();
