@@ -61,9 +61,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
-	  var lastSectionIndex = (0, _jquery2.default)('section').length - 1;
-	  var $arrowDown = (0, _jquery2.default)('.arrowDown');
-
+	  console.log((0, _jquery2.default)('#logo-small'));
 	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 	  (0, _jquery2.default)('#logo-small').click(function () {
 	    console.log('#logo-small click function');
