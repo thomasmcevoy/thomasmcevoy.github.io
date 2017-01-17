@@ -73,10 +73,13 @@ svg {
   position: fixed;
   top: 20px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   margin: auto;
   font-size: 1.875em;
   font-weight: 700;
+}
+#logo-small:hover {
+  cursor: pointer;
 }
 .menuIsOpen #logo-small,
 .menuIsClosed.fp-viewing-0 #logo-small {
