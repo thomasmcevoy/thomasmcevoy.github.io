@@ -61,13 +61,10 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
-	  (0, _jquery2.default)('#main').fullpage({
-	    loopHorizontal: false //,
-	    // afterLoad: () =>
-	  });
+	  (0, _hamburger2.default)();
+	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 	  (0, _jquery2.default)('#logo-small').click(function () {
-	    console.log('moveTo(1)');
-	    _jquery2.default.fn.fullpage.moveTo(1);
+	    return _jquery2.default.fn.fullpage.moveTo(1);
 	  });
 	  (0, _jquery2.default)('.arrowUp').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionUp();
@@ -75,8 +72,6 @@
 	  (0, _jquery2.default)('.arrowDown').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionDown();
 	  });
-
-	  (0, _hamburger2.default)();
 	});
 
 /***/ },
