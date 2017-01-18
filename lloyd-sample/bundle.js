@@ -58,13 +58,17 @@
 
 	var _hamburger2 = _interopRequireDefault(_hamburger);
 
+	var _smoothScroll = __webpack_require__(4);
+
+	var _smoothScroll2 = _interopRequireDefault(_smoothScroll);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
 	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 	  (0, _jquery2.default)('#logo-small').click(function () {
-	    console.log('moveTo(1)');
-	    _jquery2.default.fn.fullpage.moveTo(1);
+	    console.log('smoothScroll(0, 0)');
+	    (0, _smoothScroll2.default)(0, 0);
 	  });
 	  (0, _jquery2.default)('.arrowUp').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionUp();
@@ -13400,6 +13404,36 @@
 
 	  menuIsOpen = true;
 	  $body.removeClass('menuIsClosed').addClass('menuIsOpen');
+	}
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = smoothScroll;
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function smoothScroll(target) {
+	  (0, _jquery2.default)('a[href^="#"]').on('click', function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = (0, _jquery2.default)(target);
+
+	    (0, _jquery2.default)('html, body').stop().animate({
+	      'scrollTop': $target.offset().top
+	    }, 700, 'swing');
+	  });
 	}
 
 /***/ }
