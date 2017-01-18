@@ -77,6 +77,7 @@ svg {
   margin: auto;
   font-size: 1.875em;
   font-weight: 700;
+  user-select: none;
 }
 #logo-small:hover {
   cursor: pointer;
