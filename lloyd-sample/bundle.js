@@ -67,8 +67,8 @@
 	(0, _jquery2.default)(function () {
 	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
 	  (0, _jquery2.default)('#logo-small').click(function () {
-	    console.log('smoothScroll(0, 0)');
-	    (0, _smoothScroll2.default)(0, 0);
+	    console.log('smoothScroll(logo-container)');
+	    (0, _smoothScroll2.default)('logo-container');
 	  });
 	  (0, _jquery2.default)('.arrowUp').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionUp();
