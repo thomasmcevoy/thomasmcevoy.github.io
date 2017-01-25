@@ -13453,13 +13453,13 @@
 	  if (imageUrl) console.log('imageUrl exists');
 	  if (!imageUrl) console.log('imageUrl does not exist');
 
-	  if (imageUrl === 0) {
-	    setLightColorScheme();
-	    console.log('jump to top');
-	  } else if (imageUrl.length > 0) {
+	  if (imageUrl) {
 	    getImageLightness(imageUrl, function (brightness) {
 	      return setColors(brightness);
 	    });
+	  } else {
+	    setLightColorScheme();
+	    console.log('jump to top');
 	  }
 	}
 
