@@ -13444,17 +13444,15 @@
 
 	var lightColorScheme = true;
 
-	function adaptColorTo(i) {
-	  var imageUrl = backgroundImages[i - 1];
+	function adaptColorTo(imageUrl) {
 	  console.log(imageUrl);
-
-	  if (imageUrl === 0) {
-	    setLightColorScheme();
-	    console.log('jump to top');
-	  } else if (imageUrl.length > 0) {
+	  if (imageUrl.length > 0) {
 	    getImageLightness(imageUrl, function (brightness) {
 	      return setColors(brightness);
 	    });
+	  } else {
+	    setLightColorScheme();
+	    console.log('setLightColorScheme()');
 	  }
 	}
 
