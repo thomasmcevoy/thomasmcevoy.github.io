@@ -13446,7 +13446,7 @@
 
 	function adaptColorTo(imageUrl) {
 	  console.log(imageUrl);
-	  if (imageUrl === '') {
+	  if (!imageUrl) {
 	    setLightColorScheme();
 	    console.log('setLightColorScheme()');
 	  } else {
