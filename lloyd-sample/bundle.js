@@ -58,11 +58,21 @@
 
 	var _hamburger2 = _interopRequireDefault(_hamburger);
 
+	var _colorAdapter = __webpack_require__(4);
+
+	var _colorAdapter2 = _interopRequireDefault(_colorAdapter);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _jquery2.default)(function () {
 	  (0, _hamburger2.default)();
-	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
+
+	  (0, _jquery2.default)('#main').fullpage({
+	    loopHorizontal: false,
+	    onLeave: function onLeave(index, nextIndex, direction) {
+	      (0, _colorAdapter2.default)(nextIndex);
+	    }
+	  });
 	  (0, _jquery2.default)('#logo-small').click(function () {
 	    return _jquery2.default.fn.fullpage.moveTo(1);
 	  });
@@ -13359,6 +13369,10 @@
 
 	var _fullpage2 = _interopRequireDefault(_fullpage);
 
+	var _colorAdapter = __webpack_require__(4);
+
+	var _colorAdapter2 = _interopRequireDefault(_colorAdapter);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var $body = (0, _jquery2.default)('body');
@@ -13378,7 +13392,12 @@
 
 	function closeMenu() {
 	  _jquery2.default.fn.fullpage.destroy('all');
-	  (0, _jquery2.default)('#main').fullpage({ loopHorizontal: false });
+	  (0, _jquery2.default)('#main').fullpage({
+	    loopHorizontal: false,
+	    onLeave: function onLeave(index, nextIndex, direction) {
+	      (0, _colorAdapter2.default)(nextIndex);
+	    }
+	  });
 
 	  $menuContainer.css('z-index', '-1');
 	  $hamburgerPath.css('fill', '#000');
@@ -13398,6 +13417,104 @@
 
 	  menuIsOpen = true;
 	  $body.removeClass('menuIsClosed').addClass('menuIsOpen');
+	}
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = handleLeave;
+
+	var _jquery = __webpack_require__(1);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var $logo = (0, _jquery2.default)('#logo-small');
+	var $hamburgerPath = (0, _jquery2.default)('#hamburger').find('path');
+	var $downArrowPath = (0, _jquery2.default)('.arrowDown').find('path');
+	var $controlArrowsPath = (0, _jquery2.default)('.fp-controlArrow').find('path');
+	var backgroundImages = (0, _jquery2.default)('#main .section').map(function (i, el) {
+	  return (0, _jquery2.default)(el).css('background-image').slice(5, -2);
+	});
+
+	var lightColorScheme = true;
+
+	function handleLeave(i) {
+	  var imageUrl = backgroundImages[i - 1];
+
+	  if (imageUrl.length > 0) {
+	    getImageLightness(imageUrl, function (brightness) {
+	      return setColors(brightness);
+	    });
+	  }
+	}
+
+	function setColors(brightness) {
+	  if (brightness < 103) {
+	    if (lightColorScheme) {
+	      setDarkColorScheme();
+	    }
+	  } else if (!lightColorScheme) {
+	    setLightColorScheme();
+	  }
+	}
+
+	function setDarkColorScheme() {
+	  $logo.css('color', 'white');
+	  $hamburgerPath.css('fill', 'white');
+	  $downArrowPath.css('fill', 'white');
+	  $controlArrowsPath.css('fill', 'white');
+	  lightColorScheme = false;
+	}
+
+	function setLightColorScheme() {
+	  $logo.css('color', 'black');
+	  $hamburgerPath.css('fill', 'black');
+	  $downArrowPath.css('fill', 'black');
+	  $controlArrowsPath.css('fill', 'black');
+	  lightColorScheme = true;
+	}
+
+	function getImageLightness(imageSrc, callback) {
+	  var img = document.createElement("img");
+	  img.src = imageSrc;
+	  img.style.display = "none";
+	  document.body.appendChild(img);
+
+	  var colorSum = 0;
+
+	  img.onload = function () {
+	    // create canvas
+	    var canvas = document.createElement("canvas");
+	    canvas.width = this.width;
+	    canvas.height = this.height;
+
+	    var ctx = canvas.getContext("2d");
+	    ctx.drawImage(this, 0, 0);
+
+	    var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+	    var data = imageData.data;
+	    var r, g, b, avg;
+
+	    for (var x = 0, len = data.length; x < len; x += 4) {
+	      r = data[x];
+	      g = data[x + 1];
+	      b = data[x + 2];
+
+	      avg = Math.floor((r + g + b) / 3);
+	      colorSum += avg;
+	    }
+
+	    var brightness = Math.floor(colorSum / (this.width * this.height));
+	    callback(brightness);
+	  };
 	}
 
 /***/ }
