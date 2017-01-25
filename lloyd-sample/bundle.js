@@ -13447,12 +13447,12 @@
 	function adaptColorTo(i) {
 	  var imageUrl = backgroundImages[i - 1];
 
-	  if (imageUrl.length > 0) {
+	  if (i === 1) {
+	    setLightColorScheme();
+	  } else if (imageUrl.length > 0) {
 	    getImageLightness(imageUrl, function (brightness) {
 	      return setColors(brightness);
 	    });
-	  } else {
-	    setColors(1000);
 	  }
 	}
 
