@@ -13451,6 +13451,8 @@
 	    getImageLightness(imageUrl, function (brightness) {
 	      return setColors(brightness);
 	    });
+	  } else {
+	    setColors(1000);
 	  }
 	}
 
