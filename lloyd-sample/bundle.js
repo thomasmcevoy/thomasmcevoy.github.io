@@ -13446,8 +13446,9 @@
 
 	function adaptColorTo(i) {
 	  var imageUrl = backgroundImages[i - 1];
+	  console.log(imageUrl);
 
-	  if (i === 1) {
+	  if (imageUrl === 0) {
 	    setLightColorScheme();
 	    console.log('jump to top');
 	  } else if (imageUrl.length > 0) {
