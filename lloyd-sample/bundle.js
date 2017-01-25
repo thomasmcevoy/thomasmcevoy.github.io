@@ -74,10 +74,8 @@
 	    }
 	  });
 	  (0, _jquery2.default)('#logo-small').click(function () {
-	    return _jquery2.default.fn.fullpage.moveTo(1);
-	  });
-	  (0, _jquery2.default)('.arrowUp').click(function () {
-	    return _jquery2.default.fn.fullpage.moveSectionUp();
+	    _jquery2.default.fn.fullpage.moveTo(1);
+	    (0, _colorAdapter2.default)(1);
 	  });
 	  (0, _jquery2.default)('.arrowDown').click(function () {
 	    return _jquery2.default.fn.fullpage.moveSectionDown();
@@ -13428,7 +13426,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.default = handleLeave;
+	exports.default = adaptColorTo;
 
 	var _jquery = __webpack_require__(1);
 
@@ -13446,7 +13444,7 @@
 
 	var lightColorScheme = true;
 
-	function handleLeave(i) {
+	function adaptColorTo(i) {
 	  var imageUrl = backgroundImages[i - 1];
 
 	  if (imageUrl.length > 0) {
