@@ -189,7 +189,13 @@
         checkPassword: function () {
           if (this.login === 'authorizedGUEST' && this.password === 'lloyd&co2017') {
             this.authorized = true
+            this.loadBundle()
           }
+        },
+        loadBundle: function () {
+          var tag = document.createElement("script");
+          tag.src = "bundle.js";
+          document.getElementsByTagName("head")[0].appendChild(tag);
         }
       }
     })
