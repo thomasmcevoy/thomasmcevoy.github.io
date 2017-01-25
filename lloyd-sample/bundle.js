@@ -13449,6 +13449,7 @@
 
 	  if (i === 1) {
 	    setLightColorScheme();
+	    console.log('jump to top');
 	  } else if (imageUrl.length > 0) {
 	    getImageLightness(imageUrl, function (brightness) {
 	      return setColors(brightness);
