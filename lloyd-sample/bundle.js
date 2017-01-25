@@ -13445,7 +13445,12 @@
 	var lightColorScheme = true;
 
 	function adaptColorTo(imageUrl) {
-	  console.log(imageUrl);
+	  console.log('imageUrl: \'' + imageUrl + '\'');
+	  if (imageUrl === null) console.log('imageUrl === null');
+	  if (imageUrl === undefined) console.log('imageUrl === undefined');
+	  if (imageUrl === '') console.log('imageUrl === ""');
+	  if (imageUrl) console.log('imageUrl exists');
+	  if (!imageUrl) console.log('imageUrl does not exist');
 	  if (!imageUrl) {
 	    setLightColorScheme();
 	    console.log('setLightColorScheme()');
