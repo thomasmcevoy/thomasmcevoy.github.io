@@ -4,14 +4,14 @@ export const setCurrentSection = ({ commit }, newCurrentSection) => {
   })
 }
 
-export const toggleSelected = ({ commit }, index) => {
+export const toggleSelected = ({ commit }, tune) => {
   commit('TOGGLE_SELECTED', {
-    index: index
+    tune: tune
   })
 }
 
-export const removeTune = ({ commit }, tune) => {
-  commit('REMOVE_TUNE', {
+export const removeFromSetlist = ({ commit }, tune) => {
+  commit('REMOVE_FROM_SETLIST', {
     tune: tune
   })
 }

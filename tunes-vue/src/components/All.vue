@@ -1,8 +1,8 @@
 <template>
   <ul>
     <li
-      v-for="(tune, index) in tunes"
-      v-on:click="toggleSelected(index)"
+      v-for="tune in tunes"
+      v-on:click="toggleSelected(tune)"
       v-bind:class="{ selected: tune.selected }">
       <h2>{{ tune.title }}</h2>
       <h3>
@@ -25,7 +25,8 @@
     }),
     methods: mapActions([
       'toggleSelected'
-    ])
+    ]),
+
   }
 </script>
 

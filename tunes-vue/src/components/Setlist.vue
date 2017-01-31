@@ -14,7 +14,7 @@
         <span>{{ tune.composer }}</span>
         <span>({{ tune.year }})</span>
       </h3>
-      <div class="remove" @click="removeTune(tune)">×</div>
+      <div class="remove" @click="removeFromSetlist(tune)">×</div>
     </li>
   </ul>
 </template>
@@ -30,7 +30,7 @@
       setlist: 'setlist'
     }),
     methods: mapActions([
-      'removeTune'
+      'removeFromSetlist'
     ])
   }
 </script>
@@ -72,7 +72,7 @@ li {
   transform: translateY(-50%);
   width: 13px;
   height: 13px;
-  line-height: 1;
+  line-height: 1.2;
   text-align: center;
   font-size: .75em;
   background-color: red;
