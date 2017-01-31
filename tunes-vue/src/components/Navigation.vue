@@ -52,21 +52,16 @@ nav {
   background-color: #f8f8f8;
   border-bottom: 1px solid #d6d6d6;
 }
-
-a {
+nav a {
   flex: auto;
   height: 100%;
-  line-height: 40px;
+  line-height: 3.5;
   text-align: center;
   color: #777;
   font-size: .75em;
 }
-a:last-child {
-  border-left: 1px solid #d6d6d6;
-}
-a:hover {
-  cursor: pointer;
-}
+nav a:last-child { border-left: 1px solid #d6d6d6; }
+nav a:hover { cursor: pointer; }
 
 .active {
   color: #4285f4;
