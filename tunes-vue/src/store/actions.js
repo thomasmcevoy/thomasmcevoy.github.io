@@ -10,6 +10,12 @@ export const toggleSelected = ({ commit }, tune) => {
   })
 }
 
+export const addToSetlist = ({ commit }, tune) => {
+  commit('ADD_TO_SETLIST', {
+    tune: tune
+  })
+}
+
 export const removeFromSetlist = ({ commit }, tune) => {
   commit('REMOVE_FROM_SETLIST', {
     tune: tune

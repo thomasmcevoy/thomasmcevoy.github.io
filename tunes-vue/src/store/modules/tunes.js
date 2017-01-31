@@ -54,6 +54,12 @@ const mutations = {
     }
   },
 
+  ['ADD_TO_SETLIST'] (state, { tune }) {
+    const tunesIndex = state.tunes.indexOf(tune)
+    state.tunes[tunesIndex].selected = true
+    state.setlist.push(tune)
+  },
+
   ['REMOVE_FROM_SETLIST'] (state, { tune }) {
     const tunesIndex = state.tunes.indexOf(tune)
     const setlistIndex = state.setlist.indexOf(tune)
