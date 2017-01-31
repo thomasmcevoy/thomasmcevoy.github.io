@@ -47,7 +47,7 @@ body {
   margin: auto;
   max-width: 768px;
   border: solid thin #ddd;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Gotham", "Proxima Nova", "Montserrat", Helvetica, Arial, sans-serif;
   color: black;
 }
 
