@@ -35,6 +35,12 @@ export default {
 
 
 <style>
+@font-face {
+  font-family: 'Akzidenz Grotest CE Roman';
+  src:  url('/src/assets/fonts/Akzidenz Grotest CE Roman.woff2') format('woff2'),
+        url('/src/assets/fonts/Akzidenz Grotest CE Roman.woff') format('woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -47,7 +53,7 @@ body {
   margin: auto;
   max-width: 768px;
   border: solid thin #ddd;
-  font-family: "Proxima Nova", "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Akzidenz Grotesk CE Roman", Helvetica, Arial, sans-serif;
   color: black;
 }
 

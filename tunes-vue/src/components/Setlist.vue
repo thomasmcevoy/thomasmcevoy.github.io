@@ -7,7 +7,7 @@
     </div>
   </div>
 
-  <ul v-else class="setlist">
+  <draggable v-else class="setlist">
     <li v-for="tune in setlist">
       <h2>{{ tune.title }}</h2>
       <h3>
@@ -16,7 +16,7 @@
       </h3>
       <div class="remove" @click="removeFromSetlist(tune)">×</div>
     </li>
-  </ul>
+  </draggable>
 </template>
 
 
@@ -48,7 +48,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -58%);
+  transform: translate(-50%, -65%);
   text-align: center;
 }
 
