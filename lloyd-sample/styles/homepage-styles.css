@@ -1,0 +1,13 @@
+header {
+  height: 5em;
+}
+#site-logo,
+#site-nav {
+  line-height: 5rem;
+}
+#site-logo {
+  left: 3rem;
+}
+#site-nav {
+  right: 3rem;
+}

@@ -1,0 +1,115 @@
+#contact {
+  margin: 1.5em auto;
+  padding: 2em 13% 5.5em;
+  width: 90%;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+#contact h1 {
+  margin-bottom: 4rem;
+  font-size: 1.5em;
+}
+#contact-info {
+  border-bottom: solid 1px #555;
+}
+#contact-info img,
+#contact-info aside {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+#contact-info img {
+  margin-right: 3%;
+}
+#contact-info h3,
+#contact-info div {
+  text-align: left;
+  margin: 0 auto .25rem;
+  font-size: 1.125rem;
+}
+#contact-info h3 {
+  font-weight: 700;
+}
+#contact-info div,
+form label,
+form input {
+  font-weight: 300;
+  letter-spacing: .02em;
+}
+#contact-info .info-group {
+  margin-bottom: 1.6875em;
+}
+#contact-info .info-group:last-of-type {
+  margin-bottom: 1em;
+}
+#contact-info .info-group.social div {
+  display: inline-block;
+}
+#contact-info .info-group.social .link-group {
+  vertical-align: top;
+}
+#contact-info .info-group.social a {
+  display: block;
+}
+form {
+  position: relative;
+  padding-top: 1em;
+  width: 48%;
+  font-size: 1.125rem;
+}
+form legend {
+  margin: 0 0 .5em;
+  padding: 0;
+  font-weight: 500;
+}
+form label {
+  display: flex;
+  margin: 0 auto .5em;
+  padding: .125em 0;
+  height: 1.75em;
+  border-bottom: solid 1px #bfbfbf;
+  text-align: left;
+}
+form label:last-of-type {
+  display: block;
+  height: auto;
+  border-bottom: none;
+}
+form input {
+  flex: 1;
+  border: none;
+  padding: 0 .5em .125em;
+  height: 100%;
+  max-width: 100%;
+  font-size: .875em;
+  background-color: inherit;
+  vertical-align: bottom;
+}
+form textarea {
+  display: block;
+  margin: .75em 0;
+  border: none;
+  padding: .33em;
+  width: 100%;
+  height: 9em;
+  resize: none;
+  font-size: .875em;
+}
+form input:focus,
+form textarea:focus {
+  outline: none;
+}
+form button {
+  position: absolute;
+  left: 0;
+  border: solid 1px black;
+  padding: 0 1em;
+  font-family: futura;
+  font-size: .6875em;
+  font-weight: 500;
+  line-height: 2.25;
+  background-color: inherit;
+}
+form button:hover {
+  cursor: pointer;
+}
