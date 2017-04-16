@@ -26,5 +26,5 @@ main {
   background-position: center center;
   cursor: pointer;
 }
-#bottega { background-image: url('../../images/bottega.jpg'); }
-#estee { background-image: url('../../images/estee.jpg'); }
+#bottega { background-image: url('../images/bottega.jpg'); }
+#estee { background-image: url('../images/estee.jpg'); }
