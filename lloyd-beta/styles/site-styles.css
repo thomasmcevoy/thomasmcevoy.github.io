@@ -66,8 +66,8 @@ footer span {
 footer span:first-of-type {
   font-weight: 700;
 }
-footer a:hover */ {
-  color: #888;
+footer a:hover {
+  color: #8a8a8a;
 }
 #social-icons {
   position: absolute;
