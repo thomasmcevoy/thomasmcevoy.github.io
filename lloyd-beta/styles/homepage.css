@@ -2,21 +2,12 @@ header {
   z-index: 99;
   position: fixed;
   top: 0;
-  height: 5em;
-}
-#site-logo,
-#site-nav {
-  line-height: 5rem;
 }
 #site-logo {
-  left: 3rem;
   cursor: pointer;
 }
-#site-nav {
-  right: 3rem;
-}
 main {
-  height: calc(100% - 5em);
+  height: calc(100% - 7rem);
   position: fixed;
   bottom: 0;
 }
