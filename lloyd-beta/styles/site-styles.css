@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 a[href^="mailto"]:hover {
-  color: #999;
+  color: #555;
 }
 svg {
   width: 100%;
