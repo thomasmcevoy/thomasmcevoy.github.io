@@ -12,14 +12,16 @@
 #contact-info {
   border-bottom: solid 1px #555;
 }
-#contact-info img,
+#map,
 #contact-info aside {
   display: inline-block;
   width: 48%;
   vertical-align: top;
 }
-#contact-info img {
+#map {
   margin-right: 3%;
+  height: 17em;
+  filter: grayscale(100%);
 }
 #contact-info h3,
 #contact-info div {

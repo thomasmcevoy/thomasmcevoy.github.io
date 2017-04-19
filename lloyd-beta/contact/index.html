@@ -3,7 +3,7 @@
 <head>
   <title>Contact — Lloyd&amp;Co.</title>
   <link rel="stylesheet" type="text/css" href="../styles/site-styles.css" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="../styles/contact.css" />
 </head>
 <body>
   <header>
@@ -21,11 +21,12 @@
     <section id="contact">
       <h1>CONTACT</h1>
       <div id="contact-info">
-        <iframe
+        <div id="map"></div>
+        <!-- <iframe
           frameborder="0"
           style="border:0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.126645534047!2d-74.00954653191877!3d40.72762854449538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598d415575bf%3A0xc935924287364f7c!2sLloyd+%26+Co!5e0!3m2!1sen!2sph!4v1492604596505">
-        </iframe>
+        </iframe> -->
         <aside>
           <div class="info-group">
             <h3>Lloyd&amp;Co.</h3>
@@ -72,5 +73,19 @@
     </span>
   </footer>
 
+  <script>
+    function initMap() {
+      var lloyd = {lat: 40.7276285, lng: -74.0073525};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: lloyd
+      });
+      var marker = new google.maps.Marker({
+        position: lloyd,
+        map: map
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXIoORO3GAjkbYi0GTnKHF_LYF_FQR3c8&callback=initMap"></script>
 </body>
 </html>
