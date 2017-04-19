@@ -73,7 +73,9 @@
       var lloyd = {lat: 40.7276285, lng: -74.0073525};
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
-        center: lloyd
+        center: lloyd,
+        mapTypeControl: false,
+        streetViewControl: false
       });
       var marker = new google.maps.Marker({
         position: lloyd,
