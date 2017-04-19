@@ -23,9 +23,9 @@
   height: 17em;
   filter: grayscale(100%);
 }
-.gm-inset,
-.gm-style-cc,
-.login-control {
+#contact-info .gm-inset,
+#contact-info iframe .gm-style-cc,
+#contact-info iframe .login-control {
   display: none;
 }
 #contact-info h3,
