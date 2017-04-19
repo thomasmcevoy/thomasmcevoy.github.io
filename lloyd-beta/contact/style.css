@@ -23,6 +23,11 @@
   height: 17em;
   filter: grayscale(100%);
 }
+.gm-inset,
+.gm-style-cc,
+.login-control {
+  display: none;
+}
 #contact-info h3,
 #contact-info div {
   text-align: left;
