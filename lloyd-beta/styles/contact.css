@@ -19,9 +19,11 @@
   vertical-align: top;
 }
 #map {
-  margin-right: 3%;
   height: 17em;
   filter: grayscale(100%);
+}
+#contact-info aside {
+  margin-left: 3%;
 }
 #contact-info h3,
 #contact-info div {
