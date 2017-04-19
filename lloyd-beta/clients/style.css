@@ -1,0 +1,16 @@
+#clients {
+  margin: 1.5em auto;
+  padding: 2em 2em 3em;
+  width: 90%;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+#clients h1 {
+  margin-bottom: 3rem;
+  padding: 2rem auto;
+  font-size: 1.5em;
+}
+#clients img {
+  width: 50em;
+  height: auto;
+}

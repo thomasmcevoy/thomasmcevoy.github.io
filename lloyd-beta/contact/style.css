@@ -25,8 +25,13 @@
 }
 #contact-info .gm-inset,
 #contact-info iframe .gm-style-cc,
-#contact-info iframe .login-control {
+#contact-info iframe .login-control,
+#contact-info iframe .star-entity-medium {
   display: none;
+}
+#contact-info iframe .place-card-medium,
+#contact-info iframe .place-desc-medium {
+  width: auto;
 }
 #contact-info h3,
 #contact-info div {
