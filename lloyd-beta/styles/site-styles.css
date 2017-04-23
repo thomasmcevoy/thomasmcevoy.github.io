@@ -39,8 +39,9 @@ svg {
 }
 #site-logo {
   left: 5%;
-  width: 6em;
-  height: 1.3em;
+  width: 5em;
+  height: 1em;
+  line-height: 4;
 }
 #site-nav {
   right: 5%;
