@@ -10,10 +10,6 @@ h3 {
   margin: 1rem auto 1.25rem;
   font-size: 1.125em;
 }
-#about,
-#the-people {
-  text-align: center;
-}
 #about p {
   margin: .25em auto .5em;
   width: 38em;
