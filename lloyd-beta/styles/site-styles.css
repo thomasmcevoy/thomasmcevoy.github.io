@@ -35,6 +35,11 @@ a {
   src:  url('../assets/BrownStd-Bold.woff2') format('woff2'),
         url('../assets/BrownStd-Bold.woff') format('woff');
 }
+@font-face {
+  font-family: 'Brown Light';
+  src:  url('../assets/BrownStd-Light.woff2') format('woff2'),
+        url('../assets/BrownStd-Light.woff') format('woff');
+}
 body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-size: 100%;
@@ -77,7 +82,7 @@ header {
   font-size: 1.0625em;
 }
 #site-nav a.active {
-  color: #999;
+  color: #aaa;
 }
 
 /*================================== Section =================================*/

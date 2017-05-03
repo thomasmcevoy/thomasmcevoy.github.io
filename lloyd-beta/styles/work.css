@@ -11,6 +11,7 @@ section.copy {
 }
 section.copy p {
   margin: .125em;
+  font-family: 'Brown Light', 'Avenir', sans-serif;
   font-size: 1.125em;
   letter-spacing: .025em;
 }
