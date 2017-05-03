@@ -1,19 +1,15 @@
 #brand-name {
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 section.copy,
 section.project-summary,
 section.press-awards {
   padding: 4.5em;
 }
-section.copy {
-  max-width: 70em;
-}
 section.copy p {
-  margin: .125em;
-  font-family: 'Brown Light', 'Avenir', sans-serif;
-  font-size: 1.125em;
-  letter-spacing: .025em;
+  margin: .2em auto;
+  max-width: 52em;
+  font: 1.1875em/1.4 'Brown Light', 'Avenir', sans-serif;
 }
 .image img {
   width: 100%;
