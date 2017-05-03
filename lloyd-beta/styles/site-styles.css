@@ -26,13 +26,21 @@ a {
 
 /*================================ Typography ================================*/
 @font-face {
-  font-family: 'Brown';
+  font-family: 'Brown Regular';
   src:  url('../assets/Brown-Regular.woff2') format('woff2'),
         url('../assets/Brown-Regular.woff') format('woff');
 }
+@font-face {
+  font-family: 'Brown Bold';
+  src:  url('../assets/BrownStd-Bold.woff2') format('woff2'),
+        url('../assets/BrownStd-Bold.woff') format('woff');
+}
 body {
-  font-family: 'Brown', 'Avenir', sans-serif;
+  font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-size: 100%;
+}
+header {
+  font-family: 'Brown Bold', 'Avenir', sans-serif;
 }
 h1 {
   font-size: 1.5rem;
@@ -56,7 +64,7 @@ header {
 
 #site-logo {
   left: 5%;
-  width: 6em;
+  width: 5.167em;
   font-size: 1.5em;
   line-height: 4.667;
 }
