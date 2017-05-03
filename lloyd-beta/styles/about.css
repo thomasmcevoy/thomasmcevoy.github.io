@@ -1,12 +1,11 @@
-h1,
-h2 {
+#about h1 {
   margin: 2.5rem auto 4rem;
+}
+#about h2 {
   font-size: 1.5rem;
+  margin: 7rem auto 4rem;
 }
-h2 {
-  margin-top: 7rem;
-}
-h3 {
+#about h3 {
   margin: 1rem auto 1.25rem;
   font-size: 1.125em;
 }
@@ -17,6 +16,7 @@ h3 {
   font-weight: 700;
   line-height: 1.5;
 }
+
 #the-people p {
   margin: 0 auto 1.5rem;
   width: 43em;
