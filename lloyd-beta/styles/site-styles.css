@@ -56,13 +56,8 @@ header {
   background-color: white;
 }
 
-#site-logo,
-#site-nav {
-  position: absolute;
-  font-weight: 700;
-}
-
 #site-logo {
+  position: absolute;
   left: 5%;
   width: 5.167em;
   font-size: 1.5em;
@@ -73,14 +68,13 @@ header {
 }
 
 #site-nav {
+  position: absolute;
   right: 5%;
   line-height: 7rem;
 }
 #site-nav a {
-  margin-left: 1.2em;
-  font-size: 1em;
-  font-weight: 700;
-  letter-spacing: .015em;
+  margin-left: 1.3em;
+  font-size: 1.0625em;
 }
 #site-nav a.active {
   color: #999;
@@ -93,7 +87,6 @@ main section {
 }
 section h1 {
   margin: 1em auto 2em;
-  font-size: 1.5em;
 }
 
 /*================================== Footer ==================================*/
