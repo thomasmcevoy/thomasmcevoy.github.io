@@ -25,7 +25,6 @@ section.press-awards {
   display: inline-block;
   vertical-align: top;
   padding: 1em;
-  width: 25.5em;
   height: 100%;
 }
 .column:first-of-type {
@@ -35,6 +34,10 @@ section.press-awards {
 }
 .column:last-of-type {
   text-align: left;
+}
+.column p {
+  width: 23em;
+  font-size: 1.0625em;
 }
 .column h3 {
   margin: 0;
