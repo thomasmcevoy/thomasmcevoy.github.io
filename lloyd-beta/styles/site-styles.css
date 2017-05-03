@@ -36,20 +36,25 @@ header {
   height: 7em;
   background-color: white;
 }
+
 #site-logo,
 #site-nav {
   position: absolute;
-  line-height: 7rem;
   font-weight: 700;
 }
+
 #site-logo {
   left: 5%;
   width: 4.5em;
-  height: 1em;
-  line-height: 4;
+  line-height: 3.5;
 }
+#site-logo img {
+  vertical-align: middle;
+}
+
 #site-nav {
   right: 5%;
+  line-height: 7rem;
 }
 #site-nav a {
   margin-left: 1.2em;
