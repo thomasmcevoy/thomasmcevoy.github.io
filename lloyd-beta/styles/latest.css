@@ -12,10 +12,9 @@
 }
 #latest img {
   display: inline-block;
-  width: 100%;
-  height: auto;
-  min-height: 39.5vw;
   vertical-align: top;
+  width: 100%;
+  min-height: 38vw;
 }
 img.placeholder {
   background-color: #ddd;

@@ -1,17 +1,15 @@
 #brand-name {
-
+  margin-bottom: 0;
 }
-.copy,
-.project-summary,
-.press-awards {
-  margin: auto;
+section.copy,
+section.project-summary,
+section.press-awards {
   padding: 4.5em;
-  text-align: center;
 }
-.copy {
+section.copy {
   max-width: 70em;
 }
-.copy p {
+section.copy p {
   margin: .125em;
   font-size: 1.125em;
   letter-spacing: .025em;
