@@ -28,6 +28,11 @@ h1 {
 }
 body {
   font-family: 'Brown', 'Avenir', sans-serif;
+  font-size: 100%;
+}
+h1 {
+  font-size: 1.5rem;
+  letter-spacing: .09em;
 }
 a {
   color: black;
@@ -51,9 +56,8 @@ header {
 
 #site-logo {
   left: 5%;
-  width: 4.5em;
-  font-size: 2em;
-  line-height: 3.5;
+  width: 6em;
+  line-height: 4.667;
 }
 #site-logo img {
   vertical-align: middle;
