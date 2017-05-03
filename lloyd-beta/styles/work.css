@@ -2,8 +2,7 @@
   margin: 0 auto;
 }
 section.copy,
-section.project-summary,
-section.press-awards {
+section.project-summary {
   padding: 4.5em;
 }
 
@@ -48,9 +47,9 @@ section.press-awards {
   margin: 0;
 }
 .press-awards {
-  padding: 3em;
+  padding: 3.25em;
   background-color: #eee;
-  font-size: 81.25%;
+  font-size: 87%;
 }
 
 .image img {
