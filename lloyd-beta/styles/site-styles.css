@@ -12,15 +12,22 @@ img {
   padding: 0;
   width: 100%;
 }
-body {
-  font-family: 'avenir', sans-serif;
-}
 svg {
   width: 100%;
   height: 100%;
 }
 h1 {
   margin: 0;
+}
+
+/*================================ Typography ================================*/
+@font-face {
+  font-family: 'Brown';
+  src:  url('../assets/Brown-Regular.woff2') format('woff2'),
+        url('../assets/Brown-Regular.woff') format('woff');
+}
+body {
+  font-family: 'Brown', 'Avenir', sans-serif;
 }
 a {
   color: black;
