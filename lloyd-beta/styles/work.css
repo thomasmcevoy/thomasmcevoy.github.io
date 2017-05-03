@@ -6,18 +6,20 @@ section.project-summary,
 section.press-awards {
   padding: 4.5em;
 }
-section.copy p {
+
+.copy p,
+.column p {
+  font-family: 'Brown Light', 'Avenir', sans-serif;
+}
+.column h3 {
+  font-family: 'Brown Bold', 'Avenir', sans-serif;
+}
+
+.copy p {
   margin: .2em auto;
   max-width: 52em;
-  font: 1.1875em/1.4 'Brown Light', 'Avenir', sans-serif;
-}
-.image img {
-  width: 100%;
-}
-.image-placeholder {
-  width: 100%;
-  height: 38.6vw;
-  background-color: #eee;
+  font-size: 1.1875em;
+  line-height: 1.4;
 }
 .column {
   display: inline-block;
@@ -25,7 +27,6 @@ section.copy p {
   padding: 1em;
   width: 25.5em;
   height: 100%;
-  letter-spacing: .02em;
 }
 .column:first-of-type {
   border-right: solid 1px black;
@@ -47,4 +48,13 @@ section.copy p {
   padding: 3em;
   background-color: #eee;
   font-size: 81.25%;
+}
+
+.image img {
+  width: 100%;
+}
+.image-placeholder {
+  width: 100%;
+  height: 38.6vw;
+  background-color: #eee;
 }
