@@ -51,7 +51,8 @@ p,
 footer {
   font-family: 'Brown Light', 'Avenir', sans-serif;
 }
-h1 {
+h1,
+h2 {
   font-size: 1.5rem;
   letter-spacing: .09em;
 }

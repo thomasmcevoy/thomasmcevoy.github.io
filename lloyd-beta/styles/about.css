@@ -12,11 +12,10 @@
 }
 #about p {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
-  margin: .25em auto .5em;
+  margin: 0 auto .75em;
   width: 38em;
   font-size: 1.1875em;
-  font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
 #the-people p {
