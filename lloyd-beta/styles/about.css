@@ -3,10 +3,6 @@
   margin: 4rem auto;
   font-size: 1.5rem;
 }
-#about h3 {
-  margin: 1rem auto 1.25rem;
-  font-size: 1.125em;
-}
 #about p {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
   margin: 0 auto .75em;
@@ -17,6 +13,10 @@
 
 #the-people h2 {
   margin: 5rem auto;
+}
+#the-people h3 {
+  margin: 1em auto;
+  font-size: 1.1875em;
 }
 #the-people p {
   margin: 0 auto 1.5rem;
