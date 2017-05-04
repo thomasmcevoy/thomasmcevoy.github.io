@@ -77,7 +77,7 @@ form label:last-of-type {
 form input {
   flex: 1;
   border: none;
-  padding: .1em .5em 0;
+  padding: .13em .65em 0;
   height: 100%;
   max-width: 100%;
   font-size: .875em;
