@@ -35,16 +35,15 @@ section.project-summary {
   text-align: left;
 }
 .column p {
+  margin: 0;
   width: 23em;
   font-size: 1.0625em;
+  line-height: 1.3;
 }
 .column h3 {
-  margin: 0;
+  margin: 0 0 .05em;
   font-size: 1.0625em;
   font-weight: 700;
-}
-.column p {
-  margin: 0;
 }
 .press-awards {
   padding: 3.25em;
