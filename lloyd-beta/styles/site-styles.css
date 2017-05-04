@@ -40,10 +40,14 @@ body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-size: 100%;
 }
+h1,
+h2,
+h3,
 header,
 footer span:first-child {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
 }
+p,
 footer {
   font-family: 'Brown Light', 'Avenir', sans-serif;
 }

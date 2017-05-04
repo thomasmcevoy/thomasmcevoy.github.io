@@ -1,15 +1,17 @@
-#about h1 {
-  margin: 2.5rem auto 4rem;
+#about {
+  margin-bottom: 3rem;
 }
+#about h1,
 #about h2 {
+  margin: 4rem auto;
   font-size: 1.5rem;
-  margin: 7rem auto 4rem;
 }
 #about h3 {
   margin: 1rem auto 1.25rem;
   font-size: 1.125em;
 }
 #about p {
+  font-family: 'Brown Bold', 'Avenir', sans-serif;
   margin: .25em auto .5em;
   width: 38em;
   font-size: 1.1875em;
