@@ -65,9 +65,7 @@ form legend {
 }
 form label {
   display: flex;
-  margin: 0 auto .5em;
-  padding: .125em 0;
-  height: 1.75em;
+  padding: .8em 0 .5em;
   border-bottom: solid 1px #bfbfbf;
   text-align: left;
 }
@@ -79,7 +77,7 @@ form label:last-of-type {
 form input {
   flex: 1;
   border: none;
-  padding: 0 .5em .125em;
+  padding: .1em .5em 0;
   height: 100%;
   max-width: 100%;
   font-size: .875em;
