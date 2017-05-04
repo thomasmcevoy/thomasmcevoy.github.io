@@ -102,13 +102,9 @@ footer {
   line-height: 6rem;
   text-align: center;
 }
-footer img {
-  margin-right: .5em;
-  width: 5em;
-  vertical-align: text-bottom;
-}
 footer span {
   margin: .3em;
+  font-size: 1.0625em;
 }
 footer a:hover {
   color: #8a8a8a;
