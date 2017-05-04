@@ -102,7 +102,9 @@ footer {
   text-align: center;
 }
 footer img {
-  width: 3.5em;
+  margin-right: .5em;
+  width: 5em;
+  vertical-align: text-bottom;
 }
 footer span {
   margin: .3em;
