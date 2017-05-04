@@ -10,7 +10,8 @@
 #contact-info {
   border-bottom: solid 1px #555;
 }
-#contact-info span {
+#contact-info span,
+form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-weight: 500;
 }
@@ -59,9 +60,8 @@ form {
   font-size: 1.125rem;
 }
 form legend {
-  margin: 0 0 .5em;
+  margin: 0 0 .75em;
   padding: 0;
-  font-weight: 500;
 }
 form label {
   display: flex;
