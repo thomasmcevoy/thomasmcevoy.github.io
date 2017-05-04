@@ -5,7 +5,8 @@
 }
 #clients h1 {
   margin-bottom: 3rem;
-  font-size: 1.5em;
+  font-size: 1.75rem;
+  letter-spacing: .06em;
 }
 #clients img {
   width: 50em;
