@@ -21,7 +21,7 @@
   vertical-align: top;
 }
 #map {
-  height: 16em;
+  height: 17.5em;
   filter: grayscale(100%);
 }
 #contact-info aside {
@@ -32,15 +32,15 @@
 }
 
 .info-group {
-  margin-bottom: 1.6875em;
+  margin-bottom: 2.2em;
   text-align: left;
 }
 .info-group.social {
-  margin-bottom: 1em;
+  margin-bottom: 1.6em;
 }
 .info-group h3,
 .info-group div {
-  margin: 0 auto .25rem;
+  margin: 0 auto .375rem;
   font-size: 1.1875rem;
 }
 .info-group.social div {
