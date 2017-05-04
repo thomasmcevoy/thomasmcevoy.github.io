@@ -6,14 +6,6 @@ section.project-summary {
   padding: 4.5em;
 }
 
-.copy p,
-.column p {
-  font-family: 'Brown Light', 'Avenir', sans-serif;
-}
-.column h3 {
-  font-family: 'Brown Bold', 'Avenir', sans-serif;
-}
-
 .copy p {
   margin: .2em auto;
   max-width: 52em;
