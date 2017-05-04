@@ -1,5 +1,7 @@
 #brand-name {
   margin: 0 auto;
+  font-size: 1.75rem;
+  letter-spacing: .06em;
 }
 section.copy,
 section.project-summary {
