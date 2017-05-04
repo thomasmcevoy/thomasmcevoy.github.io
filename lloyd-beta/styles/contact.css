@@ -3,6 +3,7 @@
   padding: 2em 13% 5.5em;
   background-color: #e6e6e6;
   font-family: 'Brown Light', 'Avenir', sans-serif;
+  font-size: 1.1875em;
 }
 #contact h1 {
   margin-bottom: 4rem;
@@ -42,7 +43,7 @@ form legend {
 .info-group h3,
 .info-group div {
   margin: 0 auto .375rem;
-  font-size: 1.1875rem;
+
 }
 .info-group.social div {
   display: inline-block;
@@ -55,7 +56,7 @@ form legend {
 
 form {
   position: relative;
-  padding-top: 1em;
+  padding-top: 1.25em;
   width: 48%;
   font-size: 1.125rem;
 }
