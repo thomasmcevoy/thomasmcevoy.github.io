@@ -33,13 +33,13 @@
 
 .info-group {
   margin-bottom: 1.6875em;
+  text-align: left;
 }
 .info-group.social {
   margin-bottom: 1em;
 }
 .info-group h3,
 .info-group div {
-  text-align: left;
   margin: 0 auto .25rem;
   font-size: 1.125rem;
 }
