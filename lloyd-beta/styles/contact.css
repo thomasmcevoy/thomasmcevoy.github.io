@@ -41,21 +41,29 @@ form input {
   font-weight: 300;
   letter-spacing: .02em;
 }
-#contact-info .info-group {
+
+.info-group {
   margin-bottom: 1.6875em;
 }
-#contact-info .info-group:last-of-type {
+.info-group:last-of-type {
   margin-bottom: 1em;
 }
-#contact-info .info-group.social div {
+.info-group div {
+  font-family: 'Brown Light', 'Avenir', sans-serif;
+}
+.info-group span {
+  font-family: 'Brown Bold', 'Avenir', sans-serif;
+}
+.info-group.social div {
   display: inline-block;
 }
-#contact-info .info-group.social .link-group {
+.info-group.social .link-group {
   vertical-align: top;
 }
-#contact-info .info-group.social a {
+.info-group.social a {
   display: block;
 }
+
 form {
   position: relative;
   padding-top: 1em;
