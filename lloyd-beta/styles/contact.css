@@ -36,7 +36,7 @@
   text-align: left;
 }
 .info-group.social {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.3em;
 }
 .info-group h3,
 .info-group div {
@@ -49,6 +49,7 @@
 }
 .info-group.social a {
   display: block;
+  margin-bottom: .33em;
 }
 
 form {
