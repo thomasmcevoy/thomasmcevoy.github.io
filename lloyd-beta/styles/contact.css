@@ -27,12 +27,6 @@
 #contact-info aside {
   margin-left: 3%;
 }
-#contact-info h3,
-#contact-info div {
-  text-align: left;
-  margin: 0 auto .25rem;
-  font-size: 1.125rem;
-}
 #contact-info a:hover {
   color: #777;
 }
@@ -40,8 +34,14 @@
 .info-group {
   margin-bottom: 1.6875em;
 }
-.info-group:last-of-type {
+.info-group.social {
   margin-bottom: 1em;
+}
+.info-group h3,
+.info-group div {
+  text-align: left;
+  margin: 0 auto .25rem;
+  font-size: 1.125rem;
 }
 .info-group.social div {
   display: inline-block;
