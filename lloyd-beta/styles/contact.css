@@ -34,7 +34,7 @@ form legend {
 }
 
 .info-group {
-  margin-bottom: 2.2em;
+  margin-bottom: 2em;
   text-align: left;
 }
 .info-group.social {
@@ -43,7 +43,7 @@ form legend {
 .info-group h3,
 .info-group div {
   margin: 0 auto .375rem;
-
+  font-size: inherit;
 }
 .info-group.social div {
   display: inline-block;
@@ -58,7 +58,6 @@ form {
   position: relative;
   padding-top: 1.25em;
   width: 48%;
-  font-size: 1.125rem;
 }
 form legend {
   margin: 0 0 .75em;
