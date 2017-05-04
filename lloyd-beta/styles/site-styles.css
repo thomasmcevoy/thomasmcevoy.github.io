@@ -40,7 +40,8 @@ body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-size: 100%;
 }
-header {
+header,
+footer span:first-child {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
 }
 footer {
