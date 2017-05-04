@@ -21,8 +21,7 @@
 #the-people p {
   margin: 0 auto 1.5rem;
   width: 43em;
-  font-size: 1.125em;
-  font-weight: 300;
+  font-size: 1.1875em;
   line-height: 1.625;
 }
 #the-people p:nth-of-type(2) {
