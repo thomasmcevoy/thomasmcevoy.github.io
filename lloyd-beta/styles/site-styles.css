@@ -81,6 +81,7 @@ header {
   #site-logo {
     position: static;
     margin: auto;
+    width: 7em;
   }
 }
 
@@ -109,7 +110,7 @@ header {
   }
   #site-nav a {
     display: block;
-    margin: .05em;
+    margin: .1em;
     padding: .2em;
   }
   #site-nav a:first-child { margin-top: 12%; }
