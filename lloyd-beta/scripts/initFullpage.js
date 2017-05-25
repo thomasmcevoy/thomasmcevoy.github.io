@@ -4,10 +4,10 @@ import adaptColorTo from './colorAdapter'
 
 export default function initFullpage() {
   $('#fullpage').fullpage({
+    responsiveWidth: 769,
     onLeave: function(index, nextIndex, direction) {
       adaptColorTo(nextIndex)
-    },
-    responsiveWidth: 769
+    }
   })
   $('#logo-small').click(() => {
     $.fn.fullpage.moveTo(1)
