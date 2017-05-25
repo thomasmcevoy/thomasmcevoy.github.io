@@ -100,8 +100,9 @@ header {
   #site-nav {
     position: fixed;
     top: 7rem;
+    left: 0;
     width: 100%;
-    font-size: 2.5em;
+    font: 3em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
     background-color: #eee;
     opacity: .96;
