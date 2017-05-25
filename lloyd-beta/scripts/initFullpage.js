@@ -4,7 +4,7 @@ import adaptColorTo from './colorAdapter'
 
 export default function initFullpage() {
   $('#fullpage').fullpage({
-    loopHorizontal: false,
+    responsiveWidth: 769,
     onLeave: function(index, nextIndex, direction) {
       adaptColorTo(nextIndex)
     }
