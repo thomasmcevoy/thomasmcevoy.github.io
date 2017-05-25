@@ -6,7 +6,7 @@ import adaptColorTo from './colorAdapter'
 $(() => {
   // initHamburger()
 
-  $('#main').fullpage({
+  $('#fullpage').fullpage({
     loopHorizontal: false,
     onLeave: function(index, nextIndex, direction) {
       adaptColorTo(nextIndex)
