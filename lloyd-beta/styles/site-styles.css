@@ -105,10 +105,10 @@ header {
 @media (max-width: 768px) {
   #site-nav {
     position: fixed;
-    top: 7rem;
+    top: 4.5rem;
     left: 0;
     width: 100%;
-    font: 3.75em 'Brown Regular', 'Avenir', sans-serif;
+    font: 3em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
     background-color: #eee;
     opacity: .96;
@@ -124,6 +124,16 @@ header {
 }
 
 /*================================== Section =================================*/
+main {
+  height: calc(100% - 7rem);
+  position: fixed;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  main {
+    height: calc(100% - 4.5rem);
+  }
+}
 main section {
   margin: auto;
   text-align: center;

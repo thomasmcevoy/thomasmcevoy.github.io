@@ -6,11 +6,6 @@ header {
 #site-logo {
   cursor: pointer;
 }
-main {
-  height: calc(100% - 7rem);
-  position: fixed;
-  bottom: 0;
-}
 .section {
   background-size: cover;
   background-repeat: no-repeat;
