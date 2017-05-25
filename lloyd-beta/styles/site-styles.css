@@ -112,9 +112,9 @@ header {
     margin: .05em;
     padding: .2em;
   }
-  #site-nav a.active {
-    color: black;
-  }
+  #site-nav a:first-child { margin-top: 12%; }
+  #site-nav a:last-child { margin-bottom: 15%; }
+  #site-nav a.active { color: black; }
 }
 
 /*================================== Section =================================*/
