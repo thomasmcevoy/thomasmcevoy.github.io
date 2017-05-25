@@ -1,3 +1,4 @@
+import $ from 'jquery'
 // import initHamburger from './initHamburger'
 import initFullpage from './initFullpage'
 import {debounce} from 'lodash'
