@@ -108,6 +108,7 @@ header {
   }
   #site-nav a {
     display: block;
+    margin: 0;
   }
 }
 
