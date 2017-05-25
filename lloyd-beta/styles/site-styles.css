@@ -108,18 +108,18 @@ header {
     top: 4.5rem;
     left: 0;
     width: 100%;
-    font: 3em 'Brown Regular', 'Avenir', sans-serif;
+    font: 2.8em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
     background-color: #eee;
     opacity: .96;
   }
   #site-nav a {
     display: block;
-    margin: .1em;
+    margin: .15em;
     padding: .2em;
   }
-  #site-nav a:first-child { margin-top: 12%; }
-  #site-nav a:last-child { margin-bottom: 15%; }
+  #site-nav a:first-child { margin-top: 18%; }
+  #site-nav a:last-child { margin-bottom: 30%; }
   #site-nav a.active { color: black; }
 }
 
