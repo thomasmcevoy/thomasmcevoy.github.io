@@ -79,8 +79,8 @@ header {
 }
 @media (max-width: 768px) {
   #site-logo {
-    left: 0;
-    right: 0;
+    position: static;
+    margin: auto;
   }
 }
 
@@ -102,6 +102,9 @@ header {
     top: 7rem;
     width: 100%;
     font-size: 2.5em;
+    text-align: center;
+    background-color: #eee;
+    opacity: .96;
   }
   #site-nav a {
     display: block;
