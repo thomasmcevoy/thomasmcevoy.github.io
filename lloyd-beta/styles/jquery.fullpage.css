@@ -229,6 +229,9 @@ html.fp-enabled,
 }
 
 /*========================== Lloyd specific styles ===========================*/
+.fp-responsive .fp-section {
+  height: auto !important;
+}
 .fp-responsive .fp-section .fp-tableCell {
   height: 60vw !important;
 }
