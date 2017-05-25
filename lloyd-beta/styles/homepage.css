@@ -17,8 +17,8 @@ main {
   background-position: center center;
   cursor: pointer;
 }
-#bottega-veneta { background-image: url('/lloyd-beta/images/bottega.jpg'); }
-#estee-lauder { background-image: url('/lloyd-beta/images/estee.jpg'); }
+#bottega-veneta { background-image: url('../images/bottega.jpg'); }
+#estee-lauder { background-image: url('../images/estee.jpg'); }
 #adidas { background-image: url('/lloyd-beta/images/adidas.jpg'); }
 #justin-timberlake { background-image: url('/lloyd-beta/images/justin-timberlake.jpg'); }
 #y-3 { background-image: url('/lloyd-beta/images/y-3.jpg'); }
