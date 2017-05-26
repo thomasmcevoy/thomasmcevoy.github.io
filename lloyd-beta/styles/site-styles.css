@@ -108,6 +108,7 @@ header {
     top: 4.5rem;
     left: 0;
     width: 100%;
+    height: calc(100% - 4.5rem);
     font: 2.8em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
     background-color: #eee;
@@ -118,8 +119,8 @@ header {
     margin: .15em;
     padding: .2em;
   }
-  #site-nav a:first-child { margin-top: 18%; }
-  #site-nav a:last-child { margin-bottom: 30%; }
+  /*#site-nav a:first-child { margin-top: 18%; }
+  #site-nav a:last-child { margin-bottom: 30%; }*/
   #site-nav a.active { color: black; }
 }
 
