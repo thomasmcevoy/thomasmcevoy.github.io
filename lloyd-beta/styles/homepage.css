@@ -18,3 +18,7 @@ header {
 #justin-timberlake { background-image: url('../images/justin-timberlake.jpg'); }
 #y-3 { background-image: url('../images/y-3.jpg'); }
 #narciso-rodriguez { background-image: url('../images/narciso-rodriguez.jpg'); }
+
+@media (max-width: 768px) {
+  .arrowDown { display: none; }
+}
