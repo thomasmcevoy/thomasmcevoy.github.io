@@ -1,26 +1,20 @@
-function ready(fn) {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
+import $ from 'jquery'
 
-function footerFix() {
-  var windowHeight = window.innerHeight;
-  var documentHeight = document.body.clientHeight;
-  var footer = document.querySelector('footer');
+export default function footerFix() {
+  const windowHeight = window.innerHeight
+  const documentHeight = document.body.clientHeight
+  const $footer = $('footer')
 
   if (windowHeight >= documentHeight) {
-    pin(footer);
-  }
-
-  function pin(footer) {
-    footer.style.position = 'fixed';
-    footer.style.bottom = '0';
-    footer.style.left = '0';
-    footer.style.right = '0';
+    pin($footer)
   }
 }
 
-ready(footerFix);
+function pin($footer) {
+  $footer.css({
+    'position': 'fixed',
+    'bottom': '0',
+    'right': '0',
+    'left': '0'
+  })
+}
