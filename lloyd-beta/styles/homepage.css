@@ -7,7 +7,7 @@ header {
   cursor: pointer;
 }
 #homepage main {
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 .section {
   background-size: cover;
