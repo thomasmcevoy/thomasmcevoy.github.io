@@ -116,6 +116,7 @@ header {
 }
 @media (max-width: 768px) {
   #site-nav {
+    z-index: 1;
     position: fixed;
     top: 3.5rem;
     left: 0;
