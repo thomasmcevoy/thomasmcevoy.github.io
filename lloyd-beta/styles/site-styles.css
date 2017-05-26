@@ -91,6 +91,16 @@ header {
   }
 }
 
+#hamburger-menu {
+  position: absolute;
+  right: 5%;
+  width: 2.5em;
+  line-height: 3.5;
+}
+@media (min-width: 769px) {
+  #hamburger-menu { display: none; }
+}
+
 #site-nav {
   position: absolute;
   right: 5%;
@@ -117,7 +127,7 @@ header {
   #site-nav a {
     display: block;
     margin: .15em;
-    padding: .2em;
+    padding: .1625em;
   }
   #site-nav a:first-child { margin-top: 13%; }
   #site-nav a:last-child { margin-bottom: 30%; }
