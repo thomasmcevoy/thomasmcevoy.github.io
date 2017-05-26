@@ -1,8 +1,8 @@
 import $ from 'jquery'
-// import initHamburger from './initHamburger'
-import initFullpage from './initFullpage'
+import hamburgerInit from './hamburger'
+import fullpageInit from './fullpage'
 
 $(() => {
-  // initHamburger()
-  initFullpage()
+  hamburgerInit()
+  fullpageInit()
 })
