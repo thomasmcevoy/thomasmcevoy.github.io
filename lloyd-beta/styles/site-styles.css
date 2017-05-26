@@ -116,7 +116,7 @@ header {
   }
   #site-nav a {
     display: block;
-    margin: .15em;
+    margin: .2em;
     padding: .2em;
   }
   #site-nav a:first-child { margin-top: 15%; }
