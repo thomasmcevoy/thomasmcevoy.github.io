@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 const $hamburger = $('#hamburger')
-const $menu = $('#menu')
+const $siteNav = $('#site-nav')
 
 let menuIsOpen = false
 
@@ -13,11 +13,11 @@ export default function initHamburger() {
 }
 
 function closeMenu() {
-  $hamburger.css('z-index', '-1')
+  $siteNav.css('z-index', '-1')
   menuIsOpen = false
 }
 
 function openMenu() {
-  $hamburger.css('z-index', '1')
+  $siteNav.css('z-index', '1')
   menuIsOpen = true
 }
