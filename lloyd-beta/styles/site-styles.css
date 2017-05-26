@@ -113,7 +113,7 @@ header {
 @media (max-width: 414px) {
   #hamburger {
     width: 1.375em;
-    line-height: 4.2;
+    line-height: 5;
   }
 }
 @media (max-width: 375px) {
