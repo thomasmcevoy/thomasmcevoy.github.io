@@ -6,6 +6,9 @@ header {
 #site-logo {
   cursor: pointer;
 }
+#homepage main {
+  overflow-x: hidden !important;
+}
 .section {
   background-size: cover;
   background-repeat: no-repeat;
