@@ -13,11 +13,11 @@ export default function initHamburger() {
 }
 
 function closeMenu() {
-  $siteNav.css('z-index', '-1')
+  $siteNav.css('left', '-9999px')
   menuIsOpen = false
 }
 
 function openMenu() {
-  $siteNav.css('z-index', '1')
+  $siteNav.css('left', '0')
   menuIsOpen = true
 }
