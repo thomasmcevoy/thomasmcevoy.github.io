@@ -86,6 +86,7 @@ header {
   #site-logo {
     position: static;
     margin: auto;
+    width: 6.5em;
     line-height: 4.5;
   }
 }
@@ -108,7 +109,7 @@ header {
     top: 4.5rem;
     left: 0;
     width: 100%;
-    font: 2.8em 'Brown Regular', 'Avenir', sans-serif;
+    font: 2.5em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
     background-color: #eee;
     opacity: .96;
