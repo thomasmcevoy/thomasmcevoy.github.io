@@ -66,12 +66,11 @@ header {
   height: 7em;
   background-color: white;
 }
-@media (max-width: 768px) {
-  header {
-    height: 3.5em;
-  }
-}
+@media (max-width: 768px) { header {height: 5.5em;}}
+@media (max-width: 414px) { header {height: 4.5em;}}
+@media (max-width: 375px) { header {height: 3.5em;}}
 
+/*================================ Site Logo =================================*/
 #site-logo {
   position: absolute;
   left: 5%;
@@ -79,29 +78,57 @@ header {
   font-size: 1em;
   line-height: 7;
 }
-#site-logo img {
-  vertical-align: middle;
-}
 @media (max-width: 768px) {
   #site-logo {
     position: static;
     margin: auto;
+    width: 7.25em;
+    line-height: 5.5;
+  }
+}
+@media (max-width: 414px) {
+  #site-logo {
+    width: 6.875em;
+    line-height: 4.5;
+  }
+}
+@media (max-width: 375px) {
+  #site-logo {
     width: 6.5em;
     line-height: 3.5;
   }
 }
+#site-logo img {
+  vertical-align: middle;
+}
 
+/*================================ Hamburger =================================*/
 #hamburger {
   position: absolute;
   top: 0;
   right: 1.5em;
-  width: 1.25em;
-  line-height: 3.9;
+  width: 1.5em;
+  line-height: 4.5;
+}
+@media (max-width: 414px) {
+  #hamburger {
+    width: 1.375em;
+    line-height: 4.2;
+  }
+}
+@media (max-width: 375px) {
+  #hamburger {
+    width: 1.25em;
+    line-height: 3.9;
+  }
 }
 @media (min-width: 769px) {
-  #hamburger { display: none; }
+  #hamburger {
+    display: none;
+  }
 }
 
+/*================================ Site Nav ==================================*/
 #site-nav {
   position: absolute;
   right: 5%;
@@ -146,11 +173,10 @@ main {
   bottom: 0;
   overflow-x: scroll;
 }
-@media (max-width: 768px) {
-  main {
-    height: calc(100% - 3.5rem);
-  }
-}
+@media (max-width: 768px) { main {height: calc(100% - 5.5rem);}}
+@media (max-width: 414px) { main {height: calc(100% - 4.5rem);}}
+@media (max-width: 375px) { main {height: calc(100% - 3.5rem);}}
+
 main section {
   margin: auto;
   text-align: center;
