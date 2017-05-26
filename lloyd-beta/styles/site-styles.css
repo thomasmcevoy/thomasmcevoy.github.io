@@ -139,11 +139,12 @@ header {
   #site-nav a.active { color: black; }
 }
 
-/*================================== Section =================================*/
+/*=================================== Main ===================================*/
 main {
   height: calc(100% - 7rem);
   position: fixed;
   bottom: 0;
+  overflow-x: scroll;
 }
 @media (max-width: 768px) {
   main {
