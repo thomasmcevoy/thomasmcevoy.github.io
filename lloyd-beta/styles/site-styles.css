@@ -118,7 +118,7 @@ header {
   #site-nav {
     position: fixed;
     top: 3.5rem;
-    left: 0;
+    left: -9999px;
     width: 100%;
     font: 2.5em 'Brown Regular', 'Avenir', sans-serif;
     text-align: center;
