@@ -93,9 +93,10 @@ header {
 
 #hamburger-menu {
   position: absolute;
-  right: 5%;
-  width: 2.5em;
-  line-height: 3.5;
+  top: 0;
+  right: 7.5%;
+  width: 1.25em;
+  line-height: 4;
 }
 @media (min-width: 769px) {
   #hamburger-menu { display: none; }
