@@ -116,10 +116,10 @@ header {
   }
   #site-nav a {
     display: block;
-    margin: .2em;
+    margin: .15em;
     padding: .2em;
   }
-  #site-nav a:first-child { margin-top: 15%; }
+  #site-nav a:first-child { margin-top: 13%; }
   #site-nav a:last-child { margin-bottom: 30%; }
   #site-nav a.active { color: black; }
 }
