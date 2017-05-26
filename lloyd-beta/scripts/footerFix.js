@@ -6,11 +6,7 @@ export default function footerFix() {
   const documentHeight = $(document).height()
   const mainHeight = $('main').height()
 
-  console.log(`windowHeight: ${windowHeight}
-documentHeight: ${documentHeight}
-mainHeight: ${mainHeight}`)
-
-  if (windowHeight >= documentHeight) {
+  if (windowHeight > documentHeight) {
     pin($footer);
   }
 }
