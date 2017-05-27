@@ -53,13 +53,13 @@ section.project-summary {
   background-color: #eee;
   font-size: 87%;
 }
-@media (max width: 414px) {
+@media (max-width: 414px) {
   .column {
     display: block;
     height: auto;
   }
   .column:first-of-type {
-    border-radius: none;
+    border-right: none;
     border-bottom: solid 1px black;
     text-align: center;
   }
