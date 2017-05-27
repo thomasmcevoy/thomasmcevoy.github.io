@@ -58,7 +58,7 @@ section.project-summary {
     display: block;
     height: auto;
     font-size: 1rem;
-    text-align: center;
+    text-align: center !important;
   }
   .column:first-of-type {
     border-right: none;
