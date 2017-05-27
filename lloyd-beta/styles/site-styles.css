@@ -48,8 +48,8 @@ h1,
 h2,
 h3,
 header,
-footer span:first-child,
-footer #social-icons div {
+footer #follow-us,
+footer span:first-child {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
 }
 p,
@@ -211,7 +211,7 @@ footer a:hover {
   margin: 0;
 }
 @media (min-width: 415px) {
-  footer #social-icons div { display: none; }
+  footer #follow-us { display: none; }
 }
 #social-icons img {
   margin-left: .33rem;
