@@ -69,9 +69,9 @@ section.project-summary {
     background: black;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    height: 1px;
-    width: 50%;
+    left: 32%;
+    height: 1.5px;
+    width: 36%;
   }
   .column p {
     width: auto;
