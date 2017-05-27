@@ -53,6 +53,23 @@ section.project-summary {
   background-color: #eee;
   font-size: 87%;
 }
+@media (max width: 414px) {
+  .column {
+    display: block;
+    height: auto;
+  }
+  .column:first-of-type {
+    border-radius: none;
+    border-bottom: solid 1px black;
+    text-align: center;
+  }
+  .column p {
+    width: auto;
+  }
+  .press-awards {
+    padding: 1em;
+  }
+}
 
 .image img {
   width: 100%;
