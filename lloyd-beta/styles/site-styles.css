@@ -221,15 +221,16 @@ footer a:hover {
 }
 @media (max-width: 414px) {
   footer {
-    margin-top: 0;
+    margin: 2em auto;
     height: auto;
     line-height: 1.5;
   }
-  footer span {
+  footer span:first-of-type {
     display: block;
   }
   #social-icons {
     position: static;
     margin: auto;
+    height: 2.5rem;
   }
 }
