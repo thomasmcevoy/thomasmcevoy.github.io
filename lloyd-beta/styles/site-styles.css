@@ -48,7 +48,8 @@ h1,
 h2,
 h3,
 header,
-footer span:first-child {
+footer span:first-child,
+footer #social-icons div {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
 }
 p,
@@ -209,9 +210,24 @@ footer a:hover {
   height: 2rem;
   margin: 0;
 }
+@media (min-width: 415px) {
+  footer #social-icons div { display: none; }
+}
 #social-icons img {
   margin-left: .33rem;
   height: 100%;
   width: auto;
   vertical-align: top;
+}
+@media (max-width: 414px) {
+  footer {
+    margin-top: 0;
+  }
+  footer span {
+    display: block;
+  }
+  #social-icons {
+    position: static;
+    margin: auto;
+  }
 }
