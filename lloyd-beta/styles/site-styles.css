@@ -230,7 +230,7 @@ footer a:hover {
   }
   #social-icons {
     position: static;
-    margin: auto;
+    margin: 0 auto 3rem;
     height: 2.5rem;
   }
 }
