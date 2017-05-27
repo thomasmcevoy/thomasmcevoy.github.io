@@ -57,11 +57,12 @@ section.project-summary {
   .column {
     display: block;
     height: auto;
+    font-size: 1rem;
+    text-align: center;
   }
   .column:first-of-type {
     border-right: none;
     border-bottom: solid 1px black;
-    text-align: center;
   }
   .column p {
     width: auto;
