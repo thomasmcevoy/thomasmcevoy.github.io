@@ -4,6 +4,10 @@
   font-size: 1.1875em;
 }
 @media (max-width: 414px) {
+  #contact {
+    margin: 0 .75em;
+    text-align: center;
+  }
   #contact h1 {
     margin: 0;
     padding: 1em;
