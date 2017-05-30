@@ -13,6 +13,9 @@
   font-size: 1.1875em;
   line-height: 1.55;
 }
+#about p:first-of-type {
+  width: 35em;
+}
 @media (max-width: 414px) {
   #about p {
     width: auto;
