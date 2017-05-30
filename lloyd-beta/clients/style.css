@@ -1,11 +1,11 @@
 #clients {
   background-color: #e6e6e6;
 }
-#clients img .mobile {
+#clients img.mobile {
   width: 100%;
   height: auto;
 }
-#clients img .desktop {
+#clients img.desktop {
   display: none;
   width: 50em;
   height: auto;
@@ -20,6 +20,6 @@
     font-size: 1.75rem;
     letter-spacing: .06em;
   }
-  #clients img .mobile { display: none; }
-  #clients img .desktop { display: block; }
+  #clients img.mobile { display: none; }
+  #clients img.desktop { display: block; }
 }
