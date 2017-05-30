@@ -23,6 +23,15 @@
     width: 28em;
   }
 }
+@media (max-width: 414px) {
+  #about p:first-of-type {
+    display: block;
+    width: 20em;
+  }
+  #about p:nth-of-type(n+1) {
+    text-align: left;
+  }
+}
 
 
 #the-people h2 {
