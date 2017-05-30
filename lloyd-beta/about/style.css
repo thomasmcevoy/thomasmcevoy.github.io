@@ -9,15 +9,16 @@
 #about p {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
   margin: 0 auto .75em;
-  width: 38.5em;
   font-size: 1.1875em;
   line-height: 1.55;
+  width: 38.5em;
 }
-#about p:first-of-type {
-  width: 35em;
-}
+#opening-line-one { width: 28em;}
+#opening-line-two { width: 29em;}
 @media (max-width: 414px) {
-  #about p {
+  #about p,
+  #opening-line-one,
+  #opening-line-two {
     width: auto;
   }
 }
