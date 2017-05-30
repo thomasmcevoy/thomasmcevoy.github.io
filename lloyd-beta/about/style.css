@@ -8,10 +8,8 @@
   line-height: 1.55;
 }
 @media (max-width: 414px) {
-  h1,
-  h2 {
-    margin: 1em auto 1.5em;
-  }
+  h1 { margin: 1em auto 1.5em; }
+  h2 { margin: 2em auto 2.5em; }
   #about p:first-of-type {
     display: block;
     width: 20em;
@@ -20,19 +18,17 @@
 @media (min-width: 415px) {
   h1,
   h2 {
-    margin: 4rem auto;
     font-size: 1.75rem;
     letter-spacing: .06em;
   }
+  h1 { margin: 4rem auto; }
+  h2 { margin: 5rem auto; }
   #about p { width: 38.5em; }
   #the-people p { width: 43em; }
   #about p span {
     display: block;
     margin: auto;
     width: 28em;
-  }
-  #the-people h2 {
-    margin: 5rem auto;
   }
 }
 
