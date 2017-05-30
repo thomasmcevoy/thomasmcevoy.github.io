@@ -4,6 +4,7 @@
 #about p {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
   margin: 0 auto .75em;
+  font-size: 1.1875em;
   line-height: 1.55;
 }
 @media (max-width: 414px) {
@@ -22,11 +23,6 @@
     margin: 4rem auto;
     font-size: 1.75rem;
     letter-spacing: .06em;
-  }
-  #about p,
-  #the-people p,
-  #the-people h3 {
-    font-size: 1.1875em;
   }
   #about p { width: 38.5em; }
   #the-people p { width: 43em; }
