@@ -1,15 +1,20 @@
 #contact {
-  width: 90%;
-  padding: 2em 13% 5.5em;
   background-color: #e6e6e6;
   font-family: 'Brown Light', 'Avenir', sans-serif;
   font-size: 1.1875em;
 }
-#contact h1 {
-  margin-bottom: 4rem;
-  font-size: 1.75rem;
-  letter-spacing: .06em;
+@media (min-width: 415px) {
+  #contact {
+    width: 90%;
+    padding: 2em 13% 5.5em;
+  }
+  #contact h1 {
+    margin-bottom: 4rem;
+    font-size: 1.75rem;
+    letter-spacing: .06em;
+  }
 }
+
 #contact-info {
   border-bottom: solid 1px #555;
 }
