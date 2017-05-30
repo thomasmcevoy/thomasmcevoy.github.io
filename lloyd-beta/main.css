@@ -27,18 +27,18 @@ a {
 /*================================ Typography ================================*/
 @font-face {
   font-family: 'Brown Regular';
-  src:  url('../assets/Brown-Regular.woff2') format('woff2'),
-        url('../assets/Brown-Regular.woff') format('woff');
+  src:  url('assets/Brown-Regular.woff2') format('woff2'),
+        url('assets/Brown-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Brown Bold';
-  src:  url('../assets/BrownStd-Bold.woff2') format('woff2'),
-        url('../assets/BrownStd-Bold.woff') format('woff');
+  src:  url('assets/BrownStd-Bold.woff2') format('woff2'),
+        url('assets/BrownStd-Bold.woff') format('woff');
 }
 @font-face {
   font-family: 'Brown Light';
-  src:  url('../assets/BrownStd-Light.woff2') format('woff2'),
-        url('../assets/BrownStd-Light.woff') format('woff');
+  src:  url('assets/BrownStd-Light.woff2') format('woff2'),
+        url('assets/BrownStd-Light.woff') format('woff');
 }
 body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
