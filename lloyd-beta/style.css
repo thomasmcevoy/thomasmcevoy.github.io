@@ -15,12 +15,12 @@ header {
   background-position: center center;
   cursor: pointer;
 }
-#bottega-veneta { background-image: url('../images/bottega-veneta.jpg'); }
-#estee-lauder { background-image: url('../images/estee-lauder.jpg'); }
-#adidas { background-image: url('../images/adidas.jpg'); }
-#justin-timberlake { background-image: url('../images/justin-timberlake.jpg'); }
-#y-3 { background-image: url('../images/y-3.jpg'); }
-#narciso-rodriguez { background-image: url('../images/narciso-rodriguez.jpg'); }
+#bottega-veneta { background-image: url('images/bottega-veneta.jpg');}
+#estee-lauder { background-image: url('images/estee-lauder.jpg');}
+#adidas { background-image: url('images/adidas.jpg');}
+#justin-timberlake { background-image: url('images/justin-timberlake.jpg');}
+#y-3 { background-image: url('images/y-3.jpg');}
+#narciso-rodriguez { background-image: url('images/narciso-rodriguez.jpg');}
 
 @media (max-width: 768px) {
   .arrowDown { display: none; }
