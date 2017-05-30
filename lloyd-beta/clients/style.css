@@ -13,7 +13,6 @@
   height: auto;
 }
 #clients img.desktop {
-  display: none;
   width: 50em;
   height: auto;
 }
@@ -27,6 +26,4 @@
     font-size: 1.75rem;
     letter-spacing: .06em;
   }
-  #clients img.mobile { display: none; }
-  #clients img.desktop { display: block; }
 }
