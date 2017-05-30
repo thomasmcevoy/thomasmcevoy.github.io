@@ -17,10 +17,6 @@ p {
 @media (max-width: 414px) {
   h1 { margin: 1em auto 1.5em; }
   h2 { margin: 2em auto 2.5em; }
-  #about p:first-of-type {
-    display: block;
-    width: 20em;
-  }
 }
 @media (min-width: 415px) {
   h1,
