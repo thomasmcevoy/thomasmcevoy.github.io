@@ -83,11 +83,15 @@ form legend {
 form {
   position: relative;
   padding-top: 1.25em;
-  width: 48%;
 }
 @media (max-width: 414px) {
   form {
-    padding: 1.25em .75em 0;
+    padding: 3em .75em;
+  }
+}
+@media (min-width: 415px) {
+  form {
+    width: 48%;
   }
 }
 form legend {
