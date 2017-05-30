@@ -3,6 +3,12 @@
   font-family: 'Brown Light', 'Avenir', sans-serif;
   font-size: 1.1875em;
 }
+@media (max-width: 414px) {
+  contact h1 {
+    margin: 0;
+    padding: 1em;
+  }
+}
 @media (min-width: 415px) {
   #contact {
     width: 90%;
