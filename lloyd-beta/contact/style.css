@@ -32,11 +32,11 @@
     float: left;
     margin-right: 3%;
   }
+  #contact-info {
+    border-bottom: solid 1px #555;
+  }
 }
 
-#contact-info {
-  border-bottom: solid 1px #555;
-}
 #contact-info span,
 form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
