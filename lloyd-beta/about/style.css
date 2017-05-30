@@ -11,15 +11,15 @@
   margin: 0 auto .75em;
   font-size: 1.1875em;
   line-height: 1.55;
-  width: 38.5em;
 }
-#about p span {
-  width: 28em;
-}
-@media (max-width: 414px) {
-  #about p,
+@media (min-width: 415px) {
+  #about p {
+    width: 38.5em;
+  }
   #opening p span {
-    width: auto;
+    display: block;
+    margin: auto;
+    width: 28em;
   }
 }
 
