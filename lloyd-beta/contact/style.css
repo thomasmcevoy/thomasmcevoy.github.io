@@ -3,6 +3,17 @@
   font-family: 'Brown Light', 'Avenir', sans-serif;
   font-size: 1.1875em;
 }
+#contact-info span,
+form legend {
+  font-family: 'Brown Regular', 'Avenir', sans-serif;
+  font-weight: 500;
+}
+#map {
+  filter: grayscale(100%);
+}
+#contact-info a:hover {
+  color: #777;
+}
 @media (max-width: 414px) {
   #contact {
     margin: 0 .75em;
@@ -11,6 +22,10 @@
   #contact h1 {
     margin: 0;
     padding: 1em;
+  }
+  #map {
+    width: 100%;
+    height: auto;
   }
 }
 @media (min-width: 415px) {
@@ -31,24 +46,15 @@
   #map {
     float: left;
     margin-right: 3%;
+    height: 15.25em;
+    width: auto;
   }
   #contact-info {
     border-bottom: solid 1px #555;
   }
 }
 
-#contact-info span,
-form legend {
-  font-family: 'Brown Regular', 'Avenir', sans-serif;
-  font-weight: 500;
-}
-#map {
-  height: 15.25em;
-  filter: grayscale(100%);
-}
-#contact-info a:hover {
-  color: #777;
-}
+
 
 .info-group {
   margin-bottom: 2em;
