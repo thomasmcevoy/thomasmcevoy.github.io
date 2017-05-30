@@ -136,6 +136,11 @@ header {
   right: 5%;
   line-height: 7rem;
 }
+@media (max-width: 768px) {
+  #site-nav {
+    line-height: 5.5rem;
+  }
+}
 #site-nav a {
   margin-left: 1.3em;
   font-size: 1.0625em;
@@ -143,11 +148,11 @@ header {
 #site-nav a.active {
   color: #aaa;
 }
-@media (max-width: 768px) {
+@media (max-width: 414px) {
   #site-nav {
     z-index: 1;
     position: fixed;
-    top: 5.5rem;
+    top: 4.5rem;
     left: 0;
     width: 100%;
     font: 2.5em 'Brown Regular', 'Avenir', sans-serif;
@@ -167,7 +172,6 @@ header {
   #site-nav a:last-child { margin-bottom: 30%; }
   #site-nav a.active { color: black; }
 }
-@media (max-width: 414px) { #site-nav {top: 4.5rem;}}
 @media (max-width: 375px) { #site-nav {top: 3.5rem;}}
 
 /*=================================== Main ===================================*/
