@@ -1,6 +1,9 @@
 #clients {
   background-color: #e6e6e6;
 }
+@media (max-width: 414px) {
+  #clients { background-color: #eaeaea; }
+}
 #clients h1 {
   margin: 0;
   padding: 1em;
