@@ -1,6 +1,10 @@
 #clients {
   background-color: #e6e6e6;
 }
+#clients h1 {
+  margin: 0;
+  padding: 1em;
+}
 #clients img.mobile {
   width: 100%;
   height: auto;
