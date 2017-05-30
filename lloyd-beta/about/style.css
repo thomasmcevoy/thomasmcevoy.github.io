@@ -4,12 +4,12 @@
 #about p {
   font-family: 'Brown Bold', 'Avenir', sans-serif;
   margin: 0 auto .75em;
-  font-size: 1.1875em;
   line-height: 1.55;
 }
 @media (max-width: 414px) {
-  #about p {
-    font-size: 1em;
+  h1,
+  h2 {
+    margin: 1em auto 1.5em;
   }
   #about p:first-of-type {
     display: block;
@@ -17,34 +17,34 @@
   }
 }
 @media (min-width: 415px) {
-  #about h1,
-  #about h2 {
+  h1,
+  h2 {
     margin: 4rem auto;
     font-size: 1.75rem;
     letter-spacing: .06em;
   }
-  #about p {
-    width: 38.5em;
+  #about p,
+  #the-people p,
+  #the-people h3 {
+    font-size: 1.1875em;
   }
+  #about p { width: 38.5em; }
+  #the-people p { width: 43em; }
   #about p span {
     display: block;
     margin: auto;
     width: 28em;
   }
+  #the-people h2 {
+    margin: 5rem auto;
+  }
 }
 
-
-#the-people h2 {
-  margin: 5rem auto;
-}
 #the-people h3 {
   margin: 1em auto;
-  font-size: 1.1875em;
 }
 #the-people p {
   margin: 0 auto 1.5rem;
-  width: 43em;
-  font-size: 1.1875em;
   line-height: 1.625;
 }
 #the-people p:nth-of-type(2) {
