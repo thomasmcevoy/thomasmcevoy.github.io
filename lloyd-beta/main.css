@@ -87,14 +87,14 @@ header {
 }
 @media (max-width: 768px) {
   #site-logo {
-    position: static;
-    margin: auto;
     width: 7.25em;
     line-height: 5.5;
   }
 }
 @media (max-width: 414px) {
   #site-logo {
+    position: static;
+    margin: auto;
     width: 6.875em;
     line-height: 4.5;
   }
