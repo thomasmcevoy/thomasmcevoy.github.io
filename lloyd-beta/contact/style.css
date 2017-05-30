@@ -54,11 +54,6 @@ form legend {
   margin-bottom: 2em;
   text-align: left;
 }
-@media (max-width: 414px) {
-  .info-group {
-    text-align: center;
-  }
-}
 .info-group.social {
   margin-bottom: 1.3em;
 }
@@ -72,9 +67,17 @@ form legend {
   vertical-align: top;
 }
 .info-group.social a {
-  display: block;
   margin-bottom: .33em;
 }
+@media (max-width: 414px) {
+  .info-group {
+    text-align: center;
+  }
+  .info-group.social a {
+    display: block;
+  }
+}
+
 
 form {
   position: relative;
