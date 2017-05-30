@@ -15,16 +15,17 @@ form legend {
   color: #777;
 }
 @media (max-width: 414px) {
-  #contact {
-    padding: 0 .75em;
-  }
   #contact h1 {
     margin: 0;
     padding: 1em;
   }
+  #contact-info,
+  form {
+    padding: 0 .75em;
+  }
   #map {
     width: 100%;
-    height: auto;
+    height: 13em;
   }
 }
 @media (min-width: 415px) {
