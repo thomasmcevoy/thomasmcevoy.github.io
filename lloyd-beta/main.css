@@ -129,11 +129,6 @@ header {
     line-height: 3.9;
   }
 }
-@media (min-width: 769px) {
-  #hamburger {
-    display: none;
-  }
-}
 
 /*================================ Site Nav ==================================*/
 #site-nav {
