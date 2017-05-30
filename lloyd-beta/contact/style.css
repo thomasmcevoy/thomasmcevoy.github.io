@@ -84,16 +84,6 @@ form {
   position: relative;
   padding-top: 1.25em;
 }
-@media (max-width: 414px) {
-  form {
-    padding: 3em .75em;
-  }
-}
-@media (min-width: 415px) {
-  form {
-    width: 48%;
-  }
-}
 form legend {
   margin: 0 0 .125em;
   padding: 0;
@@ -146,4 +136,17 @@ form button {
 }
 form button:hover {
   cursor: pointer;
+}
+@media (max-width: 414px) {
+  form {
+    padding: 3em .75em;
+  }
+  form textarea {
+    border: solid 1px #bfbfbf;
+  }
+}
+@media (min-width: 415px) {
+  form {
+    width: 48%;
+  }
 }
