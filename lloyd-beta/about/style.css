@@ -18,6 +18,14 @@ p {
   h1 { margin: 1em auto 1.5em; }
   h2 { margin: 2em auto 2.5em; }
 }
+@media (max-width: 375px) {
+  #about,
+  #the-people { font-size: 1.125em; }
+}
+@media (max-width: 325px) {
+  #about,
+  #the-people { font-size: 1.0625em; }
+}
 @media (min-width: 415px) {
   h1,
   h2 {
