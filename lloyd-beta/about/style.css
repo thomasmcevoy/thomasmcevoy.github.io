@@ -13,12 +13,12 @@
   line-height: 1.55;
   width: 38.5em;
 }
-#opening-line-one { width: 28em;}
-#opening-line-two { width: 29em;}
+#about p span {
+  width: 28em;
+}
 @media (max-width: 414px) {
   #about p,
-  #opening-line-one,
-  #opening-line-two {
+  #opening p span {
     width: auto;
   }
 }
