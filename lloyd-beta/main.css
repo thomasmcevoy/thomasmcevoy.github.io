@@ -210,9 +210,6 @@ footer a:hover {
   height: 2rem;
   margin: 0;
 }
-@media (min-width: 415px) {
-  footer #follow-us { display: none; }
-}
 #social-icons img {
   margin-left: .33rem;
   height: 100%;
@@ -221,7 +218,8 @@ footer a:hover {
 }
 @media (max-width: 414px) {
   footer {
-    margin: 2em auto;
+    margin: 0;
+    padding: 2em 0;
     height: auto;
     line-height: 1.5;
   }
@@ -233,4 +231,7 @@ footer a:hover {
     margin: 0 auto 3rem;
     height: 2.5rem;
   }
+}
+@media (min-width: 415px) {
+  footer #follow-us { display: none; }
 }
