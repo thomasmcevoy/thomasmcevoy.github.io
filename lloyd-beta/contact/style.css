@@ -73,11 +73,12 @@ form legend {
   .info-group {
     text-align: center;
   }
+}
+@media (min-width: 415px) {
   .info-group.social a {
     display: block;
   }
 }
-
 
 form {
   position: relative;
