@@ -197,7 +197,7 @@ footer {
   text-align: center;
 }
 footer span {
-  margin: .3em;
+  margin: .3em .3em 0;
   font-size: 1.0625em;
 }
 footer a:hover {
@@ -222,10 +222,10 @@ footer a:hover {
 @media (max-width: 414px) {
   footer {
     margin: 0;
-    padding: 2em 0;
+    padding: 5vw 0;
     height: auto;
     font-size: 4vw;
-    line-height: 1.5;
+    line-height: 1.7;
   }
   footer span:first-of-type {
     display: block;
