@@ -87,9 +87,7 @@ header {
   background-color: white;
 }
 @media (max-width: 768px) { header {height: 6rem;}}
-@media (max-width: 414px) { header {height: 5rem;}}
-@media (max-width: 375px) { header {height: 4rem;}}
-@media (max-width: 325px) { header {height: 3.5rem;}}
+@media (max-width: 600px) { header {height: 18vw;}}
 
 /*================================ Site Logo =================================*/
 #site-logo {
@@ -102,7 +100,7 @@ header {
 @media (max-width: 768px) {
   #site-logo {
     width: 7.25em;
-    line-height: 5.5;
+    line-height: 6;
   }
 }
 @media (max-width: 600px) {
@@ -110,12 +108,7 @@ header {
     position: static;
     margin: auto;
     width: 34vw;
-    line-height: 20vw;
-  }
-}
-@media (max-width: 414px) {
-  #site-logo {
-    line-height: 19vw;
+    line-height: 18vw;
   }
 }
 #site-logo img {
