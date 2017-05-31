@@ -48,10 +48,10 @@ a {
 }
 body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
-  font-size: 4vw;
+  font-size: 100%;
 }
-@media (min-width: 1200px) {
-  body { font-size: 1.1875em;}
+@media (max-width: 414px) {
+  body { font-size: 4.5vw;}
 }
 h1,
 h2,
