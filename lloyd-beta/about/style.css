@@ -21,9 +21,6 @@ p {
   h2 {
     margin-bottom: 1em;
   }
-  #about p:last-of-type {
-    margin-bottom: 0;
-  }
 }
 @media (max-width: 375px) {
   #about,
