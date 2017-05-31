@@ -1,9 +1,6 @@
 #clients {
   background-color: #e6e6e6;
 }
-@media (max-width: 414px) {
-  #clients { background-color: #eaeaea; }
-}
 #clients img.mobile {
   width: 100%;
   height: auto;
@@ -22,6 +19,7 @@
   }
 }
 @media (max-width: 960px) {
+  #clients { background-color: #eaeaea;}
   #clients img.desktop { display: none;}
 }
 @media (min-width: 961px) {
