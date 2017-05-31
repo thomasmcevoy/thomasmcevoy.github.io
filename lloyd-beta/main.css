@@ -48,7 +48,10 @@ a {
 }
 body {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
-  font-size: 100%;
+  font-size: 4vw;
+}
+@media (min-width: 1200px) {
+  body { font-size: 1.1875em;}
 }
 h1,
 h2,
@@ -208,6 +211,13 @@ main {
 main section {
   margin: auto;
   text-align: center;
+  font-size: 1em;
+}
+@media (min-width: 375px) {
+  main section { font-size: 1.125em; }
+}
+@media (min-width: 414px) {
+  main section { font-size: 1.1875em; }
 }
 
 /*================================== Footer ==================================*/
