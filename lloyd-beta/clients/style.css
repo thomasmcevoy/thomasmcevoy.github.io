@@ -21,3 +21,9 @@
     margin-bottom: 3rem;
   }
 }
+@media (max-width: 960px) {
+  #clients img.desktop { display: none;}
+}
+@media (min-width: 961px) {
+  #clients img.mobile { display: none;}
+}
