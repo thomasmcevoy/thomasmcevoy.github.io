@@ -65,14 +65,12 @@ form legend {
   margin-bottom: .33em;
 }
 @media (max-width: 414px) {
-  .info-group {
-    text-align: center;
-  }
+  .info-group { text-align: center;}
+  .info-group.social.desktop { display: none;}
 }
 @media (min-width: 415px) {
-  .info-group.social a {
-    display: block;
-  }
+  .info-group.social a { display: block;}
+  .info-group.social.mobile { display: none;}
 }
 
 form {
