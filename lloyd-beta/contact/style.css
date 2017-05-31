@@ -3,7 +3,8 @@
   font-size: 1.1875em;
 }
 #contact h1,
-#contact #contact-info {
+#contact #contact-info,
+#contact #map {
   background-color: #e6e6e6;
 }
 #contact-info span,
