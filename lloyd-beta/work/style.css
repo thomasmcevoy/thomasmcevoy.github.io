@@ -3,6 +3,9 @@ section.project-summary {
   padding: 4.5em 2em;
 }
 @media (max-width: 414px) {
+  h1 {
+    padding: 0;
+  }
   section.copy {
     padding: 2.5em .9em;
   }

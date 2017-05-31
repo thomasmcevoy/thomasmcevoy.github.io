@@ -69,7 +69,7 @@ h1,
 h2 {
   margin: 0;
   padding: 1em;
-  font-size: 1.375rem;
+  font-size: 5.5vw;
   letter-spacing: .09em;
 }
 @media (min-width: 415px) {
