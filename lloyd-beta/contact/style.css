@@ -76,6 +76,7 @@ form legend {
   margin-bottom: .33em;
 }
 .info-group.social.mobile {
+  margin: auto;
   max-width: 20em;
 }
 @media (max-width: 767px) {
