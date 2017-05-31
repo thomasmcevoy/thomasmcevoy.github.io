@@ -211,13 +211,6 @@ main {
 main section {
   margin: auto;
   text-align: center;
-  font-size: 1em;
-}
-@media (min-width: 375px) {
-  main section { font-size: 1.125em; }
-}
-@media (min-width: 414px) {
-  main section { font-size: 1.1875em; }
 }
 
 /*================================== Footer ==================================*/
