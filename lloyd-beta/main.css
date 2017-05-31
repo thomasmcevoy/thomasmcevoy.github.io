@@ -110,6 +110,11 @@ header {
     position: static;
     margin: auto;
     width: 34vw;
+    line-height: 20vw;
+  }
+}
+@media (max-width: 414px) {
+  #site-logo {
     line-height: 19vw;
   }
 }
