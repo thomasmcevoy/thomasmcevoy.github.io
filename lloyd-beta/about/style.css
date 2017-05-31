@@ -19,10 +19,18 @@ p {
   h2 { margin-bottom: 1em;}
 }
 @media (min-width: 415px) {
-  h1 { margin: 4rem auto; }
-  h2 { margin: 5rem auto; }
-  #about p { width: 38.5em; }
-  #the-people p { width: 43em; }
+  h1 { margin: 4rem auto;}
+  h2 { margin: 5rem auto;}
+  #about,
+  #the-people {
+    font-size: 1.1875em;
+  }
+  #about p {
+    width: 38.5em;
+  }
+  #the-people p {
+    width: 43em;
+  }
   #about p span {
     display: block;
     margin: auto;
