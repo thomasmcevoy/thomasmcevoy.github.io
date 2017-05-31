@@ -29,7 +29,7 @@ form legend {
     height: 13em;
   }
 }
-@media (min-width: 600) {
+@media (min-width: 600px) {
   #contact {
     width: 90%;
   }
