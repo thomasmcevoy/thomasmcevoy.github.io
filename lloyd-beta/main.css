@@ -51,7 +51,7 @@ body {
   font-size: 100%;
 }
 @media (max-width: 414px) {
-  body { font-size: 4.5vw;}
+  body { font-size: 5vw;}
 }
 h1,
 h2,
