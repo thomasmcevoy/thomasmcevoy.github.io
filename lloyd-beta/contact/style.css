@@ -126,8 +126,6 @@ form textarea:focus {
   outline: none;
 }
 form button {
-  position: absolute;
-  left: 0;
   border: solid 1px black;
   padding: 0 1em;
   font-family: futura;
@@ -146,6 +144,10 @@ form button:hover {
   }
   form textarea {
     border: solid 1px #bfbfbf;
+  }
+  form button {
+    position: absolute;
+    left: 0;
   }
 }
 @media (min-width: 415px) {
