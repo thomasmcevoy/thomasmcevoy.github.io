@@ -203,6 +203,9 @@ footer span {
 footer a:hover {
   color: #8a8a8a;
 }
+#follow-us {
+  margin-bottom: .25em;
+}
 #social-icons {
   position: absolute;
   right: 5%;
