@@ -163,7 +163,9 @@ form button:hover {
 }
 @media (min-width: 768px) {
   form {
-    width: 48%;
+    margin: auto;
+    padding-right: 26em;
+    max-width: 50em;
     background-color: #e6e6e6;
   }
   form button {
