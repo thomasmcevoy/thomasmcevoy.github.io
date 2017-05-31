@@ -145,13 +145,13 @@ form button:hover {
   form textarea {
     border: solid 1px #bfbfbf;
   }
-  form button {
-    position: absolute;
-    left: 0;
   }
-}
 @media (min-width: 415px) {
   form {
     width: 48%;
+  }
+  form button {
+    position: absolute;
+    left: 0;
   }
 }
