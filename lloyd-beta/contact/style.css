@@ -39,10 +39,11 @@ form legend {
 }
 @media (min-width: 700px) {
   #contact {
-    padding: 2em 2% 5.5em;
+    padding: 2em 4% 5.5em;
     background-color: #e6e6e6;
   }
   #contact .container {
+    padding-bottom: 0;
     border-bottom: solid 1px #555;
   }
   #map {
@@ -81,11 +82,11 @@ form legend {
   margin: auto;
   max-width: 20em;
 }
-@media (max-width: 767px) {
+@media (max-width: 699px) {
   .info-group { text-align: center;}
   .info-group.social.desktop { display: none;}
 }
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .info-group.social a { display: block;}
   .info-group.social.mobile { display: none;}
 }
