@@ -6,6 +6,11 @@ form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-weight: 500;
 }
+#contact .container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 #contact h1,
 #contact #contact-info,
 #contact #map {
@@ -36,13 +41,14 @@ form legend {
     vertical-align: top;
   }
   #map {
-    float: left;
     margin-right: 3%;
     height: 15.25em;
     width: auto;
+    float: left;
   }
   #contact-info {
     border-bottom: solid 1px #555;
+    float: right;
   }
 }
 
