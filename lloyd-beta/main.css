@@ -109,18 +109,8 @@ header {
   #site-logo {
     position: static;
     margin: auto;
-  }
-}
-@media (max-width: 414px) {
-  #site-logo {
-    width: 6.875em;
-    line-height: 4.5;
-  }
-}
-@media (max-width: 375px) {
-  #site-logo {
-    width: 6.5em;
-    line-height: 3.5;
+    width: 34vw;
+    line-height: 19vw;
   }
 }
 #site-logo img {
