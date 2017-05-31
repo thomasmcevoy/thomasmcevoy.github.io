@@ -68,7 +68,7 @@ footer {
 h1,
 h2 {
   margin: 0;
-  padding: 1em;
+  padding: 0;
   font-size: 5.5vw;
   letter-spacing: .09em;
 }
@@ -208,9 +208,12 @@ main {
 @media (max-width: 414px) { main {height: calc(100% - 4.5rem);}}
 @media (max-width: 375px) { main {height: calc(100% - 3.5rem);}}
 
-main section {
+section {
   margin: auto;
   text-align: center;
+}
+section h1 {
+  padding: 1em;
 }
 
 /*================================== Footer ==================================*/
