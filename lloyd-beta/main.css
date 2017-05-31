@@ -148,7 +148,7 @@ header {
 @media (max-width: 375px) {
   #hamburger {
     width: 1.25em;
-    line-height: 3.9;
+    line-height: 4;
   }
 }
 
@@ -174,7 +174,7 @@ header {
   #site-nav {
     z-index: 1;
     position: fixed;
-    top: 5.5rem;
+    top: 6rem;
     left: 0;
     width: 100%;
     font: 2.5em 'Brown Regular', 'Avenir', sans-serif;
@@ -194,8 +194,8 @@ header {
   #site-nav a:last-child { margin-bottom: 30%; }
   #site-nav a.active { color: black; }
 }
-@media (max-width: 414px) { #site-nav {top: 4.5rem;}}
-@media (max-width: 375px) { #site-nav {top: 3.5rem;}}
+@media (max-width: 414px) { #site-nav {top: 5rem;}}
+@media (max-width: 375px) { #site-nav {top: 4rem;}}
 
 /*=================================== Main ===================================*/
 main {
@@ -204,9 +204,9 @@ main {
   bottom: 0;
   overflow-x: scroll;
 }
-@media (max-width: 768px) { main {height: calc(100% - 5.5rem);}}
-@media (max-width: 414px) { main {height: calc(100% - 4.5rem);}}
-@media (max-width: 375px) { main {height: calc(100% - 3.5rem);}}
+@media (max-width: 768px) { main {height: calc(100% - 6rem);}}
+@media (max-width: 414px) { main {height: calc(100% - 5rem);}}
+@media (max-width: 375px) { main {height: calc(100% - 4rem);}}
 
 section {
   margin: auto;
