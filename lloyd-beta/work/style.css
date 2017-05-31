@@ -36,7 +36,8 @@ section.project-summary {
 }
 .column p {
   margin: 0;
-  width: 23em;
+  width: 35%;
+  max-width: 23em;
   font-size: 1.0625em;
   line-height: 1.3;
 }
