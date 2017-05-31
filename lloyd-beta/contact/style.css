@@ -141,11 +141,12 @@ form button:hover {
   form {
     padding: 3em 1em 3em .75em;
     background-color: white;
+    text-align: left;
   }
   form textarea {
     border: solid 1px #bfbfbf;
   }
-  }
+}
 @media (min-width: 415px) {
   form {
     width: 48%;
