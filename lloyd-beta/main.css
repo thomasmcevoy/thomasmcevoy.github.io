@@ -121,7 +121,7 @@ header {
   top: 0;
   right: 1.5em;
   width: 6.7vw;
-  line-height: 18vw;
+  line-height: 20vw;
 }
 @media (min-width: 601px) {
   #hamburger { display: none;}
