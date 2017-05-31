@@ -11,6 +11,9 @@ section.project-summary {
   }
 }
 
+.copy h1 {
+  padding: 0;
+}
 .copy p {
   margin: .2em auto;
   max-width: 52em;
