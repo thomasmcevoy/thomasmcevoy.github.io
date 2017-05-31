@@ -25,6 +25,8 @@ section.project-summary {
   vertical-align: top;
   padding: 1em;
   height: 100%;
+  width: 35%;
+  max-width: 23em;
 }
 .column:first-of-type {
   border-right: solid 1px black;
@@ -36,8 +38,6 @@ section.project-summary {
 }
 .column p {
   margin: 0;
-  width: 35%;
-  max-width: 23em;
   font-size: 1.0625em;
   line-height: 1.3;
 }
