@@ -3,6 +3,10 @@
   font-family: 'Brown Light', 'Avenir', sans-serif;
   font-size: 1.1875em;
 }
+#contact h1,
+#contact #contact-info {
+  background-color: #e6e6e6;
+}
 #contact-info span,
 form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
@@ -150,6 +154,7 @@ form button:hover {
 @media (min-width: 415px) {
   form {
     width: 48%;
+    background-color: #e6e6e6;
   }
   form button {
     position: absolute;
