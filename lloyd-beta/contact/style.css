@@ -29,9 +29,13 @@ form legend {
     height: 13em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 600) {
   #contact {
     width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  #contact {
     padding: 2em 13% 5.5em;
     background-color: #e6e6e6;
   }
