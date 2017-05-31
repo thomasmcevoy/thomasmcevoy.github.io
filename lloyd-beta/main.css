@@ -178,9 +178,7 @@ main {
   overflow-x: scroll;
 }
 @media (max-width: 768px) { main {height: calc(100% - 6rem);}}
-@media (max-width: 414px) { main {height: calc(100% - 5rem);}}
-@media (max-width: 375px) { main {height: calc(100% - 4rem);}}
-@media (max-width: 325px) { main {height: calc(100% - 3.5rem);}}
+@media (max-width: 600px) { main {height: calc(100% - 18vw);}}
 
 section {
   margin: auto;
