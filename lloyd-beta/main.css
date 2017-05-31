@@ -262,5 +262,7 @@ footer a:hover {
   }
 }
 @media (min-width: 415px) {
-  footer #follow-us { display: none; }
+  footer {
+    font-size: 1.1875rem;
+  }
 }
