@@ -28,6 +28,7 @@ form legend {
   #contact {
     width: 90%;
     padding: 2em 13% 5.5em;
+    background-color: #e6e6e6;
   }
   #map,
   #contact-info {
