@@ -4,10 +4,6 @@
 @media (max-width: 414px) {
   #clients { background-color: #eaeaea; }
 }
-#clients h1 {
-  margin: 0;
-  padding: 1em;
-}
 #clients img.mobile {
   width: 100%;
   height: auto;
@@ -23,7 +19,5 @@
   }
   #clients h1 {
     margin-bottom: 3rem;
-    font-size: 1.75rem;
-    letter-spacing: .06em;
   }
 }

@@ -19,10 +19,6 @@ form legend {
   color: #777;
 }
 @media (max-width: 414px) {
-  #contact h1 {
-    margin: 0;
-    padding: 1em;
-  }
   #map {
     width: 100%;
     height: 13em;
@@ -32,11 +28,6 @@ form legend {
   #contact {
     width: 90%;
     padding: 2em 13% 5.5em;
-  }
-  #contact h1 {
-    margin-bottom: 4rem;
-    font-size: 1.75rem;
-    letter-spacing: .06em;
   }
   #map,
   #contact-info {

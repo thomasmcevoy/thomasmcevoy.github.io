@@ -64,8 +64,18 @@ footer {
 }
 h1,
 h2 {
-  font-size: 1.5rem;
+  margin: 0;
+  padding: 1em;
+  font-size: 1.375rem;
   letter-spacing: .09em;
+}
+@media (min-width: 415px) {
+  h1,
+  h2 {
+    font-size: 1.75rem;
+    letter-spacing: .06em;
+    margin-bottom: 4rem;
+  }
 }
 
 /*================================== Header ==================================*/

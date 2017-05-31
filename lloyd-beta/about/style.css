@@ -27,11 +27,6 @@ p {
   #the-people { font-size: 1.0625em; }
 }
 @media (min-width: 415px) {
-  h1,
-  h2 {
-    font-size: 1.75rem;
-    letter-spacing: .06em;
-  }
   h1 { margin: 4rem auto; }
   h2 { margin: 5rem auto; }
   #about p { width: 38.5em; }
