@@ -131,11 +131,11 @@ header {
 #site-nav {
   position: absolute;
   right: 5%;
-  line-height: 7;
+  line-height: 7rem;
 }
 @media (max-width: 768px) {
   #site-nav {
-    line-height: 6;
+    line-height: 6rem;
   }
 }
 #site-nav a {
