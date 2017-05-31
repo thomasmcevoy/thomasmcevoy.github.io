@@ -20,7 +20,7 @@ p {
 }
 @media (min-width: 415px) {
   h1 { margin-bottom: 1em;}
-  h2 { margin-bottom: .75em;}
+  h2 { margin: 1em 0 1.25em;}
   #about,
   #the-people {
     font-size: 1.1875em;
