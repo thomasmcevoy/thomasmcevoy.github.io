@@ -37,7 +37,7 @@ form legend {
     padding-bottom: 1.5em;
   }
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   #contact {
     padding: 2em 4% 5.5em;
     background-color: #e6e6e6;
@@ -85,11 +85,11 @@ form legend {
   margin: auto;
   max-width: 20em;
 }
-@media (max-width: 699px) {
+@media (max-width: 767px) {
   .info-group { text-align: center;}
   .info-group.social.desktop { display: none;}
 }
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .info-group.social a { display: block;}
   .info-group.social.mobile { display: none;}
 }
