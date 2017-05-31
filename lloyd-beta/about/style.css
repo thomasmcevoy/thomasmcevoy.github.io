@@ -31,6 +31,8 @@ p {
   #the-people {
     max-width: 43em;
   }
+}
+@media (min-width: 560px) {
   #about p span {
     display: block;
     margin: auto;
