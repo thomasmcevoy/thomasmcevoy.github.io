@@ -120,25 +120,11 @@ header {
   position: absolute;
   top: 0;
   right: 1.5em;
-  width: 1.625em;
-  line-height: 6;
+  width: 6.7vw;
+  line-height: 18vw;
 }
 @media (min-width: 601px) {
-  #hamburger {
-    display: none;
-  }
-}
-@media (max-width: 414px) {
-  #hamburger {
-    width: 1.375em;
-    line-height: 5;
-  }
-}
-@media (max-width: 375px) {
-  #hamburger {
-    width: 1.25em;
-    line-height: 4;
-  }
+  #hamburger { display: none;}
 }
 
 /*================================ Site Nav ==================================*/
