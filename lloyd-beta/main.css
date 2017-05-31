@@ -163,7 +163,7 @@ header {
   #site-nav {
     z-index: 1;
     position: fixed;
-    top: 6rem;
+    top: 18vw;
     left: 0;
     width: 100%;
     font: 2.5em 'Brown Regular', 'Avenir', sans-serif;
@@ -183,9 +183,6 @@ header {
   #site-nav a:last-child { margin-bottom: 30%; }
   #site-nav a.active { color: black; }
 }
-@media (max-width: 414px) { #site-nav {top: 5rem;}}
-@media (max-width: 375px) { #site-nav {top: 4rem;}}
-@media (max-width: 325px) { #site-nav {top: 3.5rem;}}
 
 /*=================================== Main ===================================*/
 main {
