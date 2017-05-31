@@ -23,14 +23,18 @@ form legend {
 }
 @media (max-width: 767px) {
   #map {
-    margin-bottom: 1em;
+    margin: 0 auto 1em;
     width: 100%;
+    max-width: 20em;
     height: 13em;
   }
 }
 @media (min-width: 600px) {
   #contact {
     width: 90%;
+  }
+  #contact .container {
+    padding-bottom: 1.5em;
   }
 }
 @media (min-width: 768px) {
