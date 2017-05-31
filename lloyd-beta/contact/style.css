@@ -6,15 +6,13 @@ form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-weight: 500;
 }
+#contact .container {
+  background-color: #e6e6e6;
+}
 #contact .container:after {
   content: '';
   display: block;
   clear: both;
-}
-#contact h1,
-#contact #contact-info,
-#contact #map {
-  background-color: #e6e6e6;
 }
 #map {
   filter: grayscale(100%);
