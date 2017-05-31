@@ -56,6 +56,7 @@ section.project-summary {
     position: relative;
     display: block;
     height: auto;
+    width: auto;
     padding: 1.25em 1.75em;
     font-size: 1rem;
     text-align: center !important;
@@ -71,9 +72,6 @@ section.project-summary {
     left: 32%;
     height: 1.5px;
     width: 36%;
-  }
-  .column p {
-    width: auto;
   }
   .press-awards {
     padding: 0;
