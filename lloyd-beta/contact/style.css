@@ -22,14 +22,14 @@ form legend {
 #contact-info a:hover {
   color: #777;
 }
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   #map {
     margin-bottom: 1em;
     width: 100%;
     height: 13em;
   }
 }
-@media (min-width: 415px) {
+@media (min-width: 601px) {
   #contact {
     width: 90%;
     padding: 2em 13% 5.5em;
@@ -71,11 +71,11 @@ form legend {
 .info-group.social a {
   margin-bottom: .33em;
 }
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   .info-group { text-align: center;}
   .info-group.social.desktop { display: none;}
 }
-@media (min-width: 415px) {
+@media (min-width: 601px) {
   .info-group.social a { display: block;}
   .info-group.social.mobile { display: none;}
 }
@@ -137,7 +137,7 @@ form button {
 form button:hover {
   cursor: pointer;
 }
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   form {
     padding: 2em .75em;
     background-color: white;
@@ -147,7 +147,7 @@ form button:hover {
     border: solid 1px #bfbfbf;
   }
 }
-@media (min-width: 415px) {
+@media (min-width: 601px) {
   form {
     width: 48%;
     background-color: #e6e6e6;
