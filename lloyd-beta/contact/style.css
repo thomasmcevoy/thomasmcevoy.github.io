@@ -6,6 +6,7 @@ form legend {
   font-family: 'Brown Regular', 'Avenir', sans-serif;
   font-weight: 500;
 }
+#contact h1,
 #contact .container {
   background-color: #e6e6e6;
 }
