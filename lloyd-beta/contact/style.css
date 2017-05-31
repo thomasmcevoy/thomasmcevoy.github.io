@@ -55,11 +55,11 @@ form legend {
 }
 
 .info-group {
-  margin-bottom: 2em;
+  padding-bottom: 2em;
   text-align: left;
 }
 .info-group.social {
-  margin-bottom: 1.3em;
+  padding-bottom: 1.3em;
 }
 .info-group h3,
 .info-group div {
