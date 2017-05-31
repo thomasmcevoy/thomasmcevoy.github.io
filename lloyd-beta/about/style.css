@@ -25,11 +25,11 @@ p {
   #the-people {
     font-size: 1.1875em;
   }
-  #about p {
-    width: 38.5em;
+  #about {
+    max-width: 38.5em;
   }
-  #the-people p {
-    width: 43em;
+  #the-people {
+    max-width: 43em;
   }
   #about p span {
     display: block;
