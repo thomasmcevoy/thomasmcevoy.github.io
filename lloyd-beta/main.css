@@ -219,7 +219,7 @@ footer a:hover {
   width: auto;
   vertical-align: top;
 }
-@media (max-width: 414px) {
+@media (max-width: 768px) {
   footer {
     margin: 0;
     padding: 6vw 0;
@@ -240,4 +240,7 @@ footer a:hover {
   footer {
     font-size: 1.1875rem;
   }
+}
+@media (min-width: 769px) {
+  #follow-us { display: none;}
 }
