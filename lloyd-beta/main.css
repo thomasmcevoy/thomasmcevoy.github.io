@@ -108,7 +108,7 @@ header {
     position: static;
     margin: auto;
     width: 34vw;
-    line-height: 18vw;
+    line-height: 19vw;
   }
 }
 #site-logo img {
@@ -120,8 +120,8 @@ header {
   position: absolute;
   top: 0;
   right: 1.5em;
-  width: 6.7vw;
-  line-height: 20vw;
+  width: 6.5vw;
+  line-height: 20.5vw;
 }
 @media (min-width: 601px) {
   #hamburger { display: none;}
