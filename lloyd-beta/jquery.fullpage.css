@@ -72,9 +72,9 @@ html.fp-enabled,
     position:fixed;
     left: 50%;
     bottom: 30px;
-    width: 68px;
-    height: 35px;
-    margin-left: -38px;
+    width: 44px;
+    height: 22px;
+    margin-left: -22px;
     cursor: pointer;
 }
 @media (max-width: 768px) {
