@@ -25,6 +25,10 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.title-card p {
+  width: 20em;
+  font: 2em/1.25 'Brown Regular', 'Avenir', sans-serif;
+}
 .title-card h2,
 .title-card h3 {
   padding: 0;
