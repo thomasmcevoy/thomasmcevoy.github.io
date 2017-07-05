@@ -77,6 +77,9 @@ html.fp-enabled,
     margin-left: -38px;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+  .arrowDown { display: none; }
+}
 .fp-controlArrow.fp-prev {
     left: 15px;
     width: 0;
