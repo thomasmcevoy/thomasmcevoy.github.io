@@ -31,8 +31,8 @@ header {
   text-align: center;
   font-family: 'Brown Light', 'Avenir', sans-serif;
 }
-.title-card h2 { font-size: 2.25em;}
-.title-card h3 { font-size: .75em;}
+.title-card h2 { font-size: 2.375em;}
+.title-card h3 { font-size: .875em;}
 #bottega-veneta    { background-image: url('images/bottega-veneta.jpg');}
 #estee-lauder      { background-image: url('images/estee-lauder.jpg');}
 #adidas            { background-image: url('images/adidas.jpg');}
