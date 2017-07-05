@@ -1,11 +1,6 @@
 #contact {
   font-family: 'Brown Light', 'Avenir', sans-serif;
 }
-#contact-info span,
-form legend {
-  font-family: 'Brown Regular', 'Avenir', sans-serif;
-  font-weight: 500;
-}
 #contact h1,
 #contact .container {
   background-color: #e6e6e6;
@@ -15,11 +10,18 @@ form legend {
   display: block;
   clear: both;
 }
-#map {
-  filter: grayscale(100%);
+
+#contact-info span,
+form legend {
+  font-family: 'Brown Regular', 'Avenir', sans-serif;
+  font-weight: 500;
 }
 #contact-info a:hover {
   color: #777;
+}
+
+#map {
+  filter: grayscale(100%);
 }
 @media (max-width: 767px) {
   #map {
