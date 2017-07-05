@@ -11,11 +11,9 @@ section.project-summary {
   }
 }
 
-.copy h1 {
-  padding: 0;
-}
+.copy h1,
 .copy h2 {
-  padding-top: 0;
+  padding: 0;
 }
 .copy p {
   margin: .2em auto;
