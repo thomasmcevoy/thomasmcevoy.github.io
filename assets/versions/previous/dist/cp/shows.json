@@ -1,0 +1,82 @@
+{
+  "month": "1",
+  "shows": [
+    {
+      "day": 1,
+      "time": "6:30–9:30 pm",
+      "venue": "Robert",
+      "website": "//robertnyc.com",
+      "band": "Solo Piano"
+    },
+    {
+      "day": 3,
+      "time": "9–11 pm",
+      "venue": "Sleep No More",
+      "band": "Manderley House Band"
+    },
+    {
+      "day": 5,
+      "time": "8:30pm–12am",
+      "venue": "Rue B",
+      "band": "Paul Sikivie Trio"
+    },
+    {
+      "day": 6,
+      "time": "6–9pm",
+      "venue": "National Arts Club",
+      "band": "Alex Nguyen Quartet"
+    },
+    {
+      "day": 8,
+      "time": "8–11 pm",
+      "venue": "Robert",
+      "website": "//robertnyc.com",
+      "band": "Duo with Paul Sikivie"
+    },
+    {
+      "day": 11,
+      "time": "9–11 pm",
+      "venue": "Sleep No More",
+      "band": "Manderley House Band"
+    },
+    {
+      "day": 13,
+      "time": "5:30–9pm",
+      "venue": "Rainbow Room",
+      "band": "Dandy Wellington"
+    },
+    {
+      "day": 15,
+      "time": "6:30–9:30 pm",
+      "venue": "Robert",
+      "website": "//robertnyc.com",
+      "band": "Duo with Marco Panascia"
+    },
+    {
+      "day": 17,
+      "time": "9–11 pm",
+      "venue": "Sleep No More",
+      "band": "Manderley House Band"
+    },
+    {
+      "day": 22,
+      "time": "8–11 pm",
+      "venue": "Robert",
+      "website": "//robertnyc.com",
+      "band": "Solo Piano"
+    },
+    {
+      "day": 26,
+      "time": "9–11 pm",
+      "venue": "Sleep No More",
+      "band": "Manderley House Band"
+    },
+    {
+      "day": 28,
+      "time": "6:30–9:30 pm",
+      "venue": "Robert",
+      "website": "//robertnyc.com",
+      "band": "Duo with Karen Marie"
+    }
+  ]
+}

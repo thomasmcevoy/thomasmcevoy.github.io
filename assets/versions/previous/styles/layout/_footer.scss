@@ -1,0 +1,11 @@
+footer {
+  background: black;
+                              padding: 1.75em;
+  @media (min-width: 500px) { padding: 2.25em; }
+  color: darken($gray-light, 7%);
+  letter-spacing: .25em;
+  text-align: center;
+  font: .5em $book;
+  @media (min-width: 500px) { font-size: .625em; }
+  font-weight: 100;
+}

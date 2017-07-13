@@ -1,0 +1,38 @@
+// colors
+$purple:    rgb(34, 38, 50);
+$gray-dark: #414042;
+
+
+
+// fonts
+@font-face {
+  font-family: 'futura-reg';
+  src: url('fonts/futura-reg.woff') format('woff'),
+  url('fonts/futura-reg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futura-book';
+  src: url('fonts/futura-book.woff') format('woff'),
+  url('fonts/futura-book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futura-bold';
+  src: url('./fonts/futura-bold.woff') format('woff'),
+       url('./fonts/futura-bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futura-light';
+  src: url('fonts/futura-light.woff') format('woff'),
+  url('fonts/futura-light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'futura-heavy';
+  src: url('fonts/futurastd-heavy.woff') format('woff'),
+  url('fonts/futurastd-heavy.ttf') format('truetype');
+}
+
+$sans:  futura, 'futura-reg', arial, sans-serif;
+$book:  'futura-book',  $sans;
+$light: 'futura-light', $sans;
+$bold:  'futura-bold',  $sans;
+$heavy: 'futura-heavy', $sans;

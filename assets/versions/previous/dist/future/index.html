@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thomas McEvoy</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0 auto;
+      background: #fff;
+      text-align: center;
+      font: 100% 'Futura', 'Futura Standard', 'Trebuchet MS', sans-serif;
+    }
+    header { padding: 1.625em 0 1em; }
+    h1 {
+      margin: 0;
+      color: #222;
+      font-weight: 400;
+      font-size: 1.625em;
+      letter-spacing: .125em;
+    }
+    nav {
+      margin: 0 0 .5em;
+      font-weight: 100;
+      font-size: .625em;
+      letter-spacing: .125em;
+    }
+    a { text-decoration: none; }
+    nav > a {
+      display: inline-block;
+      margin: .375em 1.5em;
+      padding: .25em 0;
+      border-bottom: .15em solid #fff;
+      color: #222;
+    }
+    nav > a:first-child { margin-left: 0; }
+    nav > a:last-child { margin-right: 0; }
+    .hero { padding: 0; }
+    img { max-width: 100%; }
+    section { padding: 3.6875em 0; }
+    h2 {
+      font-weight: 100;
+      font-size: .4375em;
+      letter-spacing: .6875em;
+      margin: 0 0 6em;
+    }
+    .about > h2 { color: #bf9600; }
+    @media (min-width: 450px) {
+      h1 { font-size: 2.25em; }
+      nav {
+        font-size: .6875em;
+        margin-top: .5em;
+      }
+      nav > a {
+        margin-left: 2.375em;
+        margin-right: 2.375em;
+      }
+    }
+    @media (min-width: 750px) {
+      header {
+        padding-top: 2.125em;
+        padding-bottom: 1.625em;
+      }
+      section { padding: 4.625em 0; }
+      h2 {
+        font-size: .5625em;
+        margin-bottom: 8em;
+      }
+    }
+    @media (min-width: 880px) {
+      header {
+        padding-top: 3.125em;
+        padding-bottom: 2.625em;
+      }
+      img { max-width: 94%; }
+      section { padding: 7em 0; }
+      h2 {
+        font-size: .75em;
+        margin-bottom: 8.75em;
+      }
+    }
+    @media (min-width: 94em) {
+      img { max-width: 94em; }
+    }
+  </style>
+  <script>
+    function loadCSS( href, before, media, callback ){
+    	"use strict";
+    	var ss = window.document.createElement( "link" );
+    	var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+    	var sheets = window.document.styleSheets;
+    	ss.rel = "stylesheet";
+    	ss.href = href;
+    	ss.media = "only x";
+    	if( callback ) {
+    		ss.onload = callback;
+    	}
+
+    	ref.parentNode.insertBefore( ss, ref );
+    	ss.onloadcssdefined = function( cb ){
+    		var defined;
+    		for( var i = 0; i < sheets.length; i++ ){
+    			if( sheets[ i ].href && sheets[ i ].href === ss.href ){
+    				defined = true;
+    			}
+    		}
+    		if( defined ){
+    			cb();
+    		} else {
+    			setTimeout(function() {
+    				ss.onloadcssdefined( cb );
+    			});
+    		}
+    	};
+    	ss.onloadcssdefined(function() {
+    		ss.media = media || "all";
+    	});
+    	return ss;
+    }
+
+    loadCSS("bundle.css");
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="bundle.css">
+  </noscript>
+  <script src="./scripts/lib/modernizr.custom.new.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>THOMAS MCEVOY</h1>
+    <nav role=navigation>
+      <a href="#about">ABOUT</a>
+      <a href="#music">MUSIC</a>
+      <a href="#shows">SHOWS</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="hero">
+      <img src="images/thomas-l.min.jpg"
+           srcset="images/thomas-portrait-s.min.jpg 320w,
+                   images/thomas-portrait-m.min.jpg 640w,
+                   images/thomas-m.min.jpg 960w,
+                   images/thomas-l.min.jpg 1920w,
+                   images/thomas-xl.min.jpg 5237w">
+    </section>
+
+    <section class="about" id="about">
+      <h2>ABOUT</h2>
+      <p class="lead">Thomas McEvoy is a New York based pianist with a passion for jazz music.</p>
+      <p>Thomas began playing piano by ear at the age of four, and graduated from <a href="http://juilliard.edu">Juilliard</a> in 2009, where he studied with <a href="http://kennybarron.com">Kenny Barron</a>. He has performed at major jazz venues such as <a href="http://jazz.org/dizzys">Dizzy's Club</a>, <a href="http://smallsjazzclub.com">Smalls</a>, and <a href="http://birdlandjazz.com">Birdland</a>. His accolades include first place in the Phillips Jazz Piano Competition, and the invitation to attend <a href="http://kennedy-center.org/programs/jazz/jazzahead/">Betty Carter's Jazz Ahead</a> composers' residency. He has been fortunate to share the stage with many notable artists, including <a href="http://bennygolson.com">Benny Golson</a>, <a href="http://christianmcbride.com">Christian McBride</a>, <a href="http://steveturre.com">Steve Turre</a>, <a href="http://benwolfe.com">Ben Wolfe</a>, <a href="http://grantstewartjazz.com">Grant Stewart</a>, <a href="http://fukushitainaka.com">Fukushi Tainaka</a>, and Delbert Felix. Thomas maintains a busy performance schedule and is in demand as a leader and a sideman.</p>
+      <p class="expandable">Thomas is invested in cultivating the next generation of musicians and music appreciators. He has taught students around the world, having conducted masterclasses and private lessons in Costa Rica, Colombia, and El Salvador. He has also served as guest clinician at <a href="http://snow.edu">Snow College</a> in Ephraim, UT, and guest lecturer at The Juilliard School. Thomas is presently on faculty at <a href="//churchstreetschool.org">Church Street School for Music and Art</a>, a great community arts school in Tribeca.</p>
+    </section>
+
+    <section class="music" id="music">
+      <h2>MUSIC</h2>
+      <div class="player" id="player">
+        <div class="playlist" id="playlist">
+          <div class="album">
+            <h3>STANDARDS</h3>
+            <a class="song" href="sounds/If I Love Again.mp3">IF I LOVE AGAIN</a>
+            <a class="song" href="sounds/It Never Entered My Mind.mp3">IT NEVER ENTERED MY MIND</a>
+            <a class="song" href="sounds/All the Things You Are.mp3">ALL THE THINGS YOU ARE</a>
+          </div>
+          <div class="album">
+            <h3>COMPOSITIONS</h3>
+            <a class="song" href="sounds/Mandjet.mp3">MANDJET</a>
+            <a class="song" href="sounds/Black Hat.mp3">BLACK HAT, BLACK GLOVES</a>
+            <a class="song" href="sounds/April Fool.mp3">APRIL FOOL</a>
+          </div>
+        </div>
+        <div class="controls" id="controls">
+          <div id="previous" class="controls__button controls__button--small"><svg role="img" title="previous"><use xlink:href="images/spritemap.svg#prev"></svg></div>
+          <div id="play" class="controls__button controls__button--large"><svg role="img" title="play"><use xlink:href="images/spritemap.svg#play"></svg></div>
+          <div id="pause" class="controls__button controls__button--large inactive"><svg role="img" title="pause"><use xlink:href="images/spritemap.svg#pause"></svg></div>
+          <div id="next" class="controls__button controls__button--small"><svg role="img" title="next"><use xlink:href="images/spritemap.svg#next"></svg></div>
+        </div>
+        <div class="progress">
+          <div class="current-time" id="currentTime"></div>
+          <div class="progress-bar"><div class="seek-bar" id="seekBar"></div></div>
+          <div class="duration" id="duration"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shows" id="shows">
+      <h2>SHOWS</h2>
+      <div class="calendar expandable">
+        <h4>May 2015</h4>
+        <ol>
+          <li class="show">
+            <div class="day">2</div>
+            <div class="details">
+              <a class="venue" href="http://themidnightfrolic.blogspot.com/">ZIEGFELD'S MIDNIGHT FROLIC</a>
+              <div>ALPHONSO HORNE QUARTET</div>
+              <div>8–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">3</div>
+            <div class="details">
+              <a class="venue" href="http://theiridium.com">IRIDIUM</a>
+              <div>ALEX NGUYEN QUINTET</div>
+              <div>10–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">4</div>
+            <div class="details">
+              <a class="venue" href="http://sleepnomorenyc.com">SLEEP NO MORE</a>
+              <div>MANDERLEY HOUSE BAND</div>
+              <div>9–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">6</div>
+            <div class="details">
+              <a class="venue" href="http://sleepnomorenyc.com">SLEEP NO MORE</a>
+              <div>THE HEATH BAND</div>
+              <div>6–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">10</div>
+            <div class="details">
+              <a class="venue" href="http://robertnyc.com">ROBERT</a>
+              <div>DUO W/MARCO PANASCIA</div>
+              <div>6:30–9:30 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">11</div>
+            <div class="details">
+              <a class="venue" href="http://robertnyc.com">WAYFARER</a>
+              <div>JULIA HALTIGAN BAND</div>
+              <div>8-11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">12</div>
+            <div class="details">
+              <a class="venue" href="http://sleepnomorenyc.com">SLEEP NO MORE</a>
+              <div>MANDERLEY HOUSE BAND</div>
+              <div>9–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">17</div>
+            <div class="details">
+              <a class="venue" href="http://robertnyc.com">ROBERT</a>
+              <div>DUO W/MIKE CARN</div>
+              <div>12–3 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">20</div>
+            <div class="details">
+              <a class="venue" href="http://sleepnomorenyc.com">SLEEP NO MORE</a>
+              <div>MANDERLEY HOUSE BAND</div>
+              <div>9–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">24</div>
+            <div class="details">
+              <a class="venue" href="http://robertnyc.com">ROBERT</a>
+              <div>SOLO PIANO</div>
+              <div>6:30–9:30 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">25</div>
+            <div class="details">
+              <a class="venue" href="http://sleepnomorenyc.com">SLEEP NO MORE</a>
+              <div>MANDERLEY HOUSE BAND</div>
+              <div>9–11 PM</div>
+            </div>
+          </li><li class="show">
+            <div class="day">31</div>
+            <div class="details">
+              <a class="venue" href="http://robertnyc.com">ROBERT</a>
+              <div>DUO W/NEAL MINER</div>
+              <div>6:30–9:30 PM</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT</h2>
+      <h3>GOT QUESTIONS / COMMENTS?</h3>
+      <h3>INQUIRE BELOW</h3>
+      <form id="form">
+        <input type="text" name="name" id="name" placeholder="NAME">
+        <input type="email" name="email" id="email" placeholder="EMAIL">
+        <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
+        <button name="submit">SEND</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a class="social__icon" href="http://facebook.com/tommcevoy"><svg role="img" title="Facebook"><use xlink:href="images/spritemap.svg#facebook"></svg><span class="text-fallback">FACEBOOK</span></a>
+      <a class="social__icon" href="http://twitter.com/tom_mcevoy"><svg role="img" title="Twitter"><use xlink:href="images/spritemap.svg#twitter"></svg><span class="text-fallback">TWITTER</span></a>
+      <a class="social__icon" href="http://instagram.com/thomas_mcevoy"><svg role="img" title="Instagram"><use xlink:href="images/spritemap.svg#instagram"></svg><span class="text-fallback">INSTAGRAM</span></a>
+      <a class="social__icon" href="http://linkedin.com/in/tommcevoymusic"><svg role="img" title="LinkedIn"><use xlink:href="images/spritemap.svg#linkedin"></svg><span class="text-fallback">LINKEDIN</span></a>
+    </div>
+    <small>ALL CONTENT © 2015 THOMAS MCEVOY</small>
+  </footer>
+
+  <script src="bundle.js"></script>
+</body>
+</html>

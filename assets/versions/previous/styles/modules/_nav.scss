@@ -1,0 +1,31 @@
+nav {
+  @media (max-width: 499px) { position: relative; top: -9em; }
+  display: inline-block;
+  width: 100%;
+  max-width: 435px;
+  font-family: $sans;
+  letter-spacing: .125em;
+                              margin: 0       0 .5em;   font-size: .625em;
+  @media (min-width: 500px) { margin: 1.125em 0 .25em;  font-size: .6875em; }
+
+  ol {
+    @extend %clearfix;
+    display: flex;
+    height: 100%;
+
+    li {
+      margin: auto;
+      height: 100%;
+
+      a {
+        color: $gray-dark;
+        line-height: 1.75;
+        border-bottom: 2px solid white;
+        transition: .1s ease-in-out;
+
+        .no-touch &:hover,
+                  &:active { border-color: $gray-dark; }
+      }
+    }
+  }
+}

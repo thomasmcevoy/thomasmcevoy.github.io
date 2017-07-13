@@ -1,0 +1,25 @@
+#about {
+                              padding-bottom: 1.25em;
+  @media (min-width: 750px) { padding-bottom: 3em;    }
+  @media (min-width: 880px) { padding-bottom: 5.25em; }
+  text-align: center; //to center the button;
+
+  h2 { color: $orange; }
+
+  p {
+    letter-spacing: .025em;
+    text-align: left;
+                                 max-width: 25rem;                      line-height: 1.5;
+    @media (min-width: 750px) {  max-width: 32rem; font-size: 1.25em;                         }
+    @media (min-width: 880px) {  max-width: 37rem; font-size: 1.3125em; line-height: 1.675em; }
+    @media (min-width: 1500px) { max-width: 40rem;                                            }
+
+    &.lead {
+      font-family: $sans;
+      line-height: 1.375;
+                                  font-size: 1.4375em;
+      @media (min-width: 750px) { font-size: 2em;      }
+      @media (min-width: 880px) { font-size: 2.375em;  }
+    }
+  }
+}

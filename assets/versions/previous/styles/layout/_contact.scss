@@ -1,0 +1,17 @@
+#contact {
+  background: $gray-xlight;
+  text-align: center; //to center the button
+
+  h2 {
+    @media (max-width: 799px) { padding-top: 1em; }
+    color: darken($gray-med, 10%);
+  }
+
+  h3 {
+    color: $orange-light;
+    margin: .5em;
+    text-align: center;
+    font: 1em $sans;
+    @media (min-width: 880px) { font-size: 1.3em; }
+  }
+}
