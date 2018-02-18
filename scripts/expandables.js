@@ -2,7 +2,7 @@ export function initExpandables() {
   if (!window.matchMedia) return
 
   if (window.matchMedia('(min-width: 750px)').matches) {
-    document.querySelector('#about')
+    document.getElementById('about')
       .querySelector('.expandable')
       .classList.remove('expandable')
   }

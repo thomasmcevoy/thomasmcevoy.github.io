@@ -1,3 +1,12 @@
+//
+// To do:
+//
+// - Fix bug where changing track when paused, then pressing play button
+//   does not produce the desired result.
+//
+// - Refactor?
+// 
+
 let _playlist = []
 let _currentTrack = 0
 let _isPlaying = false
@@ -7,15 +16,15 @@ let _duration = 0
 
 const html = document.getElementsByTagName('html')[0]
 const audio = document.createElement('audio')
-const playlist = document.querySelector('#playlist')
+const playlist = document.getElementById('playlist')
 const songs = document.querySelectorAll('.song')
-const playButton = document.querySelector('#play')
-const pauseButton = document.querySelector('#pause')
-const nextButton = document.querySelector('#next')
-const previousButton = document.querySelector('#previous')
-const seekBar = document.querySelector('#seekBar')
-const durationElement = document.querySelector('#duration')
-const currentTimeElement = document.querySelector('#currentTime')
+const playButton = document.getElementById('play')
+const pauseButton = document.getElementById('pause')
+const nextButton = document.getElementById('next')
+const previousButton = document.getElementById('previous')
+const seekBar = document.getElementById('seekBar')
+const durationElement = document.getElementById('duration')
+const currentTimeElement = document.getElementById('currentTime')
 
 const formatTime = seconds => {
   const m = Math.floor( seconds / 60 )

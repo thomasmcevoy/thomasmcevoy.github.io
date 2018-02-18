@@ -69,10 +69,10 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__expandables__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scroll__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__player__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__expandables__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__scroll__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__player__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modal__ = __webpack_require__(4);
 
 
 
@@ -91,6 +91,73 @@ Object(__WEBPACK_IMPORTED_MODULE_3__modal__["a" /* initModal */])()
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = initExpandables;
+function initExpandables() {
+  if (!window.matchMedia) return
+
+  if (window.matchMedia('(min-width: 750px)').matches) {
+    document.getElementById('about')
+      .querySelector('.expandable')
+      .classList.remove('expandable')
+  }
+
+  const expandables = document.querySelectorAll('.expandable')
+  expandables.forEach((el, _) => {
+    const button = document.createElement('button')
+    button.innerHTML = 'SHOW MORE'
+    button.addEventListener('click', toggleExpand)
+    el.parentNode.appendChild(button)
+    el.classList.add('is-collapsed')
+  })
+}
+
+function toggleExpand(e) {
+  const button = e.target
+  const el = button.previousElementSibling
+
+  el.classList.toggle('is-expanded')
+  el.classList.toggle('is-collapsed')
+
+  if (button.innerHTML === 'SHOW MORE') button.innerHTML = 'SHOW LESS'
+  else button.innerHTML = 'SHOW MORE'
+}
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const initScroll = () => {
+  document.querySelectorAll('.nav-link').forEach((navLink, i) => {
+    const scrollTarget = document.querySelector(navLink.getAttribute('href'))
+    navLink.addEventListener('click', e => {
+      e.preventDefault()
+      scrollTarget.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  })
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = initScroll;
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+//
+// To do:
+//
+// - Fix bug where changing track when paused, then pressing play button
+//   does not produce the desired result.
+//
+// - Refactor?
+// 
+
 let _playlist = []
 let _currentTrack = 0
 let _isPlaying = false
@@ -100,15 +167,15 @@ let _duration = 0
 
 const html = document.getElementsByTagName('html')[0]
 const audio = document.createElement('audio')
-const playlist = document.querySelector('#playlist')
+const playlist = document.getElementById('playlist')
 const songs = document.querySelectorAll('.song')
-const playButton = document.querySelector('#play')
-const pauseButton = document.querySelector('#pause')
-const nextButton = document.querySelector('#next')
-const previousButton = document.querySelector('#previous')
-const seekBar = document.querySelector('#seekBar')
-const durationElement = document.querySelector('#duration')
-const currentTimeElement = document.querySelector('#currentTime')
+const playButton = document.getElementById('play')
+const pauseButton = document.getElementById('pause')
+const nextButton = document.getElementById('next')
+const previousButton = document.getElementById('previous')
+const seekBar = document.getElementById('seekBar')
+const durationElement = document.getElementById('duration')
+const currentTimeElement = document.getElementById('currentTime')
 
 const formatTime = seconds => {
   const m = Math.floor( seconds / 60 )
@@ -215,44 +282,7 @@ const previous = () => {
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = initExpandables;
-function initExpandables() {
-  if (!window.matchMedia) return
-
-  if (window.matchMedia('(min-width: 750px)').matches) {
-    document.querySelector('#about')
-      .querySelector('.expandable')
-      .classList.remove('expandable')
-  }
-
-  const expandables = document.querySelectorAll('.expandable')
-  expandables.forEach((el, _) => {
-    const button = document.createElement('button')
-    button.innerHTML = 'SHOW MORE'
-    button.addEventListener('click', toggleExpand)
-    el.parentNode.appendChild(button)
-    el.classList.add('is-collapsed')
-  })
-}
-
-function toggleExpand(e) {
-  const button = e.target
-  const el = button.previousElementSibling
-
-  el.classList.toggle('is-expanded')
-  el.classList.toggle('is-collapsed')
-
-  if (button.innerHTML === 'SHOW MORE') button.innerHTML = 'SHOW LESS'
-  else button.innerHTML = 'SHOW MORE'
-}
-
-
-/***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -290,27 +320,6 @@ const hideModal = () => {
   modal.style.zIndex = -1
   overlay.style.zIndex = -1
 }
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-const initScroll = () => {
-  document.querySelectorAll('.nav-link').forEach((navLink, i) => {
-    const scrollTarget = document.querySelector(navLink.getAttribute('href'))
-    navLink.addEventListener('click', e => {
-      e.preventDefault()
-      scrollTarget.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      })
-    })
-  })
-}
-/* harmony export (immutable) */ __webpack_exports__["a"] = initScroll;
-
 
 
 /***/ })
