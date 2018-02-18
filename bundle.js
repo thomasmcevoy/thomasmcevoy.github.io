@@ -97,7 +97,6 @@ let _isPlaying = false
 let _isPaused = false
 let _currentTime = 0
 let _duration = 0
-let _format = Modernizr.audio.mp3 ? 'mp3' : Modernizr.audio.ogg ? 'ogg' : undefined
 
 const html = document.getElementsByTagName('html')[0]
 const audio = document.createElement('audio')
@@ -119,22 +118,15 @@ const formatTime = seconds => {
 }
 
 const initPlayer = () => {
-  if (!_format) {
-    html.classList.add('no-audio')
-    return
-  }
-
   songs.forEach((song, i) => {
-    _playlist[i] = song.getAttribute('href').slice(0, -3) + _format
+    _playlist[i] = song.getAttribute('href')
     song.removeAttribute('href')
     song.setAttribute('data-track', i)
-    song.addEventListener('click', () => play(i))
+    song.addEventListener('click', e => play(e.target.getAttribute('data-track')))
   })
 
-  // Set up audio element
   playlist.appendChild(audio)
 
-  // Events
   playButton.addEventListener('click', play)
   pauseButton.addEventListener('click', pause)
   nextButton.addEventListener('click', next)
@@ -167,12 +159,9 @@ const reset = () => {
   durationElement.innerHTML = formatTime(_duration)
   currentTimeElement.innerHTML = formatTime(_currentTime)
   seekBar.style.width = 0
-  console.log(_currentTrack)
 }
 
-const play = (e, track) => {
-  if (!_playlist.length) return
-
+const play = (track) => {
   let current = songs[_currentTrack]
   
   if (track && track !== _currentTrack) {
