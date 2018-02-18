@@ -1,154 +1,130 @@
-import $ from 'jquery';
+let _playlist = []
+let _currentTrack = 0
+let _isPlaying = false
+let _isPaused = false
+let _currentTime = 0
+let _duration = 0
+let _format = Modernizr.audio.mp3 ? 'mp3' : Modernizr.audio.ogg ? 'ogg' : undefined
 
-// Player variables
-let _playlist = [];
-let _currentTrack = 0;
-let _isPlaying = false;
-let _isPaused = false;
-let _currentTime = 0;
-let _duration = 0;
-let _format;
+const html = document.getElementsByTagName('html')[0]
+const audio = document.createElement('audio')
+const playlist = document.querySelector('#playlist')
+const songs = document.querySelectorAll('.song')
+const playButton = document.querySelector('#play')
+const pauseButton = document.querySelector('#pause')
+const nextButton = document.querySelector('#next')
+const previousButton = document.querySelector('#previous')
+const seekBar = document.querySelector('#seekBar')
+const durationElement = document.querySelector('#duration')
+const currentTimeElement = document.querySelector('#currentTime')
 
-// Cached jQuery selectors
-const $audio = $( '<audio>' );
-const $playlist = $( '#playlist' );
-const $songs = $playlist.find( '.song' );
-const $playButton = $( '#play' );
-const $pauseButton = $( '#pause' );
-const $nextButton = $( '#next' );
-const $previousButton = $( '#previous' );
-const $seekBar = $( '#seekBar' );
-const $durationElement = $( '#duration' );
-const $currentTimeElement = $( '#currentTime' );
-
-
-// Methods
-function timeFilter( seconds ) {
-  const m = Math.floor( seconds / 60 );
-  let ss = Math.floor( seconds - m * 60 );
-
-  if (ss < 10) ss = '0' + ss;
-
-  return m.toString(10) + ':' + ss.toString(10);
+const formatTime = seconds => {
+  const m = Math.floor( seconds / 60 )
+  let ss = Math.floor( seconds - m * 60 )
+  if (ss < 10) ss = '0' + ss
+  return m.toString(10) + ':' + ss.toString(10)
 }
 
-export function initializePlayer() {
-  _format = Modernizr.audio.mp3 ? 'mp3' :
-            Modernizr.audio.ogg ? 'ogg' : undefined
-
+export const initPlayer = () => {
   if (!_format) {
-    $( 'html' ).addClass( 'no-audio' );
-    return;
+    html.classList.add('no-audio')
+    return
   }
 
-  // Build playlist from songs href attributes, convert anchors to data-track
-  // js hooks, and add click event listeners to play them.
-  for (let i = 0; i < $songs.length; i++) {
-    const $song = $songs.eq( i );
-    _playlist[i] = $song.attr( 'href' ).slice(0, -3) + _format;
-    $song.removeAttr( 'href' ).attr( 'data-track', i ).click( play );
-  }
+  songs.forEach((song, i) => {
+    _playlist[i] = song.getAttribute('href').slice(0, -3) + _format
+    song.removeAttribute('href')
+    song.setAttribute('data-track', i)
+    song.addEventListener('click', () => play(i))
+  })
 
   // Set up audio element
-  $playlist.append( $audio );
+  playlist.appendChild(audio)
 
   // Events
-  $playButton.click( play );
-  $pauseButton.click( pause );
-  $nextButton.click( next );
-  $previousButton.click( previous );
-  $audio.on( 'ended', next );
-  $audio.on( 'loadedmetadata', () => {
-    _duration = $audio[0].duration;
-    $durationElement.html( timeFilter(_duration) );
-    $currentTimeElement.html( timeFilter(_currentTime) );
-  });
-  $audio.on( 'timeupdate', () => {
-    _currentTime = $audio[0].currentTime;
-    $currentTimeElement.html( timeFilter(_currentTime) );
-    $seekBar.css( 'width', (_currentTime / _duration * 100) + '%' );
-  });
+  playButton.addEventListener('click', play)
+  pauseButton.addEventListener('click', pause)
+  nextButton.addEventListener('click', next)
+  previousButton.addEventListener('click', previous)
+  audio.addEventListener('ended', next)
+  audio.addEventListener('loadedmetadata', () => {
+    _duration = audio.duration;
+    durationElement.innerHTML = formatTime(_duration)
+    currentTimeElement.innerHTML = formatTime(_currentTime)
+  })
+  audio.addEventListener('timeupdate', () => {
+    _currentTime = audio.currentTime
+    currentTimeElement.innerHTML = formatTime(_currentTime)
+    seekBar.style.width = (_currentTime / _duration * 100) + '%'
+  })
 }
 
-function togglePlayPause() {
-  $playButton.toggleClass( 'inactive' );
-  $pauseButton.toggleClass( 'inactive' );
+const togglePlayPause = () => {
+  playButton.classList.toggle('inactive')
+  pauseButton.classList.toggle('inactive')
 }
 
-function set() {
-  _isPlaying = false;
-  _isPaused = false;
-  _currentTime = 0;
-  _duration = 0;
-  $durationElement.html( timeFilter(_duration) );
-  $currentTimeElement.html( timeFilter(_currentTime) );
-  $seekBar.css( 'width', 0 );
+const reset = () => {
+  _duration = 0
+  _currentTime = 0
+  _isPaused = false
+  _isPlaying = false
+  durationElement.innerHTML = formatTime(_duration)
+  currentTimeElement.innerHTML = formatTime(_currentTime)
+  seekBar.style.width = 0
+  console.log(_currentTrack)
 }
 
-function play( event ) {
-  if (!_playlist.length) return;
+const play = (e, track) => {
+  if (!_playlist.length) return
 
-  let $current = $songs.eq( _currentTrack );
-
-  if (event) {
-    const $target = $( event.target );
-    if ($target.is( '.song' )) {
-      const track = $target.attr( 'data-track' );
-      if (track != _currentTrack) {
-        $current.removeClass( 'song--current' );
-        _currentTrack = parseInt(track, 10);
-        $current = $songs.eq( _currentTrack );
-        _isPaused = false;
-      }
-    }
+  let current = songs[_currentTrack]
+  
+  if (track && track !== _currentTrack) {
+    current.classList.remove('song--current')
+    _currentTrack = parseInt(track, 10)
+    current = songs[_currentTrack]
+    _isPaused = false
   }
 
   if (!_isPlaying) {
-    togglePlayPause();
-    _isPlaying = true;
+    togglePlayPause()
+    _isPlaying = true
   }
 
   if (!_isPaused) {
-    $audio.attr( 'src', _playlist[_currentTrack] );
-    $current.addClass( 'song--current' );
-  } else {
-    _isPaused = false;
-  }
+    audio.setAttribute('src', _playlist[_currentTrack])
+    current.classList.add('song--current')
+  } 
+  else _isPaused = false
 
-  $audio[0].play();
+  audio.play()
 }
 
-function pause() {
-  togglePlayPause();
-  _isPlaying = false;
-  _isPaused = true;
-  $audio[0].pause();
+const pause = () => {
+  togglePlayPause()
+  _isPlaying = false
+  _isPaused = true
+  audio.pause()
 }
 
-function next() {
-  $songs.eq( _currentTrack ).removeClass( 'song--current' );
-  _currentTrack = _currentTrack < _playlist.length - 1 ? _currentTrack + 1 : 0;
-  $songs.eq( _currentTrack ).addClass( 'song--current' );
+const next = () => {
+  songs[_currentTrack].classList.remove('song--current')
+  _currentTrack = _currentTrack < _playlist.length - 1 ? _currentTrack + 1 : 0
+  songs[_currentTrack].classList.add('song--current')
 
-  if (_isPlaying) {
-    play();
-  } else {
-    set();
-  }
+  if (_isPlaying) play()
+  else reset()
 }
 
-function previous() {
-  if (_isPlaying && _currentTime > 3) {
-    _currentTime = 0;
-  } else {
-    $songs.eq( _currentTrack ).removeClass( 'song--current' );
-    _currentTrack = _currentTrack > 0 ? _currentTrack - 1 : _playlist.length - 1;
-    $songs.eq( _currentTrack ).addClass( 'song--current' );
+const previous = () => {
+  if (_isPlaying && _currentTime > 3) _currentTime = 0
+  else {
+    songs[_currentTrack].classList.remove('song--current')
+    _currentTrack = _currentTrack > 0 ? _currentTrack - 1 : _playlist.length - 1
+    songs[_currentTrack].classList.add('song--current')
   }
 
-  if (_isPlaying) {
-    play();
-  } else {
-    set();
-  }
+  if (_isPlaying) play()
+  else reset()
 }

@@ -1,14 +1,11 @@
-import $ from 'jquery';
-import { initializeTouchEvents } from './touchEvents';
-import { smoothScroll } from './scroll';
-import { initializePlayer } from './player';
-import { initializeExpandables } from './expandables';
-// import { initializeForm } from './form';
-import { initializeModal } from './modal';
+import { initExpandables } from './expandables'
+import { initScroll } from './scroll'
+import { initPlayer } from './player'
+// import { initForm } from './form'
+import { initModal } from './modal'
 
-initializeTouchEvents();
-smoothScroll();
-initializePlayer();
-initializeExpandables();
-// initializeForm();
-initializeModal();
+initExpandables()
+initScroll()
+initPlayer()
+// initForm()
+initModal()

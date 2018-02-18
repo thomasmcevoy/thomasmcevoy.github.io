@@ -1,14 +1,12 @@
-import $ from 'jquery';
-
-export function smoothScroll() {
-  $('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
-    }, 900, 'swing');
-  });
+export const initScroll = () => {
+  document.querySelectorAll('.nav-link').forEach((navLink, i) => {
+    const scrollTarget = document.querySelector(navLink.getAttribute('href'))
+    navLink.addEventListener('click', e => {
+      e.preventDefault()
+      scrollTarget.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  })
 }

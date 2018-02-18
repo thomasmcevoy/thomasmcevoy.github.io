@@ -6,7 +6,7 @@ const $name = $( '#name' );
 const $email = $( '#email' );
 const $message = $( '#message' );
 
-export function initializeForm() {
+export function initForm() {
   $form.on('submit', (e) => {
     e.preventDefault();
 

@@ -1,26 +1,32 @@
-import $ from 'jquery';
+const modal = document.createElement('div')
+const overlay = document.createElement('div')
+const content = document.createElement('div')
 
-const $modal = $('<div id="modal"></div>');
-const $overlay = $('<div id="overlay"></div>');
-const $content = $('<div id="content"></div>');
+modal.setAttribute('id', 'modal')
+overlay.setAttribute('id', 'overlay')
+content.setAttribute('id', 'content')
 
-export function initializeModal() {
-  $modal.hide();
-  $overlay.hide();
-  $modal.append($content);
-  $modal.on('click', () => hideModal());
-  $overlay.on('click', () => hideModal());
+export const initModal = () => {
+  modal.style.zIndex = -1
+  overlay.style.zIndex = -1
+  modal.addEventListener('click', () => hideModal())
+  overlay.addEventListener('click', () => hideModal())
+  modal.appendChild(content)
 
-  $( 'body' ).append($overlay, $modal);
+  const fragment = document.createDocumentFragment()
+    .appendChild(overlay)
+    .appendChild(modal)
+  document.getElementsByTagName('body')[0].appendChild(fragment)
 }
 
-export function showModal(content) {
-  $content.empty().append(content);
-  $modal.show();
-  $overlay.show();
+const showModal = newContent => {
+  content.innerHTML = ''
+  content.appendChild(newContent)
+  modal.style.zIndex = 2
+  overlay.style.zIndex = 1
 }
 
-function hideModal() {
-  $modal.hide();
-  $overlay.hide();
+const hideModal = () => {
+  modal.style.zIndex = -1
+  overlay.style.zIndex = -1
 }

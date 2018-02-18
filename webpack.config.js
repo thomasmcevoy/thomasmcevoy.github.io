@@ -1,12 +1,11 @@
 module.exports = {
   entry: "./scripts/entry.js",
   output: {
-    path: __dirname,
     filename: "bundle.js"
   },
-  module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-    ]
+  devServer: {
+    contentBase: __dirname,
+    compress: true,
+    port: 9000
   }
 };
