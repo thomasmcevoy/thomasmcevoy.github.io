@@ -8,35 +8,6 @@ $black:        #000;
 $orange-light: #d6a929;
 $orange:       #bf9600;
 
-
-@font-face {
-  font-family: 'Futura Standard';
-  font-weight: 400;
-  src: url('assets/fonts/futura-std.woff2') format('woff2'),
-  url('assets/fonts/futura-std.woff') format('woff'),
-  url('assets/fonts/futura-std.ttf') format('ttf'),
-  url('assets/fonts/futura-std.eot') format('eot');
-}
-
-@font-face {
-  font-family: 'Futura Light';
-  font-weight: 100;
-  src: url('assets/fonts/futura-light.woff2') format('woff2'),
-  url('assets/fonts/futura-light.woff') format('woff'),
-  url('assets/fonts/futura-light.ttf') format('ttf'),
-  url('assets/fonts/futura-light.eot') format('eot');
-}
-
-@font-face {
-  font-family: 'Futura Book';
-  font-weight: 400;
-  src: url('assets/fonts/futura-book.woff2') format('woff2'),
-  url('assets/fonts/futura-book.woff') format('woff'),
-  url('assets/fonts/futura-book.ttf') format('ttf'),
-  url('assets/fonts/futura-book.eot') format('eot');
-}
-
-
-$sans: 'Futura', 'Futura Standard', 'Trebuchet MS', sans-serif;
-$book: 'Futura Book', $sans;
+$sans:  'Futura', 'Futura Standard', 'Trebuchet MS', sans-serif;
+$book:  'Futura Book', $sans;
 $light: 'Futura Light', $book;
