@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "start": "webpack --mode=development --watch",
-    "build": "webpack --mode=production && sass styles/entry.scss bundle.css && cp index.html dist && cp bundle.css dist"
+    "build": "rm -rf dist/* && webpack --mode=production && sass src/styles/index.scss dist/main.css && cp -rf static/* dist && cp src/index.html dist"
   },
   "dependencies": {
     "koa": "^2.5.0",
