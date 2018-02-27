@@ -2,7 +2,6 @@
 
 const Koa = require('koa')
 const app = new Koa()
-const index = require('./index.html')
 
-app.use(ctx => ctx.body = index)
+app.use(require('koa-static')('./'))
 app.listen(3000)
