@@ -1,8 +1,5 @@
-'use strict';
+const Koa = require('koa')
+const app = new Koa()
 
-const Koa = require('koa');
-const app = new Koa();
-
-app.use(require('koa-static')('/home/thomas/thomasmcevoy.github.io'));
-
-app.listen(3000);
+app.use(require('koa-static')('/home/thomas/thomasmcevoy.github.io/dist'))
+app.listen(3000)
