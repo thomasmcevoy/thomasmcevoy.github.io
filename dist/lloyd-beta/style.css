@@ -1,0 +1,53 @@
+header {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+}
+
+#site-logo {
+  cursor: pointer;
+}
+
+#homepage main {
+  overflow: hidden !important;
+}
+
+.section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.title-card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-card p {
+  width: 20em;
+  font: 2em/1.25 'Brown Regular', 'Avenir', sans-serif;
+}
+.title-card h2,
+.title-card h3 {
+  padding: 0;
+  text-align: center;
+  font-family: 'Brown Light', 'Avenir', sans-serif;
+}
+.title-card h2 {
+  font-size: 2.6em;
+  letter-spacing: .175em;
+}
+.title-card h3 {
+  margin: .5em;
+  font-size: .9375em;
+  letter-spacing: .05em;
+}
+
+#bottega-veneta    { background-image: url('images/bottega-veneta.jpg');}
+#estee-lauder      { background-image: url('images/estee-lauder.jpg');}
+#adidas            { background-image: url('images/adidas.jpg');}
+#justin-timberlake { background-image: url('images/justin-timberlake.jpg');}
+#y-3               { background-image: url('images/y-3.jpg');}
+#narciso-rodriguez { background-image: url('images/narciso-rodriguez.jpg');}

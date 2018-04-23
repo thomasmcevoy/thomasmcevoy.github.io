@@ -1,0 +1,27 @@
+#clients {
+  background-color: #e6e6e6;
+}
+#clients img.mobile {
+  width: 100%;
+  height: auto;
+}
+#clients img.desktop {
+  width: 50em;
+  height: auto;
+}
+@media (min-width: 415px) {
+  #clients {
+    padding: 2em 2em 3em;
+    width: 90%;
+  }
+  #clients h1 {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 960px) {
+  #clients { background-color: #eaeaea;}
+  #clients img.desktop { display: none;}
+}
+@media (min-width: 961px) {
+  #clients img.mobile { display: none;}
+}
