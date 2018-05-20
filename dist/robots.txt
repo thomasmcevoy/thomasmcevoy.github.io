@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /.git/
+Disallow: /531/
 Disallow: /assets/
 Disallow: /scripts/
 Disallow: /styles/
