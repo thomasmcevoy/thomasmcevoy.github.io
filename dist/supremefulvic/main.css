@@ -74,7 +74,7 @@ header {
 
 main {
   margin-top: 18vw;
-  padding: .35em;
+  padding: 0;
   text-align: center;
 }
 
@@ -84,6 +84,7 @@ a {
 }
 
 p {
+  padding: 0 .35em;
   text-align: left;
 }
 
