@@ -3,12 +3,12 @@
 }
 
 header,
-footer,
 .menu-item:hover,
 .menu-item:active {
   background-color: #083e5b;
 }
 
+footer,
 #menu {
   background-color: #206488;
 }
@@ -69,7 +69,7 @@ header {
   height: 18vw;
   display: flex;
   justify-content: space-between;
-  color: #ddd;
+  color: #fcfcfc;
 }
 
 main {
@@ -81,6 +81,7 @@ main {
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 p {
@@ -90,7 +91,8 @@ p {
 
 #menu-button {
   margin: 0;
-  font-size: 15vw;
+  font-size: 13vw;
+  font-weight: 100;
   line-height: .75;
   cursor: pointer;
   touch-action: manipulation;
@@ -110,9 +112,15 @@ p {
 }
 
 .menu-item {
-  padding: .5em;
+  padding: .6em;
   font-size: 6vw;
   letter-spacing: .04em;
+}
+.menu-item:first-of-type {
+  margin-top: .33em;
+}
+.menu-item:last-of-type {
+  margin-bottom: .33em;
 }
 
 .buy-now-button {
@@ -126,12 +134,32 @@ p {
   cursor: pointer;
 }
 
+footer {
+  padding: .5rem;
+  letter-spacing: .033em;
+}
+
+.footer-link-group {
+  margin-bottom: 1.2rem;
+}
+
 .footer-link-group h4 {
-  margin: .2em;
-  color: #3B718E;
+  margin: .75rem 0 0;
+  padding: .25rem .1rem;
+  color: #00314D;
+  font-size: 6vw;
 }
 
 .footer-link {
   display: block;
-  color: #000B28;
+  padding: .25rem .1rem;
+  color: #9FE3FF;
+  font-size: 5vw;
+}
+
+#copyright {
+  color: #00314D;
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: center;
 }
