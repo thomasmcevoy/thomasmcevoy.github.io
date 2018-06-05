@@ -139,8 +139,8 @@ li {
   border-radius: .4em;
   background-color: green;
   color: #eee;
-  font-family: inherit;
   font-size: 5vw;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -168,7 +168,7 @@ footer {
 }
 
 #copyright {
-  color: #165A76;
+  color: #206480;
   font-size: .75rem;
   font-weight: bold;
   text-align: center;
