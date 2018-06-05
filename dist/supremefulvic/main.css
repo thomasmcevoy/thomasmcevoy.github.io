@@ -3,12 +3,13 @@
 }
 
 header,
+footer,
 .menu-item:hover,
 .menu-item:active {
   background-color: #083e5b;
+  color: 
 }
 
-footer,
 #menu {
   background-color: #206488;
 }
@@ -89,6 +90,14 @@ p {
   text-align: left;
 }
 
+ul {
+  margin-top: 0;
+  padding-left: 2em;
+}
+li {
+  text-align: left;
+}
+
 #menu-button {
   margin: 0;
   font-size: 13vw;
@@ -146,19 +155,19 @@ footer {
 .footer-link-group h4 {
   margin: .75rem 0 0;
   padding: .25rem .1rem;
-  color: #00314D;
+  color: #5397B3;
   font-size: 6vw;
 }
 
 .footer-link {
   display: block;
   padding: .25rem .1rem;
-  color: #9FE3FF;
+  color: #C9FFFF;
   font-size: 5vw;
 }
 
 #copyright {
-  color: #00314D;
+  color: #165A76;
   font-size: .75rem;
   font-weight: bold;
   text-align: center;
