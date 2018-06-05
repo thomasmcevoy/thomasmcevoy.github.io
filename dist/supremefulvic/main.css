@@ -7,7 +7,6 @@ footer,
 .menu-item:hover,
 .menu-item:active {
   background-color: #083e5b;
-  color: 
 }
 
 #menu {
@@ -88,6 +87,7 @@ a {
 p {
   padding: 0 .35em;
   text-align: left;
+  font-family: inherit;
 }
 
 ul {
@@ -139,6 +139,7 @@ li {
   border-radius: .4em;
   background-color: green;
   color: #eee;
+  font-family: inherit;
   font-size: 5vw;
   cursor: pointer;
 }
