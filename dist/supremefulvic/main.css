@@ -13,6 +13,20 @@ footer,
   background-color: #206488;
 }
 
+header,
+#menu {
+  color: #eee;
+}
+
+.footer-link-group h4,
+#copyright {
+  color: #001834;
+}
+
+.footer-link {
+  color: #3A7E9A;
+}
+
 .red { color: #CC0000;}
 .gold { color: #EA9F15;}
 .blue { color: #000099;}
@@ -32,6 +46,7 @@ h2,
 h3,
 h4 {
   margin: 5vw 0;
+  font-weight: bold;
 }
 h1 {
   font-size: 8vw;
@@ -69,7 +84,7 @@ header {
   height: 18vw;
   display: flex;
   justify-content: space-between;
-  color: #fcfcfc;
+  letter-spacing: .02em;
 }
 
 main {
@@ -113,7 +128,6 @@ li {
   position: fixed;
   top: 18vw;
   overflow: hidden;
-  color: #eee;
   transition: all 0.2s;
 }
 #menu.isOpen {
@@ -139,8 +153,9 @@ li {
   border-radius: .4em;
   background-color: green;
   color: #eee;
-  font-size: 5vw;
   font-family: inherit;
+  font-size: 5vw;
+  letter-spacing: .02em;
   cursor: pointer;
 }
 
@@ -156,19 +171,17 @@ footer {
 .footer-link-group h4 {
   margin: .75rem 0 0;
   padding: .25rem .1rem;
-  color: #5397B3;
-  font-size: 6vw;
+  font-size: 6.5vw;
 }
 
 .footer-link {
   display: block;
-  padding: .25rem .1rem;
-  color: #C9FFFF;
-  font-size: 5vw;
+  padding: .33rem .1rem;
+  font-size: 5.25vw;
+  letter-spacing: .05em;
 }
 
 #copyright {
-  color: #206480;
   font-size: .75rem;
   font-weight: bold;
   text-align: center;
