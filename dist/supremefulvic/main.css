@@ -250,7 +250,7 @@ main {
 
 footer {
   position: relative;
-  padding: 4.5vw 3.5vw;
+  padding: 7vw 3.5vw;
   letter-spacing: .033em;
   color: var(--footer-text-color);
   background-color: var(--footer-background-color);
