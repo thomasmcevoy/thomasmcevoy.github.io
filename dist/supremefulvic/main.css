@@ -213,10 +213,10 @@ main {
   background-color: green;
   color: #eee;
   font-family: inherit;
-  font-size: inherit;
-  font-weight: 600;
+  font-size: 5.5vw;
+  font-weight: 500;
   letter-spacing: .02em;
-  line-height: 1.1;
+  line-height: 1;
   cursor: pointer;
 }
 @media (min-width: 500px) {
