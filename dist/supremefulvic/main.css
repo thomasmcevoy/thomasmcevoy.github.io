@@ -130,7 +130,7 @@ header {
 
 #menu-button {
   position: absolute;
-  top: 0vw;
+  top: -.5vw;
   right: -1vw;
   margin: 0;
   padding: 5vw;
