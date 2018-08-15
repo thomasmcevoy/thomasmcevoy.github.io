@@ -200,7 +200,12 @@ main {
 }
 
 #billboard {
-  padding: 3vw 1vw;
+  padding: 5vw 1vw;
+}
+@media (min-width: 500px) {
+  #billboard {
+    padding: 25px 5px;
+  }
 }
 #billboard h3 { color: #CC0000;}
 #billboard h4 { color: #000099;}
