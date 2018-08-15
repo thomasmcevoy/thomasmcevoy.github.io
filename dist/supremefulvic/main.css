@@ -27,7 +27,7 @@ h1 {
 }
 h2 { 
   margin: 5vw 0;
-  font-size: 8.5vw;
+  font-size: 9vw;
   font-weight: 700;
   line-height: 1em;
   letter-spacing: -.01em;
@@ -213,6 +213,7 @@ main {
 #official-website {
   margin-bottom: 1vw;
   color: #ea9f15;
+  letter-spacing: .05em;
 }
 @media (min-width: 500px) {
   #official-website {
