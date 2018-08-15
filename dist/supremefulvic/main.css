@@ -40,16 +40,17 @@ h1 {
 h2 { 
   font-size: 8.5vw;
   line-height: 1em;
+  letter-spacing: -.01em;
 }
 h3 { 
   font-size: 6.1vw; 
   line-height: 1.2em;
-  letter-spacing: .01em;
+  letter-spacing: 0;
 }
 h4 {
   font-size: 5.5vw;
   line-height: 1.2em;
-  letter-spacing: .01em;
+  letter-spacing: -.01em;
 }
 @media (min-width: 500px) {
   h1 { font-size: 40px;}
@@ -88,7 +89,7 @@ header {
 
 main {
   margin-top: 18vw;
-  padding: .35em 0;
+  padding: 1px 1em;
   font-size: 4vw;
   text-align: center;
 }
