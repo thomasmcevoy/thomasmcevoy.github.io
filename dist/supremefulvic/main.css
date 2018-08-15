@@ -131,9 +131,9 @@ header {
 #menu-button {
   position: absolute;
   top: 0;
-  right: -1vw;
+  right: 0;
   margin: 0;
-  padding: 4.5vw;
+  padding: 5vw 4.25vw 4.25vw;
   height: 100%;
   width: var(--header-height-mobile);
   cursor: pointer;
