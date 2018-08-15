@@ -204,7 +204,7 @@ main {
   }
 }
 
-.buy-now-button {
+#buy-now-button {
   margin: 2vw auto;
   border: none;
   border-radius: .4em;
@@ -215,7 +215,7 @@ main {
   font-family: inherit;
   font-size: inherit;
   letter-spacing: .02em;
-  /* line-height: 1.3; */
+  line-height: 1.3;
   cursor: pointer;
 }
 @media (min-width: 500px) {
