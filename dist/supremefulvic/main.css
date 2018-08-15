@@ -130,12 +130,12 @@ header {
 
 #menu-button {
   position: absolute;
-  top: -.5vw;
-  right: -1vw;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 5vw;
   height: 100%;
-  width: var(--header-height-mobile);
+  width: calc(var(--header-height-mobile));
   cursor: pointer;
   touch-action: manipulation;
 }
