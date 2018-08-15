@@ -117,8 +117,6 @@ header {
   padding: 3vw;
   width: 100%;
   height: var(--header-height-mobile);
-  display: flex;
-  justify-content: space-between;
   color: var(--header-text-color);
   background-color: var(--header-background-color);
   letter-spacing: .02em;
@@ -131,8 +129,11 @@ header {
 }
 
 #menu-button {
+  position: absolute;
+  top: 0;
+  right: 1vw;
   margin: 0;
-  padding: 2vw;
+  padding: 3vw;
   height: 100%;
   cursor: pointer;
   touch-action: manipulation;
