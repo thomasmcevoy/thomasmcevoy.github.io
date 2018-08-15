@@ -28,18 +28,21 @@ h1 {
 h2 { 
   margin: 5vw 0;
   font-size: 8.5vw;
+  font-weight: 700;
   line-height: 1em;
   letter-spacing: -.01em;
 }
 h3 { 
   margin: 5vw 0;
   font-size: 6.1vw; 
+  font-weight: 700;
   line-height: 1.2em;
   letter-spacing: -.01em;
 }
 h4 {
   margin: 0;
   font-size: 5.5vw;
+  font-weight: 700;
   line-height: 1.2em;
   letter-spacing: -.01em;
 }
