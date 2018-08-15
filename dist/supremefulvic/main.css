@@ -185,8 +185,6 @@ main {
   main { 
     margin-top: 90px;
     padding: 5px;
-    font-size: 1.2rem;
-    line-height: 1.67;
   }
 }
 @media (min-width: 600px) {
