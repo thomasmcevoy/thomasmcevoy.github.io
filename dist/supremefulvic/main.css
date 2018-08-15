@@ -182,14 +182,14 @@ header {
 
 main {
   margin: 18vw auto 0;
-  padding: 2vw;
+  padding: 1vw;
   font-size: 5vw;
   text-align: center;
 }
 @media (min-width: 500px) {
   main { 
     margin-top: 90px;
-    padding: 10px;
+    padding: 5px;
     font-size: 1.2rem;
   }
 }
