@@ -113,6 +113,7 @@ a {
 
 p {
   padding: 0 .35em;
+  font-family: inherit;
   text-align: left;
 }
 
@@ -187,7 +188,6 @@ svg {
   border-radius: .4em;
   background-color: green;
   color: #eee;
-  font-family: inherit;
   font-size: 5vw;
   letter-spacing: .02em;
   cursor: pointer;
