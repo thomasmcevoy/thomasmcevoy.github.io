@@ -57,10 +57,13 @@ h4 {
 p {
   margin: 0 auto 1em;
   padding: 0;
-  text-align: left;
-  font-size: 1.2rem;
-  line-height: 1.67;
   font-family: inherit;
+  font-size: 5.4vw;
+  line-height: 1.67;
+  text-align: left;
+}
+@media (min-width: 500px) {
+  p { font-size: 1.2rem;}
 }
 
 a {
@@ -176,13 +179,14 @@ header {
 main {
   margin: 18vw auto 0;
   padding: 1vw;
-  font-size: 5.4vw;
   text-align: center;
 }
 @media (min-width: 500px) {
   main { 
     margin-top: 90px;
     padding: 5px;
+    font-size: 1.2rem;
+    line-height: 1.67;
   }
 }
 @media (min-width: 600px) {
