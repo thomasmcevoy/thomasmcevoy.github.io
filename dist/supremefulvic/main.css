@@ -210,13 +210,13 @@ main {
 #billboard h4 { color: #000099;}
 
 #official-website {
-  margin-bottom: 1.5vw;
+  margin-bottom: -3.5vw;
   color: #ea9f15;
   letter-spacing: .04em;
 }
 @media (min-width: 500px) {
   #official-website {
-    margin-bottom: 5px;
+    margin-bottom: -17px;
   }
 }
 
