@@ -105,6 +105,7 @@ header {
   background-color: var(--header-background-color);
   color: var(--header-text-color);
   letter-spacing: .02em;
+  z-index: 1;
 }
 @media (min-width: 500px) {
   header { 
