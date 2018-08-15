@@ -117,8 +117,8 @@ header {
   padding: 3vw;
   width: 100%;
   height: var(--header-height-mobile);
-  color: var(--header-text-color);
   background-color: var(--header-background-color);
+  color: var(--header-text-color);
   letter-spacing: .02em;
 }
 @media (min-width: 500px) {
@@ -135,6 +135,7 @@ header {
   margin: 0;
   padding: 3vw;
   height: 100%;
+  width: var(--header-height-mobile);
   cursor: pointer;
   touch-action: manipulation;
 }
