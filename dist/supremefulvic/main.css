@@ -156,21 +156,15 @@ header {
   font-size: 6vw;
   letter-spacing: .04em;
 }
-.menu-item:first-of-type { 
-  margin-top: .33em;
-}
-.menu-item:last-of-type { 
-  margin-bottom: .33em;
+@media (min-width: 500px) {
+  .menu-item { font-size: 30px;}
 }
 .menu-item:hover,
 .menu-item:active {
   background-color: var(--header-background-color);
 }
-@media (min-width: 500px) {
-  .menu-item {
-    font-size: 30px;
-  }
-}
+.menu-item:first-of-type { margin-top: .33em;}
+.menu-item:last-of-type { margin-bottom: .33em;}
 
 
 
@@ -244,7 +238,7 @@ main {
 }
 
 #pitch {
-  margin: 3vw 2.5vw 6vw;
+  margin: 3vw 2.5vw 10vw;
 }
 
 
