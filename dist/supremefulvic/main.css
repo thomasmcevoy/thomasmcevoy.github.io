@@ -7,17 +7,40 @@
   --secondary-background-color: #206488;
   --footer-background-color: #001834;
   --main-text-color: #eee;
+  --main-font-size: 4.8vw;
   --footer-text-color: #3a7e9a;
   --footer-link-color: #bbb;
 }
 
-.red { color: #CC0000;}
-.gold { color: #EA9F15;}
-.blue { color: #000099;}
-.black { color: #000000;}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-.no-top-margin { margin-top: 1vw;}
-.no-bottom-margin { margin-bottom: 1vw;}
+p {
+  margin: 0 auto 1em;
+  padding: 0 .35em;
+  font-family: inherit;
+  font-size: var(--main-font-size);
+  line-height: 1.5;
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: .5em .5em 2em 2em;
+}
+li {
+  margin-bottom: .33em;
+  font-size: var(--main-font-size);
+  text-align: left;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
 
 h1,
 h2,
@@ -60,10 +83,21 @@ h4 {
   h2, h3, h4 { margin: 25px;}
 }
 
+.red { color: #CC0000;}
+.gold { color: #EA9F15;}
+.blue { color: #000099;}
+.black { color: #000000;}
+
+.no-top-margin { margin-top: 1vw;}
+.no-bottom-margin { margin-bottom: 1vw;}
+
 body {
   margin: 0;
-  padding: 0;
+  padding: 4vw;
   font: 1em/1.5 helvetica, arial, sans-serif;
+}
+@media (min-width: 500px) {
+  body { padding: 20px;}
 }
 
 header {
@@ -71,7 +105,7 @@ header {
   top: 0;
   left: 0;
   margin: 0;
-  padding: 3vw;
+  padding: 4vw;
   width: 100%;
   height: 18vw;
   display: flex;
@@ -82,52 +116,9 @@ header {
 }
 @media (min-width: 500px) {
   header { 
-    padding: 15px;
+    padding: 20px;
     height: 90px;
   }
-}
-
-main {
-  margin-top: 18vw;
-  padding: 1px .33em;
-  font-size: 4vw;
-  text-align: center;
-}
-@media (min-width: 500px) {
-  main { 
-    margin-top: 90px;
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 600px) {
-  main ul {
-    columns: 2;
-  }
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-p {
-  padding: 0 .35em;
-  font-family: inherit;
-  text-align: left;
-}
-
-ul {
-  margin-top: 0;
-  padding-left: 2em;
-}
-li {
-  text-align: left;
-}
-
-svg {
-  width: 100%;
-  height: 100%;
 }
 
 #menu-button {
@@ -144,10 +135,11 @@ svg {
 }
 
 #menu {
-  max-height: 0;
-  width: 100%;
   position: fixed;
   top: 18vw;
+  left: 0;
+  width: 100%;
+  max-height: 0;
   color: var(--main-text-color);
   background-color: var(--secondary-background-color);
   overflow: hidden;
@@ -181,6 +173,24 @@ svg {
   }
 }
 
+main {
+  margin: 0 auto;
+  padding-top: 18vw;
+  font-size: 4vw;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  main { 
+    margin-top: 90px;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 600px) {
+  main ul {
+    columns: 2;
+  }
+}
+
 .buy-now-button {
   margin: 2vw auto;
   border: none;
@@ -188,6 +198,7 @@ svg {
   border-radius: .4em;
   background-color: green;
   color: #eee;
+  font-family: inherit;
   font-size: 5vw;
   letter-spacing: .02em;
   cursor: pointer;
