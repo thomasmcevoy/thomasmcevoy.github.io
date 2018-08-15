@@ -23,7 +23,7 @@ h1 {
   margin: 0;
   font-size: 8vw;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 h2 { 
   margin: 5vw 0;
@@ -117,7 +117,6 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  /* padding: 5vw; */
   width: var(--header-height-mobile);
   height: var(--header-height-mobile);
   cursor: pointer;
@@ -125,7 +124,6 @@ header {
 }
 @media (min-width: 500px) {
   #menu-button { 
-    /* padding: 25px; */
     width: var(--header-height-desktop);
     height: var(--header-height-desktop);
   }
