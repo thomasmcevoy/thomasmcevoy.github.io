@@ -40,6 +40,8 @@ li {
 }
 
 svg {
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
 }
@@ -132,15 +134,17 @@ header {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 0;
   padding: 5vw;
-  height: 100%;
-  width: calc(var(--header-height-mobile));
+  width: var(--header-height-mobile);
+  height: var(--header-height-mobile);
   cursor: pointer;
   touch-action: manipulation;
 }
 @media (min-width: 500px) {
-  #menu-button { width: var(--header-height-desktop);}
+  #menu-button { 
+    width: var(--header-height-desktop);
+    height: var(--header-height-desktop);
+  }
 }
 #menu-button rect {
   fill: var(--header-text-color);
