@@ -213,7 +213,7 @@ main {
 #official-website {
   margin-bottom: 1.5vw;
   color: #ea9f15;
-  letter-spacing: .05em;
+  letter-spacing: .04em;
 }
 @media (min-width: 500px) {
   #official-website {
