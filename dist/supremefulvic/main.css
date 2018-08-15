@@ -133,9 +133,6 @@ header {
 #menu-button {
   margin: 0;
   padding: 2vw;
-  position: relative;
-  right: -2vw;
-  top: 0;
   height: 100%;
   cursor: pointer;
   touch-action: manipulation;
