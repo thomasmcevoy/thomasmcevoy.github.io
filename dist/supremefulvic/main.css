@@ -51,7 +51,7 @@ h4 {
   h2 { font-size: 42.5px;}
   h3 { font-size: 30.5px;}
   h4 { font-size: 27.5px;}
-  h2, h3 { margin: 25px;}
+  h2, h3, h4 { margin: 25px;}
 }
 
 p {
@@ -80,12 +80,12 @@ svg {
 }
 
 ul {
-  margin: 7.5vw 0;
-  padding-left: 1.25em;
+  margin: 0 1em;
+  padding: 0;
 }
 
 li {
-  margin: .75em;
+  margin-bottom: 1em;
   font-size: inherit;
   text-align: left;
 }
@@ -112,7 +112,7 @@ header {
 }
 @media (min-width: 500px) {
   header { 
-    padding: 20px;
+    padding: 15px;
     height: var(--header-height-desktop);
   }
 }
@@ -138,7 +138,7 @@ header {
 
 #menu {
   position: fixed;
-  top: 18vw;
+  top: var(--header-height-mobile);
   left: 0;
   width: 100%;
   max-height: 0;
@@ -177,20 +177,19 @@ header {
  **************************************************************/
 
 main {
-  margin: 18vw auto 0;
+  margin: var(--header-height-mobile) auto 0;
   padding: 1vw;
   text-align: center;
 }
 @media (min-width: 500px) {
   main { 
-    margin-top: 90px;
+    margin-top: 70px;
     padding: 5px;
   }
 }
-@media (min-width: 600px) {
-  main ul {
-    columns: 2;
-  }
+main ul {
+  columns: 300px 3;
+  column-gap: 2em;
 }
 
 #billboard {
@@ -203,6 +202,13 @@ main {
 }
 #billboard h3 { color: #CC0000;}
 #billboard h4 { color: #000099;}
+
+.guarantee {
+  padding: 10vw 5vw;
+}
+@media (min-width: 500px) {
+  .guarantee { padding: 40px 30px;}
+}
 
 #official-website {
   margin-bottom: -3.5vw;
@@ -231,15 +237,20 @@ main {
   cursor: pointer;
 }
 @media (min-width: 500px) {
-  .buy-now-button {
+  #buy-now-button {
     margin: 10px auto;
-    padding: 20px 40px;
-    font-size: 25px;
+    padding: 16px 40px;
+    height: 64px;
+    font-size: 28px;
   }
 }
 
 #pitch {
   margin: 3vw 2.5vw 10vw;
+}
+#pitch li {
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 
@@ -257,27 +268,29 @@ footer {
   background-color: var(--footer-background-color);
 }
 
-@media (min-width: 600px) {
-  #sitemap {
-    columns: 2;
-  }
+#sitemap {
+  columns: 300px 3;
+  column-gap: 1vw;
 }
 
-footer .link-group {
+.link-group {
   margin-bottom: 1.2rem;
+  padding: 1vw;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
-footer h4 {
+.link-group h4 {
   margin: .75rem 0 0;
   padding: .25rem .1rem;
   font-size: 6.5vw;
 }
 @media (min-width: 500px) {
-  footer h4 { font-size: 1.8em;}
-  footer h4:nth-of-type(1) {margin-top: 0;}
+  .link-group h4 { font-size: 1.8em;}
+  /* .link-group h4:nth-of-type(1) {margin-top: 0;} */
 }
 
-.footer-link {
+.link-group a {
   display: block;
   padding: .33rem .1rem;
   font-size: 5.25vw;
@@ -285,7 +298,7 @@ footer h4 {
   color: var(--footer-link-color);
 }
 @media (min-width: 500px) {
-  .footer-link {
+  .link-group a {
     font-size: 1.3em;
   }
 }

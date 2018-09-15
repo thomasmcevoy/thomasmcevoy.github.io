@@ -45,6 +45,10 @@
       <h2>Supreme Fulvic &amp; Humic Complex™</h2>
       <button id="buy-now-button">Buy Now!</button>
       <h4>Your premium-quality source of organic, full-spectrum, plant-based nutrients</h4>
+      <div>
+        <img src="fitness-mag.jpg"/>
+        <img src="guarantee.jpg" class="guarantee"/>
+      </div>
     </div>
     
     <div id="pitch">
@@ -80,33 +84,33 @@
     <div id="sitemap">
       <div class="link-group">
         <h4>Main Website</h4>
-        <a class="footer-link">Home Page</a>
+        <a>Home Page</a>
       </div>
       <div class="link-group">
         <h4>Online Store</h4>
-        <a class="footer-link">Online Store Main Page</a>
-        <a class="footer-link">Important Ordering Information</a>
+        <a>Online Store Main Page</a>
+        <a>Important Ordering Information</a>
       </div>
       <div class="link-group">
         <h4>Information &amp; Resources</h4>
-        <a class="footer-link">Frequently Asked Questions</a>
-        <a class="footer-link">Customer Testimonials</a>
-        <a class="footer-link">Documents Library</a>
-        <a class="footer-link">Featured Articles</a>
-        <a class="footer-link">Where To Buy</a>
+        <a>Frequently Asked Questions</a>
+        <a>Customer Testimonials</a>
+        <a>Documents Library</a>
+        <a>Featured Articles</a>
+        <a>Where To Buy</a>
       </div>
       <div class="link-group">
         <h4>Contact &amp; Help</h4>
-        <a class="footer-link">Contact Us</a>
-        <a class="footer-link">About Us</a>
-        <a class="footer-link">Refund Policy</a>
-        <a class="footer-link">Online Store Security</a>
-        <a class="footer-link">Payment Options</a>
-        <a class="footer-link">Shipping and Tracking</a>
-        <a class="footer-link">Privacy Statement</a>
-        <a class="footer-link">Notice</a>
-        <a class="footer-link">Website Use Agreement</a>
-        <a class="footer-link">Secure Form</a>
+        <a>Contact Us</a>
+        <a>About Us</a>
+        <a>Refund Policy</a>
+        <a>Online Store Security</a>
+        <a>Payment Options</a>
+        <a>Shipping and Tracking</a>
+        <a>Privacy Statement</a>
+        <a>Notice</a>
+        <a>Website Use Agreement</a>
+        <a>Secure Form</a>
       </div>
     </div>
     <div id="copyright">All Content © 2018 Supreme Fulvic LLC</div>
@@ -115,12 +119,9 @@
   <script>
     var menu = document.getElementById('menu')
     var menuButton = document.getElementById('menu-button')
-
-    function toggleMenuOpen() {
+    menuButton.onclick = function() {
       menu.classList.toggle('isOpen')
     }
-    
-    menuButton.onclick = toggleMenuOpen
   </script>
   
 </body>
