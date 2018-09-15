@@ -32,26 +32,39 @@ h2 {
   line-height: 1em;
   letter-spacing: -.01em;
 }
-h3 { 
+h3 {
+  margin: 5vw 0 1vw;
+  font-size: 7vw;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+h4 { 
   margin: 5vw 0;
   font-size: 6.1vw; 
   font-weight: 700;
   line-height: 1.2em;
   letter-spacing: -.01em;
 }
-h4 {
+h5 {
   margin: 5vw 0;
   font-size: 5.5vw;
   font-weight: 700;
   line-height: 1.2em;
   letter-spacing: -.01em;
 }
+h6 {
+  margin: 0;
+  font-size: 4vw;
+}
 @media (min-width: 500px) {
   h1 { font-size: 40px;}
-  h2 { font-size: 42.5px;}
-  h3 { font-size: 30.5px;}
-  h4 { font-size: 27.5px;}
-  h2, h3, h4 { margin: 25px;}
+  h2 { font-size: 45px;}
+  h3 { font-size: 32px; margin: 25px 0 5px;}
+  h4 { font-size: 30.5px;}
+  h5 { font-size: 27.5px;}
+  h6 { font-size: 20px;}
+  h2, h4, h5 { margin: 25px 0;}
+  h3 { margin: 50px 0 5px;}
 }
 
 p {
@@ -79,13 +92,14 @@ svg {
   height: 100%;
 }
 
+ol,
 ul {
-  margin: 0 1em;
+  margin: 0 1.67em;
   padding: 0;
 }
 
 li {
-  margin-bottom: 1em;
+  margin-bottom: .67em;
   font-size: inherit;
   text-align: left;
 }
@@ -138,6 +152,7 @@ header {
 
 #menu {
   position: fixed;
+  z-index: 2;
   top: var(--header-height-mobile);
   left: 0;
   width: 100%;
@@ -179,6 +194,7 @@ header {
 main {
   margin: var(--header-height-mobile) auto 0;
   padding: 1vw;
+  max-width: 900px;
   text-align: center;
 }
 @media (min-width: 500px) {
@@ -187,21 +203,17 @@ main {
     padding: 5px;
   }
 }
-main ul {
-  columns: 300px 3;
-  column-gap: 2em;
-}
 
 #billboard {
   padding: 1vw;
 }
 @media (min-width: 500px) {
   #billboard {
-    padding: 25px 5px;
+    padding: 25px 5px 0;
   }
 }
-#billboard h3 { color: #CC0000;}
-#billboard h4 { color: #000099;}
+#billboard h4 { color: #CC0000;}
+#billboard h5 { color: #000099;}
 
 .guarantee {
   padding: 10vw 5vw;
@@ -221,7 +233,7 @@ main ul {
   }
 }
 
-#buy-now-button {
+.buy-now-button {
   margin: 2vw auto;
   border: none;
   border-radius: .4em;
@@ -237,7 +249,7 @@ main ul {
   cursor: pointer;
 }
 @media (min-width: 500px) {
-  #buy-now-button {
+  .buy-now-button {
     margin: 10px auto;
     padding: 16px 40px;
     height: 64px;
@@ -246,11 +258,46 @@ main ul {
 }
 
 #pitch {
-  margin: 3vw 2.5vw 10vw;
+  margin: 3vw 2.5vw 6vw;
 }
-#pitch li {
+#pitch a {
+  color: var(--menu-background-color);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#benefits {
+  list-style-image: url(blucheck_small.png);
+  columns: 300px 3;
+  column-gap: 2em;
+}
+#benefits li {
   page-break-inside: avoid;
   break-inside: avoid;
+}
+
+#mid-page-call-to-action {
+  margin: 5vw auto;
+}
+
+#set-apart {
+  list-style-image: url(blucheck_small.png);
+}
+
+#testimonials {
+  margin: 3vw auto;
+  border: thin solid #e1cc89;
+  background-color: #faebbc;
+}
+blockquote::before {
+  content: url(openquote1.gif);
+}
+blockquote::after {
+  content: url(closequote.gif);
+}
+#standalone-link {
+  display: block;
+  margin: 3vw;
 }
 
 
@@ -267,6 +314,9 @@ footer {
   color: var(--footer-text-color);
   background-color: var(--footer-background-color);
 }
+@media (min-width: 500px) {
+  footer { padding: 3em 1em 1em;}
+}
 
 #sitemap {
   columns: 300px 3;
@@ -280,14 +330,13 @@ footer {
   break-inside: avoid;
 }
 
-.link-group h4 {
+.link-group h5 {
   margin: .75rem 0 0;
-  padding: .25rem .1rem;
+  padding: .5rem 0;
   font-size: 6.5vw;
 }
 @media (min-width: 500px) {
-  .link-group h4 { font-size: 1.8em;}
-  /* .link-group h4:nth-of-type(1) {margin-top: 0;} */
+  .link-group h5 { font-size: 1.8em;}
 }
 
 .link-group a {
@@ -309,4 +358,10 @@ footer {
   font-size: .75rem;
   font-weight: bold;
   text-align: center;
+}
+
+#back-to-top {
+  position: absolute;
+  right: 1em;
+  bottom: .5em;
 }
