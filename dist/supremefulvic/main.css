@@ -267,7 +267,7 @@ main {
 }
 
 #benefits {
-  list-style-image: url(blucheck_small.png);
+  list-style-image: url(/supremefulvic/blucheck_small.png);
   columns: 300px 3;
   column-gap: 2em;
 }
@@ -281,7 +281,7 @@ main {
 }
 
 #set-apart {
-  list-style-image: url(blucheck_small.png);
+  list-style-image: url(/supremefulvic/blucheck_small.png);
 }
 
 #testimonials {
@@ -290,10 +290,10 @@ main {
   background-color: #faebbc;
 }
 blockquote::before {
-  content: url(openquote1.gif);
+  content: url(/supremefulvic/openquote1.gif);
 }
 blockquote::after {
-  content: url(closequote.gif);
+  content: url(/supremefulvic/closequote.gif);
 }
 #standalone-link {
   display: block;
