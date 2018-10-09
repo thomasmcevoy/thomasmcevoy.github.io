@@ -9,9 +9,9 @@
     "build": "rm -rf dist/* && webpack --mode=production && sass src/styles/index.scss dist/main.css && cp -rf static/* dist && cp src/index.html dist"
   },
   "dependencies": {
-    "koa": "^2.5.1",
-    "koa-static": "^4.0.2",
-    "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15"
+    "koa": ">=2.5.3",
+    "koa-static": "^5.0.0",
+    "webpack": ">=4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
