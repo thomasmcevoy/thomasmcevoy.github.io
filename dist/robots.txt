@@ -1,10 +1,8 @@
 User-agent: *
 Disallow: /.git/
-Disallow: /531/
 Disallow: /assets/
 Disallow: /scripts/
 Disallow: /styles/
-Disallow: /supremefulvic/
 Disallow: /tunes/
 Disallow: /tunes-vue/
 Disallow: /lloyd-beta/
