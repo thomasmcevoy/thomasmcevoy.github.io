@@ -1,5 +1,0 @@
-export { initExpandables } from './expandables'
-// export { initForm } from './form'
-export { initModal } from './modal'
-export { initPlayer } from './player'
-export { initScroll } from './scroll'
