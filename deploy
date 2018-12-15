@@ -6,7 +6,6 @@ echo "Deploying app with the following commit message:"
 echo "'$1'"
 echo "--------------------------------------------------------------------------------"
 
-cd /Users/thomas/Projects/thomasmcevoy.github.io
 git add .
 git commit -m "$1"
 git push
