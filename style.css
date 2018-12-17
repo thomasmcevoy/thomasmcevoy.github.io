@@ -18,31 +18,19 @@ header {
   margin: var(--line-height);
   padding: 0;
 }
-@media (orientation: portrait) and (min-width: 500px) {
-  header {
-    margin: calc(2 * var(--line-height));
-  }
+@media (min-width: 415px) {
+  header {margin: calc(2 * var(--line-height));}
+  footer {padding-top: var(--line-height);}
 }
-@media (orientation: portrait) and (min-width: 600px) {
-  header {
-    margin: calc(3 * var(--line-height));
-  }
+@media (min-width: 650px) {
+  header {margin: calc(3 * var(--line-height));}
+  footer {padding-top: calc(2 * var(--line-height));}
 }
-@media (orientation: landscape) {
-  header {
-    margin: calc(2 * var(--line-height)) 0;
-  }
-}
-@media (orientation: landscape) and (min-height: 600px) {
-  header {
-    margin: calc(3 * var(--line-height)) 0;
-  }
-}
-@media (orientation: landscape) and (min-height: 720px) {
+/* @media (min-height: 720px) {
   header {
     margin: calc(4 * var(--line-height)) 0;
   }
-}
+} */
 
 main {
 
@@ -52,14 +40,17 @@ section {
   margin-bottom: var(--line-height);
 }
 
-@media (min-width: 700px) {
+footer {
+}
+
+/* @media (min-width: 700px) {
   footer {
     position: fixed;
     bottom: .25em;
     left: 0;
     width: 100%;
   }
-}
+} */
 
 h1, h2, h3, a, footer {
   margin: 0;
