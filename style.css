@@ -15,14 +15,29 @@ body {
 }
 
 header {
-  margin: calc(2 * var(--line-height)) 0;
+  margin: var(--line-height);
 }
-@media (min-height: 600px) and (orientation: landscape) {
+@media (orientation: portrait) and (min-width: 500px) {
+  header {
+    margin: calc(2 * var(--line-height));
+  }
+}
+@media (orientation: portrait) and (min-width: 600px) {
+  header {
+    margin: calc(3 * var(--line-height));
+  }
+}
+@media (orientation: landscape) {
+  header {
+    margin: calc(2 * var(--line-height)) 0;
+  }
+}
+@media (orientation: landscape) and (min-height: 600px) {
   header {
     margin: calc(3 * var(--line-height)) 0;
   }
 }
-@media (min-height: 700px) and (orientation: landscape) {
+@media (orientation: landscape) and (min-height: 720px) {
   header {
     margin: calc(4 * var(--line-height)) 0;
   }
