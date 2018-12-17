@@ -5,6 +5,7 @@
 
 body {
   margin: 0 auto;
+  padding: 0;
   max-width: 650px;
   color: #2c3e50;
   text-align: center;
@@ -51,14 +52,16 @@ section {
   margin-bottom: var(--line-height);
 }
 
-footer {
-  position: fixed;
-  bottom: .25em;
-  left: 0;
-  width: 100%;
+@media (min-width: 700px) {
+  footer {
+    position: fixed;
+    bottom: .25em;
+    left: 0;
+    width: 100%;
+  }
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, footer {
   margin: 0;
   line-height: var(--line-height);
 }
@@ -90,8 +93,4 @@ li {
 a {
   display: block;
   color: #555;
-}
-
-small {
-  color: #bbb;
 }
