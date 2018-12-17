@@ -5,6 +5,7 @@
 
 body {
   margin: 0 auto;
+  border: solid 1px black;
   padding: 0;
   max-width: 650px;
   color: #2c3e50;
