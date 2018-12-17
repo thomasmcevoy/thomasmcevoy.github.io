@@ -1,16 +1,13 @@
-html {
-  min-height: 100%;
+:root {
+  --font-size: 16px;
+  --line-height: 32px;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-
   margin: 0 auto;
   max-width: 650px;
-  height: 100%;
   
-  font-family: courier;
+  font: var(--font-size) courier;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -18,28 +15,31 @@ body {
 }
 
 header {
-  flex-grow: 4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: calc(3 * var(--line-height)) 0;
 }
 
 main {
-  flex-grow: 1;
+
 }
 
 section {
-  margin-bottom: 40px;
-}
-section:last-child {
-  margin-bottom: 0;
+  margin-bottom: var(--line-height);
 }
 
 footer {
-  padding: 5px;
+  position: fixed;
+  bottom: .25em;
+  left: 0;
+  width: 100%;
 }
 
-h1 {
+h1, h2, h3, a {
+  margin: 0;
+  height: var(--line-height);
+  line-height: var(--line-height);
+}
+
+h1 {  
   font-size: 1.15em;
 }
 
@@ -54,16 +54,16 @@ h3 {
 
 ul {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 .625em;
 }
 
 a {
   display: block;
-  margin-bottom: .6em;
   color: #555;
 }
