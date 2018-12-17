@@ -15,7 +15,17 @@ body {
 }
 
 header {
-  margin: calc(3 * var(--line-height)) 0;
+  margin: calc(2 * var(--line-height)) 0;
+}
+@media (min-height: 600px) and (orientation: landscape) {
+  header {
+    margin: calc(3 * var(--line-height)) 0;
+  }
+}
+@media (min-height: 700px) and (orientation: landscape) {
+  header {
+    margin: calc(4 * var(--line-height)) 0;
+  }
 }
 
 main {
