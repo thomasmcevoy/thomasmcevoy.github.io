@@ -6,12 +6,11 @@
 body {
   margin: 0 auto;
   max-width: 650px;
-  
+  color: #2c3e50;
+  text-align: center;
   font: var(--font-size) courier;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
 }
 
 header {
@@ -61,7 +60,6 @@ footer {
 
 h1, h2, h3, a {
   margin: 0;
-  height: var(--line-height);
   line-height: var(--line-height);
 }
 
