@@ -3,6 +3,11 @@
   --line-height: 32px;
 }
 
+html {
+  display: flex;
+  align-items: center;
+}
+
 body {
   margin: 0 auto;
   border: solid 1px black;
