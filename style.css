@@ -64,7 +64,7 @@ h1, h2, h3, a, footer {
 }
 
 h1 {  
-  font-size: 1.15em;
+  font-size: 1.12em;
 }
 
 h2 {
@@ -73,7 +73,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.075em;
+  font-size: 1.06em;
 }
 
 ul {
@@ -90,4 +90,8 @@ li {
 a {
   display: block;
   color: #555;
+}
+
+#copyright {
+  font-size: .94em;
 }
