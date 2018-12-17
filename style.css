@@ -16,6 +16,7 @@ body {
 
 header {
   margin: var(--line-height);
+  padding: 0;
 }
 @media (orientation: portrait) and (min-width: 500px) {
   header {
