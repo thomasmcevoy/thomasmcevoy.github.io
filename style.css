@@ -91,3 +91,7 @@ a {
   display: block;
   color: #555;
 }
+
+small {
+  color: #aaa;
+}
