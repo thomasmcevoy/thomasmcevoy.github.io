@@ -48,8 +48,11 @@ header {
 
 main {
 }
-main ul a {
-  padding: 0 1em;
+main li {
+  margin: 0;
+}
+main a {
+  padding: 0 0.5em;
 }
 
 section {
