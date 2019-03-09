@@ -40,36 +40,10 @@ header {
     padding-top: calc(2 * var(--line-height));
   }
 }
-/* @media (min-height: 720px) {
-  header {
-    margin: calc(4 * var(--line-height)) 0;
-  }
-} */
-
-main {
-}
-main li {
-  margin: 0;
-}
-main a {
-  padding: 0 0.5em;
-}
 
 section {
   margin-bottom: var(--line-height);
 }
-
-footer {
-}
-
-/* @media (min-width: 700px) {
-  footer {
-    position: fixed;
-    bottom: .25em;
-    left: 0;
-    width: 100%;
-  }
-} */
 
 h1,
 h2,
@@ -101,10 +75,11 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 0.625em;
+  margin: 0 0.125em;
 }
 
 a {
+  padding: 0 0.5em;
   display: block;
   color: #555;
 }
