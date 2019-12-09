@@ -40,7 +40,7 @@ body {
 main,
 section {
   margin: 0;
-  padding: 0.75em;
+  padding: 0.75em 0;
 }
 section:first-child {
   padding-top: 0;
@@ -66,7 +66,7 @@ footer {
 }
 
 header {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 h1 {
@@ -105,6 +105,6 @@ footer {
 }
 
 #copyright {
-  font-size: 0.625em;
-  letter-spacing: 0.067em;
+  font-size: 0.75em;
+  letter-spacing: 0.033em;
 }
