@@ -31,21 +31,15 @@ body {
 #page {
   display: grid;
   margin: auto;
+  padding: 1em;
   max-width: 750px;
-  min-height: 38em;
   max-height: 100%;
   background-color: white;
 }
 
-header,
 main,
-footer {
-  margin: 0;
-  padding: 0;
-  align-self: center;
-}
-
 section {
+  margin: 0;
   padding: 0.75em;
 }
 section:first-child {
@@ -61,6 +55,7 @@ section:last-child {
   transform: translateY(-50%);
 }
 
+header,
 h1,
 h2,
 h3,
@@ -68,6 +63,10 @@ a,
 footer {
   margin: 0;
   line-height: var(--line-height);
+}
+
+header {
+  padding: 2em;
 }
 
 h1 {
@@ -100,6 +99,12 @@ a {
   color: #555;
 }
 
+footer {
+  position: relative;
+  top: 1.3em;
+}
+
 #copyright {
-  font-size: 0.94em;
+  font-size: 0.625em;
+  letter-spacing: 0.067em;
 }
