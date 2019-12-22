@@ -99,11 +99,13 @@ a {
 }
 
 footer {
-  position: relative;
-  top: 1.3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #copyright {
-  font-size: 0.75em;
+  font-size: 0.667em;
   letter-spacing: 0.033em;
 }
